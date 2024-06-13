@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Vending</title>
+    <link
+      rel="stylesheet"
+      href="./styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/reset.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/index.css" />
+    <script
+      defer
+      src="./scripts/index.js"></script>
+  </head>
+  <body class="body-grey">
+    <header class="header mb-auto">
+      <div class="container">
+        <img
+          src="./images/logo.svg"
+          alt="Yamaguchi"
+          class="logo" />
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <h1 class="title input-email-title mb20">
+          Остался 1 маленький шаг :)
+        </h1>
+        <p class="descr mb20 input-email-descr">
+          Требуется подтвердить почту. Введите Ваш адрес ниже.
+        </p>
+        <form
+          action=""
+          class="form mb15">
+          <div class="inputs-wrapper inputs-wrapper_column mb10">
+            <div class="input-wrapper">
+              <input
+                type="email"
+                name="email"
+                class="input registration-input _js-email-input"
+                placeholder="Email"
+                required />
+            </div>
+          </div>
+
+          <button class="btn submit-btn registration-submit-btn btn-disabled mb15">
+            Отправить письмо
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+
+        <p class="legal-info mb15">
+          <span class="legal-info__name">ООО «РОМАШКА ПЛЮС»</span>,
+          <span class="legal-info__inn">ИНН 5635373563</span>,
+          <span class="legal-info__ogrn">ОГРН 54623452352435136</span>,
+          <span class="legal-info__address"
+            >Адрес: 108814, г Москва, п. Сосенское, п. Коммунарка, ул, Фитаревская, д.19, кв.
+            214.</span
+          >
+          <a class="legal-info__contract-offer open-contract-offer-modal"> Договор оферты </a>
+        </p>
+        <div class="bottom-wrapper">
+          <p class="chair-name">Кресло № DS02001</p>
+          <a class="toggle-lang-btn">
+            <img
+              src="./images/english.svg"
+              alt="Language"
+              class="toggle-lang-icon" />
+            English
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup subscription-popup">
+      <div class="popup__window">
+        <div class="popup__head">
+          <h3 class="popup__title">1000 баллов за подписку</h3>
+          <button class="popup__close-btn popup__close-btn_clear subscription-popup__close-btn">
+            <img
+              src="./images/close-icon.svg"
+              alt="Закрыть" />
+          </button>
+        </div>
+        <div class="popup__info mb15">
+          <p class="popup__descr">
+            Все деньги внесенные за массаж возвращаются баллами на ваш бонусный счет. Скидки и баллы
+            не суммируются.
+          </p>
+          <p class="popup__descr">Баллы нельзя использовать на оплату массажа.</p>
+          <p class="popup__descr">
+            Баллы можно потратить на ТОВАРЫ в фирменных салонах Yamaguchi, на сайте и в приложении
+            Yamaguchi.ru.
+          </p>
+          <p class="popup__descr">
+            Накопленные баллы Вы можете использовать для оплаты ваших последующих покупок по курсу 1
+            балл = 1 рубль.
+          </p>
+          <p class="popup__descr">
+            Оплатить баллами вы можете до 50% стоимости любого товара стоимостью от 1600 рублей.
+          </p>
+          <p class="popup__descr">Скидки и баллы не суммируются.</p>
+        </div>
+        <button class="popup__close-btn btn subscription-popup__close-btn">Продолжить</button>
+      </div>
+    </div>
+
+    <div class="popup agreement-popup">
+      <div class="popup__window">
+        <div class="popup__head">
+          <h3 class="popup__title">О персональных данных</h3>
+          <button class="popup__close-btn popup__close-btn_clear agreement-popup__close-btn">
+            <img
+              src="./images/close-icon.svg"
+              alt="Закрыть" />
+          </button>
+        </div>
+        <div class="popup__info mb15">
+          <p class="popup__descr">
+            Во исполнения требований Федерального закона от 27.07.2006 N 152-ФЗ "О персональных
+            данных".
+          </p>
+          <p class="popup__descr">
+            Я, даю своё согласие на автоматизированную, а также без использования средств
+            автоматизации, обработку, а именно: сбор, запись, систематизацию, накопление, хранение,
+            уточнение (обновление, изменение), извлечение, использование, распространение (в том
+            числе передачу третьим лицам), обезличивание, блокирование, удаление, уничтожение моих
+            персональных данных.
+          </p>
+          <p class="popup__descr">
+            Соглашаюсь на получение от Общества уведомлений, запросов, информационных и/или
+            рекламных материалов, акций, предложений, информирование о мероприятиях и проведение
+            опросов, предоставление информации, а также иной информации по имеющимся у Общества моим
+            контактным данным.
+          </p>
+          <p class="popup__descr">
+            Соглашаюсь с тем, что персональные данные, указанные мною, могут быть переданы Обществом
+            третьим лицам – компаниям, входящим в структуру группы компаний Общества.
+          </p>
+        </div>
+        <button class="popup__close-btn btn agreement-popup__close-btn">Продолжить</button>
+      </div>
+    </div>
+  </body>
+</html>

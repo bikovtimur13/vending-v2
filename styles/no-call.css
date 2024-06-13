@@ -1,0 +1,10 @@
+.header {
+  margin-bottom: 10%;
+}
+
+.info-descr {
+  align-self: center;
+  max-width: 90%;
+  font-size: min(4.0625vw, 20.3px);
+  font-weight: 700;
+}

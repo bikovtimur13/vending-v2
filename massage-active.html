@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/reset.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/index.css" />
+    <script
+      defer
+      src="./scripts/index.js"></script>
+    <title>Vending</title>
+  </head>
+  <body>
+    <header class="header mb40">
+      <div class="container flex-container">
+        <img
+          src="./images/logo.svg"
+          alt="Yamaguchi"
+          class="logo logo-not-100" />
+          <div class="profile">
+            <div class="profile__btn">
+              <img src="./images/default-profile-avatar.svg" alt="Изображение профиля" class="profile__avatar">
+            </div>
+          </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="massage-time mb-auto">
+          <p class="massage-time__descr">До окончания массажа осталось</p>
+          <div class="massage-time__time">01:35</div>
+        </div>
+        <a href="#" class="btn btn-fz16 mb10">Полезные видео о здоровье</a>
+        <a href="#" class="btn btn-fz16 mb10">Выбрать время массаж</a>
+        <a href="#" class="btn btn-fz16 btn-dark">Остановить массаж</a>
+
+        <!-- <a class="btn btn-fz16">Полезные видео о здоровье</a> -->
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="legal-info mb15">
+          <span class="legal-info__name">ООО «РОМАШКА ПЛЮС»</span>,
+          <span class="legal-info__inn">ИНН 5635373563</span>,
+          <span class="legal-info__ogrn">ОГРН 54623452352435136</span>,
+          <button class="legal-info__contract-offer open-contract-offer-modal">Договор оферты</button>
+        </p>
+        <div class="bottom-wrapper">
+          <p class="chair-name">Кресло № DS02001</p>
+          <button class="toggle-lang-btn">
+            <img
+              src="/images/english.svg"
+              alt="Language"
+              class="toggle-lang-icon" />
+            English
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
