@@ -47,6 +47,10 @@ body {
   margin-top: min(4.7vw, 23.5px);
 }
 
+.mt20 {
+  margin-top: min(6.25vw, 31.2px);
+}
+
 .mb20 {
   margin-bottom: min(6.25vw, 31.2px);
 }
@@ -128,6 +132,32 @@ body {
   text-decoration: unset;
 }
 
+.profile-login-l{
+  padding: 5% 10%;
+  background-color: #f1f1f1;
+  border-radius: 7px;
+  color: #181818;
+  text-align: center;
+  font-size: min(4.7vw, 23.5px);
+  font-weight: 700;
+  line-height: 124%;
+  text-decoration: unset;
+}
+
+.mode-list__auth-btn{
+  width: 16.5%;
+}
+
+.mode-list__auth-btn img{
+  width: 100%;
+}
+
+.mode-list__auth{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .profile__avatar {
   display: block;
   width: 100%;
@@ -150,6 +180,10 @@ body {
   color: #e03638;
   text-decoration: underline;
   transition: color 0.2s ease-in-out;
+}
+
+.btn-center{
+  margin: 0 auto;
 }
 
 .info-btn:focus {
@@ -277,11 +311,14 @@ body {
   justify-content: center;
   width: 96%;
   min-height: 50px;
-  padding: 4.2%;
+  /* padding: 4.2%; */
+  padding: 5.5%;
   text-align: center;
   color: #fff;
-  font-size: min(5.625vw, 28px);
-  font-weight: 700;
+  /* font-size: min(5.625vw, 28px); */
+  font-size: min(4.625vw, 25px);
+  /* font-weight: 700; */
+  font-weight: 400;
   line-height: 124%;
   border-radius: 15px;
   background: #e03638;
@@ -335,6 +372,7 @@ body {
 .popular-mode-btn {
   position: relative;
   max-width: 100%;
+  transform: scale(1.04);
 }
 
 .popular-mode-btn::before {
@@ -1085,4 +1123,14 @@ input::-webkit-inner-spin-button {
   width: Clamp(44%, 40vw, 52%);
   float: left;
   height: 100%;
+}
+
+.mode-list__title{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(4.6vw, 23.5px);
+  line-height: 22px;
+  text-align: center;
+  color: #181818;
 }

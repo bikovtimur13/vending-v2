@@ -23,56 +23,65 @@
     <title>Vending</title>
   </head>
   <body>
-    <header class="header mb65">
+    <header class="header">
       <div class="container flex-container">
         <img
           src="../../images/logo.svg"
           alt="Yamaguchi"
-          class="logo logo-not-100" />
-        <a
+          class="logo" />
+        <!-- <a
           href="#"
           class="profile-login"
           >Войти</a
-        >
-        <a
+        > -->
+        <!-- <a
           href="#"
           class="profile">
           <img
             src="../../images/default-profile-avatar.svg"
             alt="Изображение профиля"
             class="profile__avatar" />
-        </a>
+        </a> -->
       </div>
     </header>
     <main class="main">
       <div class="container">
-        <ul class="mode-list mb20">
-          <li class="mode-list__item">
+        <p class="mode-list__title">Выберите время массажа</p>
+        <ul class="mode-list mb20 mt20">
+          <!-- <li class="mode-list__item">
             <form action="">
               <button class="btn mode-btn mb10">5 минута за 100<i class="b-ruble">₽</i></button>
             </form>
-          </li>
+          </li> -->
           <li class="mode-list__item">
             <form action="">
-              <button class="btn mode-btn mb10">10 минут за 200<i class="b-ruble">₽</i></button>
+              <button class="btn mode-btn mb10">10 минут за 100<i class="b-ruble">₽</i></button>
             </form>
           </li>
           <li class="mode-list__item">
             <form action="">
               <button class="btn mode-btn popular-mode-btn mb10">
-                15 минут за 300<i class="b-ruble">₽</i>
+                15 минут за 150<i class="b-ruble">₽</i>
               </button>
             </form>
           </li>
           <li class="mode-list__item">
             <form action="">
-              <button class="btn mode-btn">30 минут за 600<i class="b-ruble">₽</i></button>
+              <button class="btn mode-btn">20 минут за 200<i class="b-ruble">₽</i></button>
             </form>
           </li>
         </ul>
-        <form action="">
-          <button class="btn fz15">Бесплатный массаж</button>
+        <p class="mode-list__title mb50 mt20">Для начисления баллов за массаж, используйте приложение</p>
+        <form class="mb25" action="">
+          <button class="btn fz15 btn-center">Скачать приложение</button>
         </form>
+
+        <div class="mode-list__auth">
+          <a href="#" class="mode-list__auth-btn yandex"><img src="../../images/yandex-login-btn.svg" alt=""></a>
+          <a href="#" class="mode-list__auth-btn vk"><img src="../../images/vk-login-btn.svg" alt=""></a>
+          <a href="#" class="mode-list__auth-btn google"><img src="../../images/google-login-btn.svg" alt=""></a>
+          <a href="#" class="mode-list__auth-login-btn profile-login-l">Войти</a>
+        </div>
       </div>
     </main>
     <footer class="footer">
