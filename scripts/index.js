@@ -484,3 +484,24 @@ class ValidEmail {
 new ValidEmail('._js-email-input', '.registration-submit-btn');
 
 
+const modalBonusesOpen = () =>{
+  const btnOpen = document.querySelector("._js-modal-bonuses-open");
+  const modal = document.querySelector(".modal-bonuses-faq");
+  
+  if(btnOpen){
+    btnOpen.addEventListener('click', (e)=>{
+      modal.classList.add("active");
+    });
+  };
+  if(modal){
+    modal.addEventListener('click', (e)=>{
+      modal.classList.remove("active");
+    });
+  };
+}
+
+try{
+  modalBonusesOpen();
+}catch(err){
+  console.warn(err);
+}
