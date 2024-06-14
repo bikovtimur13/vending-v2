@@ -23,14 +23,26 @@
     <title>Vending</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container flex-container">
-        <img
-          src="../../images/logo.svg"
-          alt="Yamaguchi"
-          class="logo" />
-      </div>
-    </header>
+    <header class="header auth">
+        <div class="container flex-container">
+          <div class="header-profile-avatar">
+              <img src="../../images/avatar-img.svg" alt="">
+          </div>
+          <div class="header__user-data">
+              <p class="header__user-name">Петрова Василиса</p>
+              <div class="header__user-bonuses">
+                  <p>Счёт: 150₽</p>
+                  <p>Баллы: <span>250</span> <img src="../../images/Clock.svg" alt=""></p>
+              </div>
+          </div>
+          <a
+            href="#"
+            class="profile-btn"
+            >Личный<br> 
+            кабинет</a
+          > 
+        </div>
+      </header>
     <main class="main">
       <div class="container">
         <div class="massage-time mb-auto">
@@ -39,18 +51,14 @@
         </div>
         <a href="#" class="btn btn-fz16 mb10">Полезные видео о здоровье</a>
         <a href="#" class="btn btn-fz16 mb10">Выбрать время массаж</a>
-        <a href="#" class="btn btn-fz16 btn-dark">Остановить массаж</a>
+        <a href="#" class="btn btn-fz16 btn-dark mb10">Остановить массаж</a>
+        <a href="#" class="btn btn-fz16 mb10">Потратить баллы</a>
 
-        <p class="mode-list__title mt20 mb20">Для начисления баллов за массаж, используйте приложение</p>
+        <p class="mode-list__title mt20 mb20">Вам начислены баллы за массаж. Они сгорят через 3 дня. Чтобы<br> баллы остались нужно</p>
         <form class="mb25" action="">
           <button class="btn fz15 btn-center">Скачать приложение</button>
         </form>
-        <div class="mode-list__auth mb40">
-          <a href="#" class="mode-list__auth-btn yandex"><img src="../../images/yandex-login-btn.svg" alt=""></a>
-          <a href="#" class="mode-list__auth-btn vk"><img src="../../images/vk-login-btn.svg" alt=""></a>
-          <a href="#" class="mode-list__auth-btn google"><img src="../../images/google-login-btn.svg" alt=""></a>
-          <a href="#" class="mode-list__auth-login-btn profile-login-l">Войти</a>
-        </div>
+        <p class="mode-list__title mb20">и авторизовать в нём<br> с теми же данными</p>
       </div>
     </main>
     <footer class="footer">

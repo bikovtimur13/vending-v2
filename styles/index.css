@@ -90,6 +90,11 @@ body {
   border-bottom: 1px solid #E5E5E5;
 }
 
+.header.auth .container{
+  display: flex;
+  align-items: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -142,12 +147,12 @@ body {
 }
 
 .profile-btn{
-  padding: 3% 5%;
+  padding: 1% 4%;
   background-color: #f1f1f1;
   border-radius: 7px;
   color: #181818;
   text-align: center;
-  font-size: min(4.7vw, 23.5px);
+  font-size: min(3.5vw, 15.5px);
   font-weight: 700;
   line-height: 124%;
   text-decoration: unset;
@@ -252,7 +257,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: min(31.25vw, 156.25px);
+  /* margin-bottom: min(31.25vw, 156.25px); */
 }
 .massage-time__descr {
   color: #181818;
@@ -1193,4 +1198,41 @@ input::-webkit-inner-spin-button {
 
 .header-profile-avatar img{
   width: 100%;
+}
+
+.header__user-data{
+  display: flex;
+  flex-direction: column;
+  width: 53%;
+}
+
+.header__user-name{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(4.5vw, 23.5px);
+  line-height: 22px;
+  color: #181818;
+}
+
+.header__user-bonuses{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(3.5vw, 18.5px);
+  line-height: 140%;
+  color: #575757;
+
+  span{
+    color: #E03638;
+  }
+  p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 4%;
+  }
 }
