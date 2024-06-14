@@ -83,6 +83,14 @@ body {
   margin-bottom: min(15.625vw, 78.75px);
 }
 
+.mt50{
+  margin-top: min(15.625vw, 78.75px);
+}
+
+.mt65 {
+  margin-top: min(21.16%, 101px);
+}
+
 .header {
 }
 
@@ -1161,6 +1169,16 @@ input::-webkit-inner-spin-button {
   color: #181818;
 }
 
+.mode-list__title-s{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: min(3.8vw, 19px);
+  line-height: 150%;
+  text-align: center;
+  color: #181818;
+}
+
 .loading{
   position: relative;
   width: 16px;
@@ -1235,4 +1253,23 @@ input::-webkit-inner-spin-button {
     justify-content: space-between;
     column-gap: 4%;
   }
+}
+
+.call-link{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(5.9vw, 32.5px);
+  line-height: 150%;
+  text-align: center;
+  color: #E03638;
+  text-decoration: none;
+}
+
+.call-link__number-wrapper{
+
+}
+
+.call-link__number-let-space{
+
 }
