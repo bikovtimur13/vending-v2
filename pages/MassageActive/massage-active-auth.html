@@ -17,6 +17,10 @@
     <link
       rel="stylesheet"
       href="../../styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="../../libs/swiper/swiper.min.css" />
+    <script src="../../libs/swiper/swiper.min.js"></script>
     <script
       defer
       src="../../scripts/index.js"></script>
@@ -31,8 +35,7 @@
           <div class="header__user-data">
               <p class="header__user-name">Петрова Василиса</p>
               <div class="header__user-bonuses">
-                  <p>Счёт: 150₽</p>
-                  <p>Баллы: <span>250</span> <img src="../../images/Clock.svg" alt=""></p>
+                  <p>Баллы: 250 <a href="#">Подробнее</a></p>
               </div>
           </div>
           <a
@@ -49,16 +52,43 @@
           <p class="massage-time__descr">До окончания массажа осталось</p>
           <div class="massage-time__time">01:35</div>
         </div>
-        <a href="#" class="btn btn-fz16 mb10">Полезные видео о здоровье</a>
-        <a href="#" class="btn btn-fz16 mb10">Выбрать время массаж</a>
-        <a href="#" class="btn btn-fz16 btn-dark mb10">Остановить массаж</a>
-        <a href="#" class="btn btn-fz16 mb10">Потратить баллы</a>
 
-        <p class="mode-list__title mt20 mb20">Вам начислены баллы за массаж. Они сгорят через 3 дня. Чтобы<br> баллы остались нужно</p>
-        <form class="mb25" action="">
-          <button class="btn fz15 btn-center">Скачать приложение</button>
-        </form>
-        <p class="mode-list__title mb20">и авторизовать в нём<br> с теми же данными</p>
+        <div class="products-swiper mt30">
+          <div class="swiper-wrapper">
+            <a href="#" class="products-swiper__slide swiper-slide">
+              <div class="products-swiper__img mb10">
+                <img src="../../images/product-1-v1.png" alt="">
+              </div>
+              <p class="products-swiper__product-name mb10">
+                Роликовый массажер для лица и тела Yamaguchi Face and Body 3D Roller
+              </p>
+              <p class="products-swiper__product-price">1 500 ₽</p>
+            </a>
+            <a href="#" class="products-swiper__slide swiper-slide">
+              <div class="products-swiper__img mb10">
+                <img src="../../images/product-2-v1.png" alt="">
+              </div>
+              <p class="products-swiper__product-name mb10">
+                Перкуссионный массажер для тела Yamaguchi Therapy Massage Gun
+              </p>
+              <p class="products-swiper__product-price">24 000 ₽</p>
+            </a>
+            <a href="#" class="products-swiper__slide swiper-slide">
+              <div class="products-swiper__img mb10">
+                <img src="../../images/product-3-v1.png" alt="">
+              </div>
+              <p class="products-swiper__product-name mb10">
+                Массажное кресло Yamaguchi Xr
+              </p>
+              <p class="products-swiper__product-price">490 000 ₽</p>
+            </a>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-w100 btn-fz16 mb10 mt40">Полезные видео о здоровье</a>
+        <a href="#" class="btn btn-w100 btn-fz16 btn-dark mb10">Остановить массаж</a>
+        <a href="#" class="btn btn-w100 btn-fz16 btn-dark mb10">назад</a>
+
       </div>
     </main>
     <footer class="footer">

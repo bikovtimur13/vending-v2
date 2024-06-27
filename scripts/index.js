@@ -1,3 +1,4 @@
+
 class Modal {
   constructor(modalClass, closeBtnClass, openBtnClass) {
     this.modal = document.querySelector(`.${modalClass}`);
@@ -372,6 +373,7 @@ function initSwiper() {
     },
   });
 
+
   swiper.on('slideChange', () => {
     if (prevVideo) {
       prevVideo.pause();
@@ -407,6 +409,7 @@ function initSwiper() {
     event.target.removeEventListener('play', onVideoPlay);
   }
 }
+
 
 function getTotalLength(player) {
   const totalLength = player.duration % 60;
@@ -505,3 +508,13 @@ try{
 }catch(err){
   console.warn(err);
 }
+
+const swiperProduct = new Swiper('.products-swiper', {
+  // loop: true,
+  // centeredSlides: true,
+  loopedSlides: true,
+  spaceBetween: 10,
+  slidesPerView: 2.3,
+  // centeredSlides: true,
+  loopedSlides: true,
+});

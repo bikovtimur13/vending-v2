@@ -23,31 +23,49 @@
     <title>Vending</title>
   </head>
   <body>
-    <header class="header mb-auto">
-      <div class="container">
+    <header class="header">
+      <div class="container flex-container">
         <img
           src="../../images/logo.svg"
           alt="Yamaguchi"
           class="logo" />
+        <!-- <a
+          href="#"
+          class="profile-login"
+          >Войти</a
+        > -->
+        <!-- <a
+          href="#"
+          class="profile">
+          <img
+            src="../../images/default-profile-avatar.svg"
+            alt="Изображение профиля"
+            class="profile__avatar" />
+        </a> -->
       </div>
     </header>
     <main class="main">
       <div class="container">
-        <h1 class="title mb40">Извините, кресло № DS02001 временно недоступно</h1>
-        <p class="descr descr-not-available mb10">
-          Попробуйте снова через несколько&nbsp;минут. Или обратитесь в&nbsp;службу поддержки
-          по&nbsp;номеру телефона
-        </p>
-        <a
-          href="tel:+78003331281"
-          class="tel-link mb30"
-          >8 800 333 12 81</a
-        >
-        <a
-          href="#"
-          class="btn btn-w100"
-          >Сканировать</a
-        >
+        <p class="mode-list__title mb20">Кресло активируется, ожидайте</p>
+        <div class="loading">
+            <span style="--n:1"></span>
+            <span style="--n:2"></span>
+            <span style="--n:3"></span>
+            <span style="--n:4"></span>
+            <span style="--n:5"></span>
+            <span style="--n:6"></span>
+            <span style="--n:7"></span>
+            <span style="--n:8"></span>
+            <span style="--n:9"></span>
+            <span style="--n:10"></span>
+            <span style="--n:11"></span>
+            <span style="--n:12"></span>
+            <span style="--n:13"></span>
+            <span style="--n:14"></span>
+            <span style="--n:15"></span>
+        </div>
+
+
       </div>
     </main>
     <footer class="footer">
@@ -60,11 +78,17 @@
             >Адрес: 108814, г Москва, п. Сосенское, п. Коммунарка, ул, Фитаревская, д.19, кв.
             214.</span
           >
-          <a class="legal-info__contract-offer open-contract-offer-modal"> Договор оферты </a>
+          <a
+            href="#"
+            class="legal-info__contract-offer open-contract-offer-modal">
+            Договор оферты
+          </a>
         </p>
         <div class="bottom-wrapper">
           <p class="chair-name">Кресло № DS02001</p>
-          <a class="toggle-lang-btn">
+          <a
+            href="#"
+            class="toggle-lang-btn">
             <img
               src="../../images/english.svg"
               alt="Language"
