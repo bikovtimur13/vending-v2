@@ -1246,6 +1246,22 @@ input::-webkit-inner-spin-button {
   animation-delay: calc(var(--n) * 0.05s);
 }
 
+.loading_width-m{
+  width: 15vw;
+  height: 15vw;
+}
+
+.loading_width-m > span {
+  width: .94vw;
+  height: .94vw;
+  transform-origin: 0 5vw;
+}
+
+.loading_child-element-сenter > span {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(calc(var(--n) * 24deg));
+}
 
 @keyframes animate_dot{
   0%, 50%{
@@ -1404,5 +1420,43 @@ input::-webkit-inner-spin-button {
 .products-swiper__product-price{
   font-weight: 600;
   color: #000000;
+}
+
+.download-massage-tech{
+
+}
+
+.download-massage-tech__img-container {
+  width: 100%;
+  height: 63.13vw;
+  margin: auto;
+}
+
+.download-massage-tech__img {
+  width: 100%;
+  height: 100%;
+}
+
+.download-massage-tech__loading{
+  margin-bottom: 5vw;
+}
+
+.download-massage-tech__title{
+  margin-bottom: 15vw;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 4.38vw;
+  line-height: 1.5;
+  text-align: center;
+  color: #181818;
+}
+
+.download-massage-tech__descr{
+  margin-bottom: 4.69vw;
+  color: #181818;
+  text-align: center;
+  font-size: 4.38vw;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
