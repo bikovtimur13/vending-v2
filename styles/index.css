@@ -358,7 +358,6 @@ body {
   justify-content: center;
   width: 96%;
   min-height: 50px;
-  margin: 0 auto;
   padding: 5.5%;
   text-align: center;
   color: #fff;
@@ -413,6 +412,13 @@ body {
   margin-right: auto;
   max-width: 97%;
   background-color: #383838;
+}
+
+.mode-btn-red{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 97%;
+  background-color: #e03638;
 }
 
 .mode-btn:active {
@@ -1179,7 +1185,7 @@ input::-webkit-inner-spin-button {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: min(4vw, 22px);
+  font-size: min(4.6vw, 22px);
   line-height: min(6vw, 37px);
   text-align: center;
   color: #181818;
@@ -1464,6 +1470,12 @@ input::-webkit-inner-spin-button {
   line-height: 1.5;
 }
 
+.add-card__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .add-card__card-img-wrapper{
   display: flex;
   justify-content: center;
@@ -1471,4 +1483,193 @@ input::-webkit-inner-spin-button {
 
 .add-card__card-img{
   width: 70%;
+}
+
+.mode-list__btn-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.main-card{
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  padding: min(15.6px, 2vw);
+  margin: 0 auto;
+  min-height: 50px;
+  background: #F6F6F6;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-card__card-num{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(4.6vw, 22px);
+  line-height: min(6vw, 37px);
+  text-align: center;
+  color: #181818;
+  margin-left: clamp(-28px, 20vw,-40px);
+}
+
+.main-card__card-date{
+  color: #939393;
+}
+
+.main-card__card-icon{
+  width: min(10.4vw, 50px);
+}
+
+.main-card__edit-icon{
+  border: none;
+  background: none;
+  width: min(9.6vw, 42px);
+}
+
+.main-card__edit-icon-img{
+  width: 100%;
+}
+
+.main-card__edit-icon:hover {
+  cursor: pointer;
+}
+
+
+.cards-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-list__item{
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  padding: min(15.6px, 2vw);
+  margin: 0 auto;
+  min-height: 50px;
+  border: none;
+  background: #F6F6F6;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards-list__item:nth-child(2n){
+  background: #FFFFFF;
+}
+
+.cards-list__card-icon{
+  width: min(10.4vw, 50px);
+  margin-right: clamp(13px, 3vw, 23px);
+}
+
+.cards-list__card-num-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cards-list__card-num{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(4.6vw, 22px);
+  line-height: min(6vw, 37px);
+  text-align: center;
+  color: #181818;
+}
+
+.cards-list__card-date{
+  display: inline;
+  color: #939393;
+}
+
+.cards-list__main-info{
+  display: flex;
+  align-items: center;
+}
+
+.cards-list__delete-btn{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: min(3.5vw, 16px);
+  line-height: 140%;
+  border: none;
+  background: unset;
+  color: #E03638;
+}
+
+.cards-list__delete-btn:hover{
+  cursor: pointer;
+}
+
+.checkbox-wrapper-18 .round {
+  position: relative;
+}
+
+.checkbox-wrapper-18 .round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: min(10vw, 45px);
+  width: min(10vw, 45px);
+  display: block;
+  margin-right: clamp(5px, 4vw, 10px);
+}
+
+.checkbox-wrapper-18 .round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-75%,-68%) rotate(-45deg);
+  height: min(2.5vw, 10px);
+  width: min(4.5vw, 21px);
+}
+
+.checkbox-wrapper-18 .round input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+.checkbox-wrapper-18 .round input[type="checkbox"]:checked + label {
+  background-color: #5B8930;
+  border-color: #5B8930;
+}
+
+.checkbox-wrapper-18 .round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.cards-list__btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.cards-list__plus-icon{
+  width: min(10.4vw, 50px);
+  margin-right: clamp(13px, 3vw, 23px);
+}
+
+.cards-list__arrow-icon{
+  width: 100%;
+}
+.cards-list__edit-arrow{
+  width: min(10.4vw, 50px);
+  border: none;
+  background: none;
+}
+
+.cards-list__edit-arrow:hover{
+  cursor: pointer;
 }
