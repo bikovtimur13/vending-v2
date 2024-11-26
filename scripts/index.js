@@ -510,11 +510,7 @@ try{
 }
 
 const swiperProduct = new Swiper('.products-swiper', {
-  // loop: true,
-  // centeredSlides: true,
-  loopedSlides: true,
   spaceBetween: 10,
   slidesPerView: 2.3,
-  // centeredSlides: true,
   loopedSlides: true,
 });
