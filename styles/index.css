@@ -116,7 +116,8 @@ body {
   flex-direction: column;
   width: 100%;
   max-width: 500px;
-  padding: min(15.6px, 3.125vw);
+  /* padding: min(15.6px, 3.125vw); */
+  padding: min(15.6px, 2vw);
   margin: 0 auto;
 }
 
@@ -357,7 +358,7 @@ body {
   justify-content: center;
   width: 96%;
   min-height: 50px;
-  /* padding: 4.2%; */
+  margin: 0 auto;
   padding: 5.5%;
   text-align: center;
   color: #fff;
@@ -1298,11 +1299,14 @@ input::-webkit-inner-spin-button {
 }
 
 .header__user-bonuses{
+  display: flex;
+  justify-content: space-between;
+
   align-items: center;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: min(3.5vw, 18.5px);
+  font-size: min(3.1vw, 16px);
   line-height: 140%;
   color: #575757;
 
@@ -1460,3 +1464,11 @@ input::-webkit-inner-spin-button {
   line-height: 1.5;
 }
 
+.add-card__card-img-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.add-card__card-img{
+  width: 70%;
+}
