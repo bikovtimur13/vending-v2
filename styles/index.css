@@ -1577,6 +1577,9 @@ input::-webkit-inner-spin-button {
   line-height: min(5vw, 21px);
   text-align: center;
 }
+.cards-list__item--error .cards-list__error-text--main{
+  font-weight: 400;
+}
 
 .cards-list__item-text{
   font-family: 'Montserrat';
@@ -1587,7 +1590,10 @@ input::-webkit-inner-spin-button {
   text-align: center;
   color: #181818;
 }
-
+.cards-list__btn-block{
+  display: flex;
+  align-items: center;
+}
 .cards-list__item:nth-child(2n){
   background: #FFFFFF;
 }
@@ -1644,6 +1650,9 @@ input::-webkit-inner-spin-button {
 }
 
 .cards-list__blocked-icon{
+  width: min(6.8vw, 30px);
+}
+.cards-list__attention-icon{
   width: min(6.8vw, 30px);
 }
 

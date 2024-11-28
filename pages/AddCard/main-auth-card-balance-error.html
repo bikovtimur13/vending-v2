@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="../../styles/reset.css" />
+    <link
+      rel="stylesheet"
+      href="../../styles/index.css" />
+    <script
+      defer
+      src="../../scripts/index.js"></script>
+    <title>Vending</title>
+  </head>
+
+  <body>
+    <header class="header auth">
+        <div class="container flex-container">
+          <div class="header-profile-avatar">
+              <img src="../../images/avatar-img.svg" alt="">
+          </div>
+          <div class="header__user-data">
+              <p class="header__user-name">Петрова Василиса</p>
+              <div class="header__user-bonuses">
+                  <p>Баллы: 3000000</p>
+                  <a href="/">Подробнее</a>
+              </div>
+          </div>
+          <a
+            href="#"
+            class="profile-btn"
+            >Личный<br> 
+            кабинет</a
+          > 
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+                <p class="mode-list__title mt20">Выберите время массажа</p>
+                <ul class="mode-list mb20 mt30">
+                    <li class="mode-list__item">
+                    <form action="">
+                        <button class="btn mode-btn mb10">1 мин за 1<i class="b-ruble">₽</i></button>
+                    </form>
+                    </li>
+                    <li class="mode-list__item">
+                    <form action="">
+                        <button class="btn mode-btn mb10">10 мин за 100<i class="b-ruble">₽</i></button>
+                    </form>
+                    </li>
+                    <li class="mode-list__item">
+                    <form action="">
+                        <button class="btn mode-btn popular-mode-btn mb10">
+                        15 мин за 150<i class="b-ruble">₽</i>
+                        </button>
+                    </form>
+                    </li>
+                    <li class="mode-list__item">
+                    <form action="">
+                        <button class="btn mode-btn mb10">20 мин за 200<i class="b-ruble">₽</i></button>
+                    </form>
+                    </li>
+                    <li class="mode-list__item">
+                        <form action="">
+                        <button class="btn mode-btn-red">Бесплатно 10 мин</button>
+                        </form>
+                    </li>
+                </ul>
+
+                <p class="mode-list__title mt20">Будет произведена оплата с карты </p>
+        </div>
+        <div class="cards-list__item cards-list__item--error">
+            <div class="cards-list__main-info">
+                <img class="cards-list__card-icon" src="../../images/card-icon-red.svg" alt="">
+                <div class="cards-list__card-num-wrapper">
+                    <p class="cards-list__card-num">4567 22** **** 6677 <span class="cards-list__card-date">12/27</span></p>
+                    <p class="cards-list__error-text cards-list__error-text--main">Было недостаточно средств</p>
+                </div>
+            </div>
+            <div class="cards-list__btn-block">
+                <img class="cards-list__attention-icon" src="../../images/attention-icon.svg" alt="">
+
+                <button class="cards-list__edit-arrow">
+                  <img class="cards-list__arrow-icon" src="../../images/edit-icon.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+          <p class="legal-info mb15">
+            <span class="legal-info__name">ООО «РОМАШКА ПЛЮС»</span>,
+            <span class="legal-info__inn">ИНН 5635373563</span>,
+            <span class="legal-info__ogrn">ОГРН 54623452352435136</span>,
+            <span class="legal-info__address"
+              >Адрес: 108814, г Москва, п. Сосенское, п. Коммунарка, ул, Фитаревская, д.19, кв.
+              214.</span
+            >
+            <a
+              href="#"
+              class="legal-info__contract-offer open-contract-offer-modal">
+              Договор оферты
+            </a>
+          </p>
+          <div class="bottom-wrapper">
+            <p class="chair-name">Кресло № DS02001</p>
+            <a
+              href="#"
+              class="toggle-lang-btn">
+              <img
+                src="../../images/english.svg"
+                alt="Language"
+                class="toggle-lang-icon" />
+              English
+            </a>
+          </div>
+        </div>
+    </footer>
+
+    <div class="modal-delete-card">
+        <div class="modal-delete-card__modal-container">
+          <div class="modal-delete-card__close-modal-container">
+            <img class="modal-delete-card__close-modal _js-close-delete-card" src="../../images/close-btn-bonus.svg" alt="">
+          </div>
+          <p class="modal-delete-card__heading mb15">Вы уверен, что хотите<br/> отвязать карту?</p>
+          <div class="modal-delete-card__card">
+            <div class="cards-list__main-info">
+                <img class="cards-list__card-icon" src="../../images/card-icon-blue.svg" alt="">
+                <div class="cards-list__card-num-wrapper">
+                    <p class="cards-list__card-num">4567 22** **** 6677 <span class="cards-list__card-date">12/27</span></p>
+                </div>
+            </div>
+          </div>
+          <p class="modal-delete-card__attention-text mt20 mb25">Отменить процесс после<br/> согласия невозможно</p>
+          <div class="modal-delete-card__btns-block">
+            <button class="modal-delete-card__return btn mb10 fz15 _js-close-delete-card">Отмена</button>
+            <button class="modal-delete-card__delete btn mb10 fz15 _js-card-delete">Да</button>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
