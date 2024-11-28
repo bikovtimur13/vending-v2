@@ -1791,6 +1791,10 @@ input::-webkit-inner-spin-button {
   width: min(10.4vw, 50px);
   margin-right: clamp(13px, 3vw, 23px);
 }
+.payments__plus-icon{
+  width: min(12.4vw, 50px);
+  margin-right: clamp(10px, 3vw, 23px);
+}
 
 .cards-list__arrow-icon{
   width: 100%;
@@ -1803,4 +1807,183 @@ input::-webkit-inner-spin-button {
 
 .cards-list__edit-arrow:hover{
   cursor: pointer;
+}
+
+.payments__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payments__close-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(39.8px, 9.375vw);
+  height: min(39.8px, 9.375vw);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+}
+
+.payments__close-btn img{
+  width: 80%;
+}
+
+.payments__heading{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(5.6vw, 22px);
+  line-height: min(11vw, 37px);
+  text-align: center;
+  color: #181818;
+  padding: min(15.6px, 2vw);
+}
+
+.payments__sub-heading{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(4.6vw, 22px);
+  line-height: min(6vw, 37px);
+  color: #181818;
+  padding: min(15.6px, 2vw);
+}
+
+.payments__transaction-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.payments__list-item{
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  padding: min(15.6px, 2vw);
+  margin: 0 auto;
+  min-height: 50px;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+}
+.payments__list-item--success{
+  color: #5B8930;
+}
+.payments__list-item--error{
+  color: #E03638;
+}
+.payments__list-item--progress{
+  color: #939393;
+}
+.payments__list-item--progress .payments__transaction-num{
+  color: #181818;
+}
+.payments__main-info{
+  display: flex;
+  align-items: center;
+}
+
+.payments__transaction-num{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(4.7vw, 18px);
+  line-height: min(6vw, 25px);
+  text-align: center;
+}
+
+.payments__card-num{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: min(4vw, 18px);
+  line-height: min(6vw, 25px);
+  text-align: center;
+}
+
+.payments__price-container{
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  min-height: 50px;
+  padding-top: min(1.5vw,5px);
+}
+
+.payments__price-num{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: min(4vw, 18px);
+  line-height: min(6vw, 23px);
+  text-align: center;
+  margin-right: clamp(6px,1vw,14px);
+}
+
+.payments__transaction-status-icon{
+  width: min(5.2vw, 23px);
+}
+
+.modal-payment-info{
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFFFF;
+}
+.modal-payment-info__modal-container{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: min(15.6px, 3.125vw);
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 15px 15px 0 0;
+}
+.modal-payment-info.active{
+  display: block;
+}
+.modal-delete-card__close-modal{
+  width: min(5.4vw, 30px);
+}
+.modal-payment-info__heading{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(5.6vw, 22px);
+  line-height: min(11vw, 37px);
+  text-align: center;
+  color: #5B8930;
+  padding: min(15.6px, 2vw);
+}
+.modal-payment-info__header{
+  display: flex;
+  align-items: center;
+}
+.modal-payment-info__heading-icon{
+  width: min(8.4vw, 37px);
+}
+.modal-payment-info__text{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(4.7vw, 18px);
+  line-height: min(6vw, 25px);
+  color: #181818;
+}
+.modal-payment-info__sub-heading{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: min(4vw, 18px);
+  line-height: min(6vw, 25px);
+  color: #939393;
 }

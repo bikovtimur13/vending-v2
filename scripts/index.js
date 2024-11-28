@@ -524,6 +524,27 @@ const modalDeleteCard = () =>{
   };
 }
 
+const modalPaymentInfo = () => {
+  const btnOpen = document.querySelectorAll("._js-payment-info-open");
+  const modal = document.querySelector(".modal-payment-info");
+  const closeModalBtn = document.querySelectorAll("._js-payment-info-close");
+  
+  if(btnOpen){
+    btnOpen.forEach((el)=>{
+      el.addEventListener('click', (e)=>{
+        modal.classList.add("active");
+      });
+    });
+  };
+  if(closeModalBtn){
+    closeModalBtn.forEach((el)=>{
+      el.addEventListener('click', (e)=>{
+        modal.classList.remove("active");
+      });
+    });
+  };
+}
+
 const cardDelete = () => {
   const cardDeleteBtn = document.querySelectorAll("._js-card-delete");
 
@@ -540,6 +561,7 @@ try{
   modalBonusesOpen();
   modalDeleteCard();
   cardDelete();
+  modalPaymentInfo();
 }catch(err){
   console.warn(err);
 }
