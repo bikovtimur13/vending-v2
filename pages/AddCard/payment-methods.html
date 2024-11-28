@@ -47,17 +47,29 @@
 
     <main class="main">
         <div class="container">
-                <p class="mode-list__title mt20 mb10">Способы оплаты</p>
+                <p class="mode-list__title mt15 mb15">Способы оплаты</p>
         </div>
 
         <ul class="cards-list">
+            <li class="cards-list__item">
+              <div class="cards-list__main-info">
+                <img class="cards-list__plus-icon" src="../../images/card-icon-green.svg" alt="">
+                <p class="cards-list__item-text">Оплата без привязки карты</p>
+              </div>
+              <div class="checkbox-wrapper-18">
+                  <div class="round">
+                    <input type="checkbox" id="card-checkbox-no-card" />
+                    <label for="card-checkbox-no-card"></label>
+                  </div>
+              </div>
+          </li>
 
             <li class="cards-list__item">
                 <div class="cards-list__main-info">
                     <img class="cards-list__card-icon" src="../../images/card-icon-blue.svg" alt="">
                     <div class="cards-list__card-num-wrapper">
                         <p class="cards-list__card-num">4567 22** **** 6677 <span class="cards-list__card-date">12/27</span></p>
-                        <button class="cards-list__delete-btn">Удалить</button>
+                        <button class="cards-list__delete-btn _js-delete-card-open">Удалить</button>
                     </div>
                 </div>
                 <div class="checkbox-wrapper-18">
@@ -72,7 +84,7 @@
                     <img class="cards-list__card-icon" src="../../images/card-icon-blue.svg" alt="">
                     <div class="cards-list__card-num-wrapper">
                         <p class="cards-list__card-num">4567 22** **** 6677 <span class="cards-list__card-date">12/27</span></p>
-                        <button class="cards-list__delete-btn">Удалить</button>
+                        <button class="cards-list__delete-btn _js-delete-card-open">Удалить</button>
                     </div>
                 </div>
                 <div class="checkbox-wrapper-18">
@@ -87,7 +99,7 @@
                     <img class="cards-list__card-icon" src="../../images/card-icon-blue.svg" alt="">
                     <div class="cards-list__card-num-wrapper">
                         <p class="cards-list__card-num">4567 22** **** 6677 <span class="cards-list__card-date">12/27</span></p>
-                        <button class="cards-list__delete-btn">Удалить</button>
+                        <button class="cards-list__delete-btn _js-delete-card-open">Удалить</button>
                     </div>
                 </div>
                 <div class="checkbox-wrapper-18">
@@ -102,7 +114,7 @@
                     <img class="cards-list__card-icon" src="../../images/card-icon-blue.svg" alt="">
                     <div class="cards-list__card-num-wrapper">
                         <p class="cards-list__card-num">4567 22** **** 6677 <span class="cards-list__card-date">12/27</span></p>
-                        <button class="cards-list__delete-btn">Удалить</button>
+                        <button class="cards-list__delete-btn _js-delete-card-open">Удалить</button>
                     </div>
                 </div>
                 <div class="checkbox-wrapper-18">
@@ -112,10 +124,23 @@
                     </div>
                 </div>
             </li>
+            <li class="cards-list__item cards-list__item--error _js-delete-card-open">
+              <div class="cards-list__main-info">
+                  <img class="cards-list__card-icon" src="../../images/card-icon-red.svg" alt="">
+                  <div class="cards-list__card-num-wrapper">
+                      <p class="cards-list__card-num">4567 22** **** 6677 <span class="cards-list__card-date">12/27</span> <span class="cards-list__card-test">RUB (Test)</span></p>
+                      <p class="cards-list__error-text">Оплата кресла не доступна</p>
+                  </div>
+              </div>
+              <img class="cards-list__blocked-icon" src="../../images/blocked-card-icon.svg" alt="">
+              <button class="cards-list__edit-arrow">
+                <img class="cards-list__arrow-icon" src="../../images/delete-card-icon.svg" alt="">
+              </button>
+          </li>
             <li class="cards-list__item">
                 <div class="cards-list__main-info">
                     <img class="cards-list__plus-icon" src="../../images/plus-icon.svg" alt="">
-                    <p class="cards-list__card-num">Привязать карту</p>
+                    <p class="cards-list__item-text">Привязать карту</p>
                 </div>
                 <button class="cards-list__edit-arrow">
                     <img class="cards-list__arrow-icon" src="../../images/arrow-plus-icon.svg" alt="">
@@ -124,7 +149,7 @@
             <li class="cards-list__item">
                 <div class="cards-list__main-info">
                     <img class="cards-list__plus-icon" src="../../images/spb-icon.svg" alt="">
-                    <p class="cards-list__card-num">Привязать банк с СБП</p>
+                    <p class="cards-list__item-text">Привязать банк с СБП</p>
                 </div>
                 <button class="cards-list__edit-arrow">
                     <img class="cards-list__arrow-icon" src="../../images/arrow-plus-icon.svg" alt="">
@@ -170,5 +195,27 @@
           </div>
         </div>
     </footer>
+
+    <div class="modal-delete-card">
+      <div class="modal-delete-card__modal-container">
+        <div class="modal-delete-card__close-modal-container">
+          <img class="modal-delete-card__close-modal _js-close-delete-card" src="../../images/close-btn-bonus.svg" alt="">
+        </div>
+        <p class="modal-delete-card__heading mb15">Вы уверен, что хотите<br/> отвязать карту?</p>
+        <div class="modal-delete-card__card">
+          <div class="cards-list__main-info">
+              <img class="cards-list__card-icon" src="../../images/card-icon-blue.svg" alt="">
+              <div class="cards-list__card-num-wrapper">
+                  <p class="cards-list__card-num">4567 22** **** 6677 <span class="cards-list__card-date">12/27</span></p>
+              </div>
+          </div>
+        </div>
+        <p class="modal-delete-card__attention-text mt20 mb25">Отменить процесс после<br/> согласия невозможно</p>
+        <div class="modal-delete-card__btns-block">
+          <button class="modal-delete-card__return btn mb10 fz15 _js-close-delete-card">Отмена</button>
+          <button class="modal-delete-card__delete btn mb10 fz15 _js-card-delete">Да</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

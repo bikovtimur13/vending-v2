@@ -364,7 +364,7 @@ body {
   /* font-size: min(5.625vw, 28px); */
   font-size: min(4.625vw, 25px);
   /* font-weight: 700; */
-  font-weight: 400;
+  font-weight: 600;
   line-height: 124%;
   border-radius: 15px;
   background: #e03638;
@@ -1557,6 +1557,37 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
 }
 
+.cards-list__item--error{
+  color: #E03638;
+}
+.cards-list__item--error .cards-list__card-num{
+  color: #E03638;
+}
+.cards-list__item--error .cards-list__card-date{
+  color: #E03638;
+}
+.cards-list__item--error .cards-list__card-num-wrapper{
+  align-items: flex-start;
+}
+.cards-list__item--error .cards-list__error-text{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(3.5vw, 17px);
+  line-height: min(5vw, 21px);
+  text-align: center;
+}
+
+.cards-list__item-text{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(4.3vw, 20px);
+  line-height: min(4vw, 34px);
+  text-align: center;
+  color: #181818;
+}
+
 .cards-list__item:nth-child(2n){
   background: #FFFFFF;
 }
@@ -1576,8 +1607,8 @@ input::-webkit-inner-spin-button {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: min(4.6vw, 22px);
-  line-height: min(6vw, 37px);
+  font-size: min(3.7vw, 18px);
+  line-height: min(5vw, 34px);
   text-align: center;
   color: #181818;
 }
@@ -1585,6 +1616,14 @@ input::-webkit-inner-spin-button {
 .cards-list__card-date{
   display: inline;
   color: #939393;
+}
+
+.cards-list__card-test{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(2.8vw, 15px);
+  line-height: min(3.8vw, 28px);
 }
 
 .cards-list__main-info{
@@ -1601,10 +1640,93 @@ input::-webkit-inner-spin-button {
   border: none;
   background: unset;
   color: #E03638;
+  transform: translateX(min(13vw,46px));
+}
+
+.cards-list__blocked-icon{
+  width: min(6.8vw, 30px);
 }
 
 .cards-list__delete-btn:hover{
   cursor: pointer;
+}
+
+.modal-delete-card{
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal-delete-card__modal-container{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: min(15.6px, 3.125vw);
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 15px 15px 0 0;
+}
+.modal-delete-card.active{
+  display: block;
+}
+.modal-delete-card__close-modal{
+  width: min(5.4vw, 30px);
+}
+.modal-delete-card__heading{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(4.3vw, 20px);
+  line-height: min(6vw, 34px);
+  text-align: center;
+  color: #181818;
+}
+.modal-delete-card__attention-text{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: min(4vw, 20px);
+  line-height: min(6vw, 34px);
+  text-align: center;
+  color: #E03638;
+}
+.modal-delete-card__close-modal-container{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.modal-delete-card__btns-block{
+  display: flex;
+  justify-content: space-between;
+}
+.modal-delete-card__delete {
+  background: #181818;
+  width: 29%;
+}
+.modal-delete-card__return {
+  width: 68%;
+}
+.modal-delete-card__card{
+  display: flex;
+  width: 100vw;
+  max-width: 500px;
+  padding: min(15.6px, 2vw);
+  margin: 0 auto;
+  min-height: 50px;
+  border: none;
+  background: #F6F6F6;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(-50%);
+  left: 50%;
+  position: relative;
 }
 
 .checkbox-wrapper-18 .round {

@@ -503,14 +503,52 @@ const modalBonusesOpen = () =>{
   };
 }
 
+const modalDeleteCard = () =>{
+  const btnOpen = document.querySelectorAll("._js-delete-card-open");
+  const modal = document.querySelector(".modal-delete-card");
+  const closeModalBtn = document.querySelectorAll("._js-close-delete-card");
+  
+  if(btnOpen){
+    btnOpen.forEach((el)=>{
+      el.addEventListener('click', (e)=>{
+        modal.classList.add("active");
+      });
+    });
+  };
+  if(closeModalBtn){
+    closeModalBtn.forEach((el)=>{
+      el.addEventListener('click', (e)=>{
+        modal.classList.remove("active");
+      });
+    });
+  };
+}
+
+const cardDelete = () => {
+  const cardDeleteBtn = document.querySelectorAll("._js-card-delete");
+
+  if(cardDeleteBtn){
+    cardDeleteBtn.forEach((el)=>{
+      el.addEventListener("click", (e)=>{
+        alert("Логика удаления карты...");
+      });
+    });
+  }
+};
+
 try{
   modalBonusesOpen();
+  modalDeleteCard();
+  cardDelete();
 }catch(err){
   console.warn(err);
 }
 
-const swiperProduct = new Swiper('.products-swiper', {
-  spaceBetween: 10,
-  slidesPerView: 2.3,
-  loopedSlides: true,
-});
+const swiperProduct = document.querySelector(".products-swiper");
+if(swiperProduct){
+  new Swiper('.products-swiper', {
+    spaceBetween: 10,
+    slidesPerView: 2.3,
+    loopedSlides: true,
+  });  
+}
