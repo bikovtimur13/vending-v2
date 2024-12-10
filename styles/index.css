@@ -1556,6 +1556,10 @@ input::-webkit-inner-spin-button {
   align-items: center;
   justify-content: space-between;
 }
+.cards-list__img-error{
+  width: 54%;
+  margin: min(52.8px, 11.375vw) auto;
+}
 
 .cards-list__item--error{
   color: #E03638;
