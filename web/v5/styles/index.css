@@ -1,0 +1,99 @@
+:root{--y-red-2:#ef5556}
+
+.massage-timer-card{display:flex;align-items:center;justify-content:center;width:100%;height:76vw;max-width:475px;max-height:400px;background:rgba(255,255,255,.6);border-radius:20px;box-shadow:0 9.67742px 31.6774px rgba(188,134,71,.17),inset 0 0 24.1px rgba(255,250,243,.78)}
+.timer-circle{position:relative;width:69vw;height:69vw;max-width:320px;max-height:320px}
+.progress-ring{width:100%;height:100%;transform:rotate(-90deg)}
+.progress-ring__bg{opacity:.3}
+.progress-ring__circle{stroke-linecap:round;transition:stroke-dashoffset 1s linear;transform-origin:center}
+.timer-circle__content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.timer-circle__text{margin-bottom:6px;color:#575757;font-size:min(3.2vw,14px);font-weight:600;line-height:1.25}
+.timer-circle__time{color:#2b2b2b;font-size:min(13vw,58px);font-weight:700;line-height:1}
+
+.bottom-fixed{position:fixed;left:50%;bottom:0;z-index:50;width:100%;max-width:500px;padding:10px;transform:translateX(-50%);background:rgba(255,244,232,.96);border-radius:15px 15px 0 0;box-shadow:0 -8px 30px rgba(166,93,33,.25)}
+.bottom-fixed__video{width:100%;margin-bottom:8px}
+.bottom-fixed__stop{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:50px;padding:5.5%;border:2px solid #e03638;border-radius:14px;background:#fff;color:#e03638;font-size:min(4.625vw,25px);font-weight:700;text-decoration:none}
+.bottom-fixed__time{display:none;margin-right:auto;color:#575757;font-size:min(8vw,34px);font-weight:700;line-height:1}
+.bottom-fixed._timer-visible .bottom-fixed__stop{justify-content:space-between;padding:4%}
+.bottom-fixed._timer-visible .bottom-fixed__time{display:block}
+
+.page-bottom-space{height:135px}
+.vending-v2{background:#f7e9d8;padding-bottom:clamp(240px, 62vw, 330px)}
+
+.vendi{background:#f6e4d6 url("../images/vendi-v2/vendi-bg-mob@1.5x.webp") center/cover;padding:min(7.81vw,39px) 0 min(12vw,60px)}
+.vendi__main{display:flex;flex-direction:column-reverse;gap:min(28.44vw,142px);margin-top:min(10.63vw,53px);margin-bottom:min(10vw,50px)}
+.vendi__section-title{margin-bottom:min(5vw,25px)}
+.vendi__main-form{width:100%}
+.vendi__main-sign{position:relative;flex:1;height:min(68.75vw,344px);min-height:min(68.75vw,344px);padding:min(3.75vw,18px) min(4.38vw,22px);border-radius:min(7.5vw,37.5px);background:linear-gradient(180.17deg,rgba(255,255,255,.6) .15%,rgba(255,255,255,0) 79.96%);box-shadow:0 max(-.63vw,-3px) min(4.75vw,23px) 0 #bc86472b}
+.vendi__main-sign::after{content:"";position:absolute;inset:0;padding:min(.31vw,1.5px);border-radius:min(7.5vw,37.5px);background:linear-gradient(192.83deg,#fffdfa 15.99%,rgba(255,253,250,0) 90.41%);-webkit-mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.vendi__main-sign-text{position:relative;z-index:2;margin-bottom:0;color:#ae8155;font-size:min(4.38vw,22px);font-weight:500;line-height:1.2}
+.vendi__main-sign-pic{position:relative;z-index:2;width:min(28vw,140px)}
+.vendi__main-pic{position:absolute;top:max(-1.13vw,-15px);right:0;z-index:1;width:min(93.75vw,468px)}
+
+.vs-form{position:relative;overflow:hidden;padding:min(4vw,25px);border-radius:min(7.5vw,37.5px);background:rgba(255,255,255,.6);box-shadow:0 9.67742px 31.6774px rgba(188,134,71,.17),inset 0 0 24.1px rgba(255,250,243,.78)}
+.vs-form__note{position:absolute;top:0;left:0;z-index:1;display:flex;align-items:center;justify-content:center;width:min(49.38vw,246.9px);height:min(13.13vw,65.65px);overflow:hidden;border-radius:min(7.5vw,37.5px) 0 min(7.5vw,37.5px) 0;background:#3b8a21;box-shadow:min(1.25vw,6px) min(1.88vw,9px) min(7.88vw,39px) 0 #cdffbdc2 inset;color:#fff;font-size:min(4.69vw,23.45px);font-weight:700;line-height:1.2;text-transform:uppercase}
+.vs-form__note::after{content:"";position:absolute;inset:0;padding:min(.31vw,1.5px);border-radius:min(7.5vw,37.5px) 0 min(7.5vw,37.5px) 0;background:linear-gradient(102.48deg,rgba(255,255,255,.5) 53.14%,rgba(255,255,255,.2) 94.47%);-webkit-mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.vs-form__title{margin-top:min(16vw,49px);margin-bottom:min(3vw,14px);color:#b17845;font-size:min(5.5vw,27px);font-weight:700;line-height:105%;text-transform:uppercase}
+.vs-form__text{margin-bottom:min(6vw,30px);color:#b17845;font-size:min(3.8vw,18px);font-weight:500;line-height:125%}
+
+.vendi-form{display:flex;flex-direction:column}
+.vendi-form__field-input{width:100%;min-height:min(14vw,70px);padding:0 min(5vw,24px) 0 min(13vw,62px);border:0;border-radius:min(4vw,20px);background:rgba(255,255,255,.8);color:#575757;font-size:min(4.3vw,20px);font-weight:500;line-height:100%;outline:0}
+.vendi-form__button{display:flex;align-items:center;justify-content:center;width:100%;min-height:min(14vw,70px);border:0;border-radius:min(4vw,20px);background:#e03638;color:#fff;font-size:min(4.5vw,21px);font-weight:700;line-height:100%;cursor:pointer}
+
+.vendi-cards{display:grid;grid-template-columns:1fr;gap:min(3.75vw,18.75px);margin-top:min(7.5vw,37.5px);margin-bottom:min(7.5vw,37.5px)}
+.vendi-card{position:relative;height:min(37.5vw,187.5px);overflow:hidden;border-radius:min(7.5vw,37.5px);background:linear-gradient(259.63deg,#f6d3b6 -2.33%,#fff8f1 70.55%);box-shadow:2.79px 2.79px 30px 0 #7c7c7c26 inset,0 4px 20px 0 #4e4e4e24}
+.vendi-card:hover{transform:none}
+.vendi-card__name{position:absolute;top:50%;left:min(6.25vw,31.25px);z-index:2;transform:translateY(-50%);color:#575757;font-size:min(5.63vw,28.15px);font-weight:500;line-height:1.24}
+.vendi-card__pic{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover}
+.vendi-card__arr{position:absolute;top:min(3.75vw,18.75px);right:min(4.06vw,20.3px);z-index:2;width:min(7.5vw,37.5px)}
+
+.active-hero__title,.bonus-section__title{color:var(--y-red-2);font-size:clamp(24px,7.5vw,36px);font-weight:700;line-height:120%;letter-spacing:.2px;text-transform:uppercase}
+.active-hero__descr,.bonus-section__descr{margin:14px 0 0;color:#b47b50;font-size:clamp(15px,4.6vw,23px);font-weight:700;line-height:120%}
+
+.vendi-bonus{position:relative;display:flex;align-items:center;justify-content:space-between;height:min(30vw,150px);margin:min(5vw,25px) 0;padding:min(3.13vw,15.65px) min(3.75vw,18.75px);border-radius:min(5.31vw,26.55px);background:url("../images/vendi-v2/vendi-bonus-bg-mob.webp") center/cover}
+.vendi-bonus__content{display:flex;flex-direction:column;gap:min(5vw,25px)}
+.vendi-bonus__title{color:#fff0f0;text-shadow:0 min(.31vw,1.55px) min(2.06vw,10.3px) #9d1e188c;font-size:min(5vw,25px);font-weight:600;line-height:1}
+.vendi-bonus__value{position:relative;color:#fff;font-size:min(8.38vw,46.9px);font-weight:600;line-height:1}
+.vendi-bonus__value span{font-size:min(5vw,25px);font-weight:600}
+.vendi-bonus__value::after{content:"";position:absolute;left:calc(100% + min(2.19vw,10.95px));top:70%;width:min(15.63vw,78.15px);height:min(15.63vw,78.15px);transform:translateY(-50%);background:url("../images/vendi-v2/vendi-coins.webp") center/cover}
+.vendi-bonus__info{position:absolute;top:min(3.13vw,15.65px);right:min(3.13vw,15.65px);padding:min(1.25vw,6.25px) min(2.5vw,12.5px);border-radius:min(18.13vw,90.65px);background:#ffffffe8;color:#e74d3d;font-size:min(4.06vw,20.3px);font-weight:700;line-height:1.2}
+
+.vendi-bottom{display:flex;flex-direction:column;gap:min(7.5vw,37.5px)}
+.vendi-bottom__form,.vendi-bottom__chairs{width:100%}
+
+.vb-form{position:relative;height:min(54.69vw,272px);padding:min(6.25vw,31.25px) min(3.75vw,18.75px) min(4.69vw,23.45px);border-radius:min(7.5vw,37.5px);background:#ffffff8f;box-shadow:0 min(15px,3vw) min(49px,9.8vw) 0 rgba(188,134,71,.17),inset 0 0 min(51px,10.2vw) 0 rgba(255,250,243,.95)}
+.vb-form::after{content:"";position:absolute;inset:0;padding:min(.63vw,3.15px);border-radius:min(7.5vw,37.5px);background:linear-gradient(138.37deg,rgba(255,255,255,.8) 2.98%,rgba(255,255,255,.32) 97.46%);-webkit-mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.vb-form__title{margin-bottom:min(2.5vw,12.5px);text-align:center;font-size:min(8.75vw,43.75px);font-weight:700;line-height:1.05}
+.vb-form__title span{display:block;background:linear-gradient(135.31deg,#dd4f49 15.43%,#cc3d38 30.62%,#e4655f 47.37%,#d94b45 62.96%,#eb7c77 82.05%,#cc3d38 93.35%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.vb-form__text{margin-bottom:min(4.69vw,23.45px);color:#9e6c3e;text-align:center;font-size:min(4.06vw,20.3px);font-weight:500;line-height:1.2}
+
+.vendi-chairs{position:relative;display:flex;flex-direction:column;justify-content:space-between;height:min(125.31vw,626.55px);padding:min(9.06vw,45.3px) min(3.75vw,18.75px) min(5.94vw,29.7px);border-radius:min(7.5vw,37.5px);background:#ffffff8f url("../images/vendi-v2/vendi-chairs-bg-mob.webp") center/cover;box-shadow:0 min(15px,3vw) min(49px,9.8vw) rgba(188,134,71,.17),inset 0 0 min(51px,10.2vw) rgba(255,250,243,.95)}
+.vendi-chairs::after{content:"";position:absolute;inset:0;padding:min(.63vw,3.15px);border-radius:min(7.5vw,37.5px);background:linear-gradient(138.37deg,rgba(255,255,255,.8) 2.98%,rgba(255,255,255,.32) 97.46%);-webkit-mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.vendi-chairs__top{display:flex;flex-direction:column;align-items:center;gap:min(3.75vw,18.75px)}
+.vendi-chairs__title{background:linear-gradient(135.31deg,#b6875b 15.43%,#98693d 30.62%,#ae8155 47.37%,#ae8155 62.96%,#b88a5e 82.05%,#98693d 93.35%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;text-align:center;text-transform:uppercase;font-size:min(8.75vw,43.75px);font-weight:600;line-height:1.2}
+.vendi-chairs__button{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;width:min(38vw,190px);height:min(14vw,70px);padding:0 min(8vw,40px);border-radius:min(4.69vw,23.45px);background:#e03638;color:#fff;box-shadow:0 min(4px,.8vw) min(8px,1.6vw) 0 #0000001a;font-size:min(5vw,25px);font-weight:600;line-height:1;text-decoration:none}
+.vendi-chairs__inner{display:flex;justify-content:center;margin-left:0}
+
+.vendi-chair{position:relative;display:flex;flex-direction:column;align-items:center;width:min(42.19vw,210.95px);text-decoration:none}
+.vendi-chair:nth-child(1){display:none}
+.vendi-chair::before,.vendi-chair::after{content:"";position:absolute;top:max(-13.13vw,-65.65px);left:50%;z-index:1;width:min(40.63vw,203.15px);height:min(53.13vw,265.65px);border-radius:50%;transform:translateX(-50%);filter:blur(min(6.25vw,31.25px));transition:opacity .4s}
+.vendi-chair::before{opacity:.56;background:radial-gradient(50% 50% at 50% 50%,rgba(255,255,255,.8) 0%,#fff 100%)}
+.vendi-chair::after{opacity:0;background:radial-gradient(50% 50% at 50% 50%,#ffa245 0%,#fccc9f 100%)}
+.vendi-chair:hover::after{opacity:.56}
+.vendi-chair:hover::before{opacity:0}
+.vendi-chair__pic{position:relative;z-index:2;width:min(37.5vw,187.5px)}
+.vendi-chair__btn{position:relative;z-index:2;padding:min(2.5vw,12.5px) min(3.13vw,15.65px);border:0;border-radius:min(3.13vw,15.65px);background:#e1b99033;color:#9e6c3e;font-size:min(3.75vw,18.75px);font-weight:600;line-height:1.2;transition:all .4s}
+.vendi-chair:hover .vendi-chair__btn{box-shadow:0 0 min(39.7px,7.94vw) 0 #ffb14570 inset}
+
+.vendi-form__gift-text {
+    display: none;
+    margin-top: min(3vw, 14px);
+    color: #9e6c3e;
+    font-size: min(3.5vw, 16px);
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.vendi-form__gift-text._visible {
+    display: block;
+}
