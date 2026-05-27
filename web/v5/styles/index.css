@@ -19,7 +19,7 @@
 .page-bottom-space{height:135px}
 .vending-v2{background:#f7e9d8;padding-bottom:clamp(240px, 62vw, 330px)}
 
-.vendi{background:#f6e4d6 url("../images/vendi-v2/vendi-bg-mob@1.5x.webp") center/cover;padding:min(7.81vw,39px) 0 min(12vw,60px)}
+.vendi{background:#f6e4d6 url("../images/vendi-bg-mob@1.5x.webp") center/cover;padding:min(7.81vw,39px) 0 min(12vw,60px)}
 .vendi__main{display:flex;flex-direction:column-reverse;gap:min(28.44vw,142px);margin-top:min(10.63vw,53px);margin-bottom:min(10vw,50px)}
 .vendi__section-title{margin-bottom:min(5vw,25px)}
 .vendi__main-form{width:100%}
@@ -49,12 +49,12 @@
 .active-hero__title,.bonus-section__title{color:var(--y-red-2);font-size:clamp(24px,7.5vw,36px);font-weight:700;line-height:120%;letter-spacing:.2px;text-transform:uppercase}
 .active-hero__descr,.bonus-section__descr{margin:14px 0 0;color:#b47b50;font-size:clamp(15px,4.6vw,23px);font-weight:700;line-height:120%}
 
-.vendi-bonus{position:relative;display:flex;align-items:center;justify-content:space-between;height:min(30vw,150px);margin:min(5vw,25px) 0;padding:min(3.13vw,15.65px) min(3.75vw,18.75px);border-radius:min(5.31vw,26.55px);background:url("../images/vendi-v2/vendi-bonus-bg-mob.webp") center/cover}
+.vendi-bonus{position:relative;display:flex;align-items:center;justify-content:space-between;height:min(30vw,150px);margin:min(5vw,25px) 0;padding:min(3.13vw,15.65px) min(3.75vw,18.75px);border-radius:min(5.31vw,26.55px);background:url("../images/vendi-bonus-bg-mob.webp") center/cover}
 .vendi-bonus__content{display:flex;flex-direction:column;gap:min(5vw,25px)}
 .vendi-bonus__title{color:#fff0f0;text-shadow:0 min(.31vw,1.55px) min(2.06vw,10.3px) #9d1e188c;font-size:min(5vw,25px);font-weight:600;line-height:1}
 .vendi-bonus__value{position:relative;color:#fff;font-size:min(8.38vw,46.9px);font-weight:600;line-height:1}
 .vendi-bonus__value span{font-size:min(5vw,25px);font-weight:600}
-.vendi-bonus__value::after{content:"";position:absolute;left:calc(100% + min(2.19vw,10.95px));top:70%;width:min(15.63vw,78.15px);height:min(15.63vw,78.15px);transform:translateY(-50%);background:url("../images/vendi-v2/vendi-coins.webp") center/cover}
+.vendi-bonus__value::after{content:"";position:absolute;left:calc(100% + min(2.19vw,10.95px));top:70%;width:min(15.63vw,78.15px);height:min(15.63vw,78.15px);transform:translateY(-50%);background:url("../images/vendi-coins.webp") center/cover}
 .vendi-bonus__info{position:absolute;top:min(3.13vw,15.65px);right:min(3.13vw,15.65px);padding:min(1.25vw,6.25px) min(2.5vw,12.5px);border-radius:min(18.13vw,90.65px);background:#ffffffe8;color:#e74d3d;font-size:min(4.06vw,20.3px);font-weight:700;line-height:1.2}
 
 .vendi-bottom{display:flex;flex-direction:column;gap:min(7.5vw,37.5px)}
@@ -66,7 +66,7 @@
 .vb-form__title span{display:block;background:linear-gradient(135.31deg,#dd4f49 15.43%,#cc3d38 30.62%,#e4655f 47.37%,#d94b45 62.96%,#eb7c77 82.05%,#cc3d38 93.35%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
 .vb-form__text{margin-bottom:min(4.69vw,23.45px);color:#9e6c3e;text-align:center;font-size:min(4.06vw,20.3px);font-weight:500;line-height:1.2}
 
-.vendi-chairs{position:relative;display:flex;flex-direction:column;justify-content:space-between;height:min(125.31vw,626.55px);padding:min(9.06vw,45.3px) min(3.75vw,18.75px) min(5.94vw,29.7px);border-radius:min(7.5vw,37.5px);background:#ffffff8f url("../images/vendi-v2/vendi-chairs-bg-mob.webp") center/cover;box-shadow:0 min(15px,3vw) min(49px,9.8vw) rgba(188,134,71,.17),inset 0 0 min(51px,10.2vw) rgba(255,250,243,.95)}
+.vendi-chairs{position:relative;display:flex;flex-direction:column;justify-content:space-between;height:min(125.31vw,626.55px);padding:min(9.06vw,45.3px) min(3.75vw,18.75px) min(5.94vw,29.7px);border-radius:min(7.5vw,37.5px);background:#ffffff8f url("../images/vendi-chairs-bg-mob.webp") center/cover;box-shadow:0 min(15px,3vw) min(49px,9.8vw) rgba(188,134,71,.17),inset 0 0 min(51px,10.2vw) rgba(255,250,243,.95)}
 .vendi-chairs::after{content:"";position:absolute;inset:0;padding:min(.63vw,3.15px);border-radius:min(7.5vw,37.5px);background:linear-gradient(138.37deg,rgba(255,255,255,.8) 2.98%,rgba(255,255,255,.32) 97.46%);-webkit-mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
 .vendi-chairs__top{display:flex;flex-direction:column;align-items:center;gap:min(3.75vw,18.75px)}
 .vendi-chairs__title{background:linear-gradient(135.31deg,#b6875b 15.43%,#98693d 30.62%,#ae8155 47.37%,#ae8155 62.96%,#b88a5e 82.05%,#98693d 93.35%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;text-align:center;text-transform:uppercase;font-size:min(8.75vw,43.75px);font-weight:600;line-height:1.2}
