@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../web/v5/styles/index.css">
+    <link rel="stylesheet" href="../../libs/swiper/swiper.min.css">
+    <script src="../../libs/swiper/swiper.min.js"></script>
+    <script defer src="../../web/v5/scripts/index.js"></script>
+  <title>Форма отзывов</title>
+
+</head>
+<body>
+    <div class="feedback-form-page">
+        <main class="review-page">
+        <section class="review-card">
+            <div class="review-head">
+            <h1 class="review-title">Как вам массаж?</h1>
+            <div class="review-code">DM01234</div>
+            </div>
+    
+            <div class="review-stars" id="reviewStars">
+            <button class="review-star" type="button" data-rating="1" aria-label="1 звезда"></button>
+            <button class="review-star" type="button" data-rating="2" aria-label="2 звезды"></button>
+            <button class="review-star" type="button" data-rating="3" aria-label="3 звезды"></button>
+            <button class="review-star" type="button" data-rating="4" aria-label="4 звезды"></button>
+            <button class="review-star" type="button" data-rating="5" aria-label="5 звезд"></button>
+            </div>
+    
+            <div class="review-reasons" id="reviewReasons">
+            <button class="review-reason" type="button" data-reason="Кресло грязное">Кресло грязное</button>
+            <button class="review-reason" type="button" data-reason="Скрипит/шумит">Скрипит/шумит</button>
+            <button class="review-reason" type="button" data-reason="Не работают ролики на ногах">Не работают ролики на ногах</button>
+            <button class="review-reason" type="button" data-reason="Не работают ролики спины">Не работают ролики спины</button>
+            <button class="review-reason" type="button" data-reason="Больно делает массаж спины">Больно делает массаж спины</button>
+            <button class="review-reason" type="button" data-reason="Не делает разминание">Не делает разминание</button>
+            <button class="review-reason" type="button" data-reason="Не в сети">Не в сети</button>
+            <button class="review-reason" type="button" data-reason="Заканчивает массаж раньше времени">Заканчивает массаж раньше времени</button>
+            <button class="review-reason" type="button" data-reason="Остановился массаж">Остановился массаж</button>
+            </div>
+    
+            <form class="review-form" id="reviewForm" action="/" method="post">
+            <input type="hidden" name="rating" id="ratingInput" value="0">
+            <input type="hidden" name="reasons" id="reasonsInput" value="">
+    
+            <div class="review-textarea-wrap">
+                <svg class="review-textarea-icon" viewBox="0 0 24 24" fill="none">
+                <path d="M5 5h14v10H8l-3 3V5Z" stroke="#7f8787" stroke-width="1.5"/>
+                <path d="M8 8h8M8 11h6" stroke="#7f8787" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <textarea class="review-textarea" name="comment" placeholder="Ваше мнение помогает нам стать лучше!"></textarea>
+            </div>
+    
+            <button class="review-submit" type="submit">Отправить отзыв</button>
+            </form>
+        </section>
+        </main>
+    </div>
+</body>  

@@ -97,3 +97,33 @@
 .vendi-form__gift-text._visible {
     display: block;
 }
+
+/* Форма отзывов */
+
+.feedback-form-page{
+    background: url(grain.jpg), linear-gradient(0deg, #F3E1D1, #F3E1D1), #FFFFFF;
+    background-blend-mode: soft-light, normal, normal;
+}
+.review-page{width:100%;max-width:500px;min-height:100vh;margin:0 auto;padding:min(6.25vw,30px) min(3.13vw,15px)}
+.review-card{padding:min(5vw,24px) min(4.38vw,21px) min(6.25vw,30px);border-radius:min(7.5vw,36px);background:rgba(255,255,255,.78);box-shadow:0 14px 42px rgba(188,134,71,.18),inset 0 0 30px rgba(255,250,243,.85)}
+.review-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:min(4.5vw,22px)}
+.review-title{margin:0;color:#ef3d3f;font-size:min(6vw,30px);font-weight:700;line-height:1.1}
+.review-code{padding:min(2.5vw,12px) min(4vw,19px);border-radius:min(4vw,20px);background:#f5eadf;color:#9e6c3e;font-size:min(4.06vw,19px);font-weight:600}
+.review-stars{display:flex;justify-content:center;gap:min(3.13vw,15px);margin-bottom:min(5vw,24px)}
+.review-star{width:min(7.5vw,36px);height:min(7.5vw,36px);padding:0;border:0;background:none;color:#8b9292;cursor:pointer}
+.review-star svg{width:100%;height:100%;fill:currentColor}
+.review-star._active{color:#ffd200}
+.review-reasons{display:none;flex-wrap:wrap;gap:min(3.13vw,15px) min(2.5vw,12px);margin-bottom:min(6.25vw,30px)}
+.review-reasons._visible{display:flex}
+.review-reason{padding:min(2.2vw,10px) min(3.13vw,15px);border:1px solid #9e6c3e;border-radius:min(3.75vw,18px);background:transparent;color:#9e6c3e;font-size:min(4.06vw,19px);font-weight:600;line-height:1.2;cursor:pointer}
+.review-reason._active{background:#9e6c3e;color:#fff}
+.review-form{padding:min(4.38vw,21px);border-radius:min(5vw,24px);background:#fff;box-shadow:0 12px 28px rgba(0,0,0,.08)}
+.review-textarea-wrap{position:relative;margin-bottom:min(4.69vw,23px)}
+.review-textarea-icon{position:absolute;top:min(3.44vw,16px);left:min(4.06vw,19px);width:min(5vw,24px);height:min(5vw,24px);opacity:.55}
+.review-textarea{width:100%;height:min(25vw,120px);padding:min(3.44vw,16px) min(3.75vw,18px) min(3.44vw,16px) min(11vw,52px);resize:none;border:1px solid #d8d8d8;border-radius:min(3.75vw,18px);background:#fff;color:#575757;font-size:min(4.06vw,19px);font-weight:500;line-height:1.25;outline:none}
+.review-textarea::placeholder{color:#8f8f8f}
+.review-submit{display:flex;align-items:center;justify-content:center;width:100%;height:min(12.5vw,60px);border:0;border-radius:min(3.13vw,15px);background:#e93639;color:#fff;font-size:min(4.7vw,23px);font-weight:700;line-height:1;cursor:pointer}
+.review-submit:active{background:#c93132}
+
+
+
