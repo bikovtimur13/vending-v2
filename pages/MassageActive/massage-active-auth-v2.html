@@ -35,7 +35,7 @@
           <div class="timer-circle__content">
             <p class="timer-circle__text">До окончания<br>массажа осталось</p>
             <!-- Тут переменная оставшего времени -->
-            <div class="timer-circle__time" id="mainTimer">09:32</div>
+            <div class="timer-circle__time" id="mainTimer">00:10</div>
           </div>
         </div>
       </section>
@@ -55,6 +55,11 @@
               <input type="hidden" name="_csrf" value="#">
               <button class="vendi-form__button" type="submit">Записаться</button>
             </form>
+            <div class="vendi-form__success">
+                Ваша заявка принята и&nbsp;обрабатывается. <br>
+                В&nbsp;ближайшее время с&nbsp;Вами
+                свяжется <br> наш менеджер.
+            </div>
           </div>
         </div>
 
@@ -167,11 +172,17 @@
   </main>
 
   <div class="bottom-fixed" id="bottomPanel">
-    <a href="#" class="btn btn-w100 bottom-fixed__video">Полезные видео о здоровье</a>
+    <a href="#" class="bottom-fixed__review">Оставить отзыв</a>
+  
+    <a href="#" class="btn btn-w100 bottom-fixed__video">
+      Полезные видео о здоровье
+    </a>
+  
     <a href="#" class="bottom-fixed__stop">
       <span class="bottom-fixed__time" id="bottomTimer">09:57</span>
       <span>Остановить</span>
     </a>
   </div>
+
 </body>
 </html>

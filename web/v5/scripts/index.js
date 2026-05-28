@@ -4,6 +4,7 @@ const timerText = document.querySelector('.timer-circle__text');
 const circle = document.querySelector('.progress-ring__circle');
 const topTimerBlock = document.getElementById('topTimerBlock');
 const bottomPanel = document.getElementById('bottomPanel');
+const stopButton = document.querySelector('.bottom-fixed__stop');
 
 if (mainTimer && bottomTimer && timerText && circle && topTimerBlock && bottomPanel) {
   const FULL_TIME = 10 * 60;
@@ -23,15 +24,17 @@ if (mainTimer && bottomTimer && timerText && circle && topTimerBlock && bottomPa
   const render = time => {
     const safeTime = Math.max(time, 0);
     const progress = safeTime / FULL_TIME;
-
+  
     mainTimer.textContent =
     bottomTimer.textContent = formatTime(safeTime);
-
+  
+    bottomPanel.classList.toggle('_massage-ended', safeTime <= 0);
+  
     timerText.innerHTML =
       safeTime > 0
         ? 'До окончания<br>массажа осталось'
-        : 'Массаж<br>окончен';
-
+        : 'Сеанс массажа завершен<br>Спасибо. Вы можете оплатить<br> следующий сеанс<br> восстановительного массажа';
+  
     circle.style.strokeDashoffset = circumference * (1 - progress);
   };
 
@@ -42,24 +45,58 @@ if (mainTimer && bottomTimer && timerText && circle && topTimerBlock && bottomPa
     );
   };
 
-  document.querySelectorAll('.vendi-form__button').forEach(button => {
-    button.addEventListener('click', event => {
-      const form = button.closest('.vendi-form');
-      const giftText = form?.querySelector('.vendi-form__gift-text');
-
-      if (!giftText) return;
-
+  document.querySelectorAll('.vendi-form').forEach(form => {
+    form.addEventListener('submit', event => {
       event.preventDefault();
-      giftText.classList.add('_visible');
+  
+      const button = form.querySelector('.vendi-form__button');
+      const vbForm = form.closest('.vb-form');
+  
+      if (button) {
+        button.style.display = 'none';
+      }
+  
+      if (vbForm) {
+        const giftText = vbForm.querySelector('.vendi-form__gift-text');
+  
+        if (giftText) {
+          giftText.classList.add('_visible');
+        }
+  
+        return;
+      }
+  
+      const successText = form.parentElement.querySelector('.vendi-form__success');
+  
+      if (successText) {
+        successText.classList.add('_visible');
+      }
     });
   });
 
   let time = parseTime(mainTimer.textContent);
 
+  if (stopButton) {
+    stopButton.addEventListener('click', event => {
+      event.preventDefault();
+  
+      time = 0;
+  
+      render(time);
+  
+      clearInterval(timer);
+  
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
   render(time);
   toggleBottomTimer();
 
-  const timer = setInterval(() => {
+  let timer = setInterval(() => {
     render(time);
 
     if (time <= 0) {
