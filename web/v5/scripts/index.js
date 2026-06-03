@@ -1,17 +1,18 @@
 const mainTimer = document.getElementById('mainTimer');
 const bottomTimer = document.getElementById('bottomTimer');
-const timerText = document.querySelector('.timer-circle__text');
-const circle = document.querySelector('.progress-ring__circle');
+// const timerText = document.querySelector('.timer-circle__text');
+const timerText = document.querySelector('.m-timer-card__text');
+// const circle = document.querySelector('.progress-ring__circle');
 const topTimerBlock = document.getElementById('topTimerBlock');
 const bottomPanel = document.getElementById('bottomPanel');
 const stopButton = document.querySelector('.bottom-fixed__stop');
 
-if (mainTimer && bottomTimer && timerText && circle && topTimerBlock && bottomPanel) {
+if (mainTimer && bottomTimer && timerText /*&& circle*/ && topTimerBlock && bottomPanel) {
   const FULL_TIME = 10 * 60;
   const radius = 95;
   const circumference = 2 * Math.PI * radius;
 
-  circle.style.strokeDasharray = circumference;
+  // circle.style.strokeDasharray = circumference;
 
   const parseTime = time => {
     const [minutes, seconds] = time.trim().split(':').map(Number);
@@ -33,9 +34,24 @@ if (mainTimer && bottomTimer && timerText && circle && topTimerBlock && bottomPa
     timerText.innerHTML =
       safeTime > 0
         ? 'До окончания<br>массажа осталось'
-        : 'Сеанс массажа завершен<br>Спасибо. Вы можете оплатить<br> следующий сеанс<br> восстановительного массажа';
+        : '<b>Сеанс массажа завершен. Спасибо.</b><br> Вы можете оплатить следующий сеанс<br> восстановительного массажа.';
   
-    circle.style.strokeDashoffset = circumference * (1 - progress);
+    // circle.style.strokeDashoffset = circumference * (1 - progress);
+
+    if (safeTime <= 0) {
+      const mTimerCard = document.querySelector('.m-timer-card');
+      if (mTimerCard) {
+          mTimerCard.classList.add('m-timer-card_finished');
+      }
+
+      const stopButton = document.querySelector('.bottom-fixed__stop');
+      if (stopButton) {
+          stopButton.innerHTML = `Выбрать время массажа`;
+          stopButton.classList.add('bottom-fixed__stop_choose-time');
+          // todo: to set link later
+          // stopButton.setAttribute('href', 'https://www.example.com');
+      }
+    }
   };
 
   const toggleBottomTimer = () => {
