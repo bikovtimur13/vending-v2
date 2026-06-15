@@ -34,7 +34,7 @@ if (mainTimer && bottomTimer && timerText /*&& circle*/ && topTimerBlock && bott
     timerText.innerHTML =
       safeTime > 0
         ? 'До окончания<br>массажа осталось'
-        : '<b>Сеанс массажа завершен. Спасибо.</b><br> Вы можете оплатить следующий сеанс<br> восстановительного массажа.';
+        : '<b>Сеанс массажа завершен. Спасибо!</b><br>Вы можете оплатить следующий<br>сеанс восстановительного массажа.';
   
     // circle.style.strokeDashoffset = circumference * (1 - progress);
 
@@ -109,20 +109,61 @@ if (mainTimer && bottomTimer && timerText /*&& circle*/ && topTimerBlock && bott
     });
   }
 
-  render(time);
-  toggleBottomTimer();
 
-  let timer = setInterval(() => {
-    render(time);
+  const setMTimerCardToConnectingState = () => {
+    timerText.innerHTML = 'Кресло подключается,<br> ожидайте';
+    topTimerBlock.classList.add('m-timer-card_connecting');
+  }
 
-    if (time <= 0) {
-      clearInterval(timer);
-      return;
+  const unsetMTimerCardFromConnectingState = () => {
+    topTimerBlock.classList.remove('m-timer-card_connecting');
+  }
+
+  setMTimerCardToConnectingState();
+
+
+  const checkIsConnecting = () => {
+    if (!window._startTime) {
+      window._startTime = Date.now();
+    }
+    const timePassed = Date.now() - window._startTime;
+    console.log(`Date.now() - window._startTime: ${timePassed} | timePassed < 2000: ${timePassed < 2000}`)
+
+    return timePassed < 2000;
+  }
+
+  const waitForConnection = (onConnectedCallback)  => {
+    const check = () => {
+      const isConnecting = checkIsConnecting();
+      if (isConnecting) {
+        setTimeout(check, 200);
+      }
+      if (!isConnecting) {
+        onConnectedCallback();
+      }
     }
 
-    time--;
-  }, 1000);
+    check();
+  }
 
+  waitForConnection(() => {
+      unsetMTimerCardFromConnectingState();
+
+      render(time);
+
+      let timer = setInterval(() => {
+        render(time);
+
+        if (time <= 0) {
+          clearInterval(timer);
+          return;
+        }
+
+        time--;
+      }, 1000);
+  })
+
+  toggleBottomTimer();
   window.addEventListener('scroll', toggleBottomTimer);
 }
 

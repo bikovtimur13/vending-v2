@@ -16,7 +16,22 @@
     min-height: unset;
     border-radius: clamp(15px, 4.69vw, 24.01px);
 }
-.bottom-fixed__stop{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:50px;padding:5.5%;border:2px solid #e03638;border-radius:14px;background:#fff;color:#e03638;font-size:min(4.625vw,25px);font-weight:700;text-decoration:none}
+.bottom-fixed__stop{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    width:100%;
+    min-height:50px;
+    padding:5.5%;
+    border:clamp(1.5px, 0.47vw, 2.41px) solid #e03638;
+    border-radius:14px;
+    background:#fff;
+    color:#e03638;
+    font-size:min(4.625vw,25px);
+    font-weight:700;
+    text-decoration:none;
+}
 .bottom-fixed__stop_new {
     height: clamp(45px, 14.06vw, 71.99px);
     min-height: unset;
@@ -25,12 +40,28 @@
 .bottom-fixed__stop_choose-time {
     justify-content: center !important;
     align-items: center;
-    border: 2px solid #383838;
-    color: #383838;
+    border: clamp(1.5px, 0.47vw, 2.41px) solid #9C9CA4;
+    color: #4C4E56;
 }
 .bottom-fixed__time{display:none;margin-right:auto;color:#575757;font-size:min(8vw,34px);font-weight:700;line-height:1}
 .bottom-fixed._timer-visible .bottom-fixed__stop{justify-content:space-between;padding:4%}
 .bottom-fixed._timer-visible .bottom-fixed__time{display:block}
+
+.bottom-fixed__description-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: clamp(4px, 1.25vw, 6.4px);
+    position: relative;
+}
+
+.bottom-fixed__description-wrapper span {
+    line-height: 1;
+    font-size: clamp(15px, 4.69vw, 24.01px);
+}
+
+.bottom-fixed__close-cross {
+    width: clamp(20px, 6.25vw, 32px);
+}
 
 .page-bottom-space{height:135px}
 .vending-v2{background:#FEFEFF;padding-bottom:clamp(240px, 62vw, 330px)}
@@ -86,7 +117,8 @@
 }
 .vs-form_new {
     width: clamp(300px, 93.75vw, 480px);
-    height: clamp(214px, 66.88vw, 342.43px);
+    /*height: clamp(214px, 66.88vw, 342.43px);*/
+    height: auto;
 }
 .vs-form__note{
     width: clamp(113px, 35.31vw, 180.79px);
@@ -167,17 +199,45 @@
     border-radius: clamp(10px, 3.13vw, 16.03px);
 }
 .vendi-form__button_bf {
-    width: clamp(280px, 87.5vw, 448px);
-    height: clamp(40px, 12.5vw, 64px);
+    width: clamp(109px, 34.06vw, 174.39px);
+    height: clamp(38px, 11.88vw, 60.83px);
+    margin: clamp(11px, 3.44vw, 17.61px) 0 0 clamp(177px, 55.31vw, 283.19px);
     min-height: unset;
-    font-size: clamp(16px, 5vw, 25.6px);
+    font-size: clamp(15px, 4.69vw, 24.01px);
+    border-radius: clamp(11px, 3.44vw, 17.61px);
 }
 
-.vendi-cards{display:grid;grid-template-columns:1fr;gap:min(3.75vw,18.75px);margin-top:min(7.5vw,37.5px);margin-bottom:min(7.5vw,37.5px)}
-.vendi-card{position:relative;height:min(37.5vw,187.5px);overflow:hidden;border-radius:min(7.5vw,37.5px);background:linear-gradient(259.63deg,#f6d3b6 -2.33%,#fff8f1 70.55%);box-shadow:2.79px 2.79px 30px 0 #7c7c7c26 inset,0 4px 20px 0 #4e4e4e24}
-.vendi-card:hover{transform:none}
-.vendi-card__name{position:absolute;top:50%;left:min(6.25vw,31.25px);z-index:2;transform:translateY(-50%);color:#575757;font-size:min(5.63vw,28.15px);font-weight:500;line-height:1.24}
-.vendi-card__pic{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover}
+.vendi-cards{
+    width: clamp(300px, 93.75vw, 480px);
+    margin: 0 auto clamp(24px, 7.5vw, 38.4px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    row-gap: clamp(15px, 4.69vw, 24.01px);
+    column-gap: clamp(10px, 3.125vw, 16.03px);
+}
+.vendi-card {
+    width: clamp(145px, 45.31vw, 231.99px);
+    position:relative;
+    overflow:hidden;
+    text-decoration: none;
+}
+.vendi-card__pic{
+    width: clamp(145px, 45.31vw, 231.99px);
+    display: block;
+    margin: 0 auto clamp(5px, 1.56vw, 7.99px);
+    object-fit:cover;
+}
+.vendi-card__name{
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(13px, 4.06vw, 20.79px);
+    line-height: 110%;
+    text-align: center;
+    color: #4C4E56;
+}
 .vendi-card__arr{position:absolute;top:min(3.75vw,18.75px);right:min(4.06vw,20.3px);z-index:2;width:min(7.5vw,37.5px)}
 
 .active-hero__title,.bonus-section__title{color:var(--y-red-2);font-size:clamp(24px,7.5vw,36px);font-weight:700;line-height:120%;letter-spacing:.2px;text-transform:uppercase}
@@ -234,14 +294,23 @@
     right: clamp(10px, 3.13vw, 16.03px);
 }
 
+.vendi-bottom__chairs {
+    width: clamp(300px, 93.75vw, 480px);
+    height: clamp(469px, 146.56vw, 750.39px);
+    margin: 0 0 clamp(48px, 15vw, 76.8px);
+    background: #F6F6FBD9;
+    border-radius: clamp(20px, 6.25vw, 32px);
+    border: clamp(1px, 0.31vw, 1.59px) solid #F2F2F4;
+}
+
 .vendi-bottom{display:flex;flex-direction:column;gap:min(7.5vw,37.5px)}
-.vendi-bottom__form,.vendi-bottom__chairs{
+.vendi-bottom__form {
     width: clamp(300px, 93.75vw, 480px);
     height: clamp(164px, 51.25vw, 262.4px);
     position: relative;
     padding: clamp(16px, 5vw, 25.6px) 0 0;
     margin: 0 auto clamp(36px, 11.25vw, 57.6px);
-    border: 1px solid #EDD3AD;
+    /*border: 1px solid #EDD3AD;*/
     border-radius: 20px;
 }
 
@@ -261,48 +330,171 @@
 }
 .vb-form_new {
 }
-.vb-form::after{content:"";position:absolute;inset:0;padding:min(.63vw,3.15px);border-radius:min(7.5vw,37.5px);background:linear-gradient(138.37deg,rgba(255,255,255,.8) 2.98%,rgba(255,255,255,.32) 97.46%);-webkit-mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
-.vb-form__title{margin-bottom:min(2.5vw,12.5px);text-align:center;font-size:min(8.75vw,43.75px);font-weight:700;line-height:1.05}
+.vb-form__title {
+    margin: 0 auto clamp(6px, 1.88vw, 9.63px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(20px, 6.25vw, 32px);
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(135.31deg, #DD4F49 15.43%, #CC3D38 30.62%, #E4655F 47.37%, #D94B45 62.96%, #EB7C77 82.05%, #CC3D38 93.35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
 .vb-form__title_giving {
-    margin: 0 auto clamp(4px, 1.25vw, 6.4px);
-}
-.vb-form__title span{display:block;background:linear-gradient(135.31deg,#dd4f49 15.43%,#cc3d38 30.62%,#e4655f 47.37%,#d94b45 62.96%,#eb7c77 82.05%,#cc3d38 93.35%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-.vb-form__text{margin-bottom:min(4.69vw,23.45px);color:#9e6c3e;text-align:center;font-size:min(4.06vw,20.3px);font-weight:500;line-height:1.2}
-
-.vendi-chairs{position:relative;display:flex;flex-direction:column;justify-content:space-between;height:min(125.31vw,626.55px);padding:min(9.06vw,45.3px) min(3.75vw,18.75px) min(5.94vw,29.7px);border-radius:min(7.5vw,37.5px);background:#ffffff8f url("../images/vendi-chairs-bg-mob.webp") center/cover;box-shadow:0 min(15px,3vw) min(49px,9.8vw) rgba(188,134,71,.17),inset 0 0 min(51px,10.2vw) rgba(255,250,243,.95)}
-.vendi-chairs_new {
-    width: clamp(300px, 93.75vw, 480px);
+    display: block;
+    width: max-content;
     margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(20px, 6.25vw, 32px);
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(92.19deg, #2D2D2F -0.49%, #6E6E74 100.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
-.vendi-chairs::after{content:"";position:absolute;inset:0;padding:min(.63vw,3.15px);border-radius:min(7.5vw,37.5px);background:linear-gradient(138.37deg,rgba(255,255,255,.8) 2.98%,rgba(255,255,255,.32) 97.46%);-webkit-mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);mask:conic-gradient(#000 0 0) content-box,conic-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
-.vendi-chairs__top{display:flex;flex-direction:column;align-items:center;gap:min(3.75vw,18.75px)}
-.vendi-chairs__title{background:linear-gradient(135.31deg,#b6875b 15.43%,#98693d 30.62%,#ae8155 47.37%,#ae8155 62.96%,#b88a5e 82.05%,#98693d 93.35%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;text-align:center;text-transform:uppercase;font-size:min(8.75vw,43.75px);font-weight:600;line-height:1.2}
-.vendi-chairs__title_new {
-    margin: 0 auto clamp(4px, 1.25vw, 6.4px);
-    font-size: clamp(24px, 7.5vw, 38.4px);
+.vb-form__text{
+    width: clamp(146px, 45.63vw, 233.63px);
+    /*margin: 0 auto clamp(11px, 3.44vw, 17.61px);*/
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(13px, 4.06vw, 20.79px);
+    line-height: 120%;
+    text-align: center;
+    color: #4C4E56;
 }
+
+.vendi-chairs{
+    position:relative;
+}
+
+.vendi-chairs_new {
+}
+
+.vendi-chairs__top{
+    width: max-content;
+    margin: 0 0 clamp(9px, 2.81vw, 14.39px) clamp(19px, 5.94vw, 30.41px);
+    display:flex;
+    align-items:center;
+    column-gap: clamp(17px, 5.31vw, 27.19px);
+}
+.vendi-chairs__title{
+    width: clamp(219px, 68.44vw, 350.41px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(19px, 5.94vw, 30.41px);
+    line-height: 110%;
+    background: linear-gradient(92.19deg, #2D2D2F -0.49%, #6E6E74 100.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
 .vendi-chairs__button{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;width:min(38vw,190px);height:min(14vw,70px);padding:0 min(8vw,40px);border-radius:min(4.69vw,23.45px);background:#e03638;color:#fff;box-shadow:0 min(4px,.8vw) min(8px,1.6vw) 0 #0000001a;font-size:min(5vw,25px);font-weight:600;line-height:1;text-decoration:none}
 .vendi-chairs__button_new {
-    width: clamp(141px, 44.06vw, 225.59px);
-    height: clamp(40px, 12.5vw, 64px);
-    border-radius: clamp(10px, 3.13vw, 16.03px);
-}
-.vendi-chairs__inner{display:flex;justify-content:center;margin-left:0}
-.vendi-chairs__inner_new {
-    column-gap: clamp(3px, 0.94vw, 4.81px);
+    width: max-content;
+    height: max-content;
+    padding: 0;
+    background: transparent;
+    border-radius: clamp(35px, 10.94vw, 56.01px);
 }
 
-.vendi-chair{position:relative;display:flex;flex-direction:column;align-items:center;width:min(42.19vw,210.95px);text-decoration:none}
-.vendi-chair:nth-child(1){display:none}
-.vendi-chair::before,.vendi-chair::after{content:"";position:absolute;top:max(-13.13vw,-65.65px);left:50%;z-index:1;width:min(40.63vw,203.15px);height:min(53.13vw,265.65px);border-radius:50%;transform:translateX(-50%);filter:blur(min(6.25vw,31.25px));transition:opacity .4s}
-.vendi-chair::before{opacity:.56;background:radial-gradient(50% 50% at 50% 50%,rgba(255,255,255,.8) 0%,#fff 100%)}
-.vendi-chair::after{opacity:0;background:radial-gradient(50% 50% at 50% 50%,#ffa245 0%,#fccc9f 100%)}
-.vendi-chair:hover::after{opacity:.56}
-.vendi-chair:hover::before{opacity:0}
-.vendi-chair__pic{position:relative;z-index:2;width:min(37.5vw,187.5px)}
-.vendi-chair__pic_new {
-    width: clamp(135px, 42.19vw, 216.01px);
+.vendi-bottom__go-to-icon {
+    width: clamp(32px, 10vw, 51.2px);
+    height: clamp(32px, 10vw, 51.2px);
 }
+
+.vendi-chairs__inner{
+    display:flex;
+    justify-content:flex-start;
+    margin: 0 0 0 clamp(14px, 4.38vw, 22.43px);
+    column-gap: clamp(8px, 2.5vw, 12.8px);
+}
+.vendi-chairs__inner_new {
+    column-gap: clamp(8px, 2.5vw, 12.8px);
+}
+
+.vendi-chair{
+    width: clamp(135px, 42.19vw, 216.01px);
+    position: relative;
+    text-decoration: none;
+}
+
+.vendi-chair__pic {
+    width: clamp(135px, 42.19vw, 216.01px);
+    position:relative;
+    display: block;
+    z-index:10;
+}
+
+.vendi-chair__highlight {
+    width: clamp(129.33px, 40.42vw, 206.95px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+@keyframes chairHighlight {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.vendi-chair__highlight_xi-robot {
+    animation: chairHighlight 2s both alternate infinite;
+}
+.vendi-chair__highlight_xu {
+    animation: chairHighlight 2s both alternate-reverse infinite;
+
+}
+
+.vendi-chair-badge {
+    width: clamp(135px, 42.19vw, 216.01px);
+    height: clamp(40px, 12.5vw, 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: clamp(1px, 0.31vw, 1.59px) solid #FFC0C1;
+    background: #FFFFFF;
+    border-radius: clamp(10px, 3.13vw, 16.03px);
+}
+
+.vendi-chair-badge__description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(11px, 3.44vw, 17.61px);
+    line-height: 130%;
+    text-align: center;
+    color: #4C4E56;
+}
+
+.vendi-chair-badge__description_red {
+    display: inline-block;
+    background: linear-gradient(135.31deg, #DD4F49 15.43%, #CC3D38 30.62%, #E4655F 47.37%, #D94B45 62.96%, #EB7C77 82.05%, #CC3D38 93.35%), #4C4E56;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
 .vendi-chair__btn{position:relative;z-index:2;padding:min(2.5vw,12.5px) min(3.13vw,15.65px);border:0;border-radius:min(3.13vw,15.65px);background:#e1b99033;color:#9e6c3e;font-size:min(3.75vw,18.75px);font-weight:600;line-height:1.2;transition:all .4s}
 .vendi-chair__btn_xi {
     width: clamp(130px, 40.63vw, 208.03px);
@@ -312,13 +504,33 @@
 }
 .vendi-chair:hover .vendi-chair__btn{box-shadow:0 0 min(39.7px,7.94vw) 0 #ffb14570 inset}
 
-.vendi-form__gift-text, .vendi-form__success {
+.vendi-form__success {
     display: none;
     color: #4C4E56;
     font-size: min(3.5vw, 16px);
     font-weight: 500;
     line-height: 1.3;
     text-align: center;
+}
+
+.vendi-form__gift-text {
+    display: none;
+    margin: clamp(5px, 1.56vw, 7.99px) auto 0;
+    width: clamp(245px, 76.56vw, 391.99px);
+    box-sizing: content-box;
+    padding: clamp(9px, 2.81vw, 14.39px) clamp(15px, 4.69vw, 24.01px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(12px, 3.75vw, 19.2px);
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #4C4E56;
+    background: #FEFEFFE5;
+    border: clamp(1px, 0.31vw, 1.59px) solid #FFFFFF;
+    box-shadow: 0px 0px clamp(14.59px, 4.56vw, 23.35px) 0px #FFFFFF inset, 0px clamp(3.67px, 1.15vw, 5.89px) clamp(15.69px, 4.9vw, 25.09px) 0px #CACADD8F;
+    border-radius: clamp(15px, 4.69vw, 24.01px);
 }
 
 .vendi-form__gift-text._visible {
@@ -437,37 +649,66 @@
 
 
 .m-timer-card {
-    /*width: 93.75vw;*/
-    /*max-width:475px;*/
-    /*height: clamp(66px, 20.63vw, 105.63px);*/
-    /*max-height: 93px;*/
     width: clamp(300px, 93.75vw, 480px);
     height: clamp(66px, 20.63vw, 105.63px);
     margin: clamp(4px, 1.25vw, 7px) auto clamp(14px, 4.38vw, 22.43px);
     position: relative;
     display: flex;
     align-items: center;
-    /*background: rgba(255,255,255,.6);*/
     background: radial-gradient(47.3% 106.88% at 52.83% 104.59%, #FF7061 0%, #E03638 100%);
-    border-radius: 6.25vw;
+    border-radius: clamp(15px, 4.69vw, 24.01px);
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .m-timer-card_finished {
-    height: clamp(74px, 23.13vw, 118.43px);
-    max-height: unset;
     justify-content: center;
+    background: radial-gradient(47.3% 106.88% at 52.83% 104.59%, #45D369 0%, #19B240 100%);
 }
 
 .m-timer-card_finished .m-timer-card__text {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 120%;
     text-align: center;
-    font-weight: 400;
-    margin: 0 auto;
-    line-height: 1.35;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 2.9px rgba(109, 188, 0, 0.58);
 }
 
 .m-timer-card_finished .m-timer-card__time {
     display: none;
+}
+
+.m-timer-card_connecting {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.m-timer-card_connecting .m-timer-card__spinner {
+    display: block;
+}
+
+.m-timer-card_connecting .m-timer-card__time {
+    display: none;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.m-timer-card__spinner {
+    display: none;
+    width: clamp(40px, 12.5vw, 64px);
+    position: absolute;
+    top: clamp(13px, 4.06vw, 20.79px);
+    right: clamp(16px, 5vw, 25.6px);
+    animation: rotation 3s linear both infinite;
 }
 
 .m-timer-card__text {
@@ -655,7 +896,7 @@
 
 .invitation-card__content {
     position: relative;
-    z-index: 100;
+    z-index: 25;
 }
 
 .invitation-card__title {
@@ -712,4 +953,88 @@
     font-size: clamp(13px, 4.06vw, 20.79px);
     line-height: 115%;
     color: #6E7077;
+}
+
+
+
+.legal-notice {
+    width: clamp(320px, 100vw, 512px);
+    height: clamp(238px, 74.38vw, 380.83px);
+    margin: 0 auto;
+    padding: clamp(24px, 7.5vw, 38.4px) 0 0;
+    background: #F7F7FB;
+}
+
+.legal-notice__container {
+    margin: 0 0 0 clamp(10px, 3.13vw, 16.03px);
+}
+
+.legal-notice__main {
+    margin: 0 0 clamp(14px, 4.38vw, 22.43px);
+}
+
+.legal-notice__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(13px, 4.06vw, 20.79px);
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #4C4E56;
+}
+
+.legal-notice__text_name {
+}
+
+.legal-notice__text_inn {
+}
+
+.legal-notice__text_ogrn {
+}
+
+.legal-notice__text_type {
+}
+
+.legal-notice__contract-offer {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(13px, 4.06vw, 20.79px);
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    text-decoration-line: underline;
+    color: #4C4E56;
+}
+
+.legal-notice__usage-rules {
+    margin: 0 0 clamp(18px, 5.63vw, 28.83px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(13px, 4.06vw, 20.79px);
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #4C4E56;
+}
+
+.legal-notice__usage-rules_bold {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    color: #4C4E56;
+}
+
+.chair-name {
+    width: max-content;
+    padding: clamp(8px, 2.5vw, 12.8px) clamp(10px, 3.13vw, 16.03px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(12px, 3.75vw, 19.2px);
+    line-height: 120%;
+    text-align: center;
+    color: #4C4E56;
+    background: #FFFFFF;
+    box-shadow: 0px 3.67px 15.69px 0px #CACADD8F, 0px 0px 14.59px 0px #FFFFFF inset;
+    border-radius: clamp(10px, 3.13vw, 16.03px);
 }
