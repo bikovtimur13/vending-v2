@@ -59,7 +59,7 @@
     font-size: clamp(15px, 4.69vw, 24.01px);
 }
 
-.bottom-fixed__close-cross {
+.bottom-fixed__icon {
     width: clamp(20px, 6.25vw, 32px);
 }
 
