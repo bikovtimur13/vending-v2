@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+          http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+  <link
+          rel="stylesheet"
+          href="../../styles/normalize.css" />
+  <link
+          rel="stylesheet"
+          href="../../styles/reset.css" />
+  <link
+          rel="stylesheet"
+          href="../../styles/index.css" />
+  <link
+          rel="stylesheet"
+          href="../../web/v5/styles/index.css" />
+  <script
+          defer
+          src="../../scripts/index.js"></script>
+  <script
+          defer
+          src="../../web/v5/scripts/index.js"></script>
+  <title>Vending</title>
+</head>
+
+<body>
+
+<header class="profile-header">
+  <div class="profile-header__container">
+    <div class="profile-header__left-part">
+      <img class="profile-header__avatar" src="../../web/v5/images/profile-header-avatar.webp" alt="аватар">
+
+      <div class="profile-header__content">
+        <p class="profile-header__name">
+          Петрова Василиса
+        </p>
+
+        <div class="profile-header__bonus-row">
+          <p class="profile-header__points">
+            Бонусы: <span class="profile-header__points_count">30 000</span>
+          </p>
+
+          <a class="profile-header__details" href="">
+            Подробнее
+
+            <img class="profile-header__details-arrow" src="../../web/v5/images/profile-header-details-arrow.webp" alt="стрелка">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-header__right-part">
+      <a class="personal-account-link" href="">
+        Личный<br>
+        кабинет
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="screen">
+    <div class="screen__container">
+      <h2 class="screen__title">
+        Находясь в кресле,<br>
+        выберите время массажа
+      </h2>
+
+      <div class="period-variants">
+        <div class="period-variants__container">
+          <a class="period-badge">
+            <p class="period-badge__description">
+              1 мин за 1<span class="period-badge__description_rouble">₽</span>
+            </p>
+          </a>
+
+          <a class="period-badge">
+            <p class="period-badge__description">
+              10 мин за 10<span class="period-badge__description_rouble">₽</span>
+            </p>
+          </a>
+
+          <a class="period-badge period-badge_popular">
+            <p class="period-badge__description">
+              15 мин за 150<span class="period-badge__description_rouble">₽</span>
+            </p>
+
+            <div class="popular-badge popular-badge_period">
+              <p class="popular-badge__description">
+                Популярное
+              </p>
+            </div>
+          </a>
+
+          <a class="period-badge">
+            <p class="period-badge__description">
+              20 мин за 200<span class="period-badge__description_rouble">₽</span>
+            </p>
+          </a>
+
+          <a class="period-badge period-badge_free">
+            <p class="period-badge__description period-badge__description_free">
+              Бесплатно 9 мин
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="chosen-payment-method-block">
+        <h3 class="chosen-payment-method-block__title">
+          Выбранный способ оплаты
+        </h3>
+        <div class="chosen-payment-method-block__card-wrapper">
+          <button class="chosen-payment-method chosen-payment-method_choose">
+            <img class="chosen-payment-method__card-icon" src="../../web/v5/images/chosen-payment-method-card.webp" alt="карта">
+
+            <div class="chosen-payment-method__content">
+              <p class="chosen-payment-method__description">
+                Выбрать карту для оплаты
+              </p>
+            </div>
+
+            <img class="chosen-payment-method__arrow" src="../../web/v5/images/chosen-payment-method-arrow.webp" alt="стрелка">
+          </button>
+
+          <a class="chosen-payment-method chosen-payment-method_сhosen chosen-payment-method_hidden">
+            <img class="chosen-payment-method__card-icon" src="../../web/v5/images/chosen-payment-method-card.webp" alt="карта">
+
+            <div class="chosen-payment-method__content">
+              <p class="chosen-payment-method__description">
+                234231********2145 UZS
+              </p>
+              <p class="chosen-payment-method__test-card">
+                тестовая карта
+              </p>
+            </div>
+
+            <img class="chosen-payment-method__change-icon" src="../../web/v5/images/chosen-payment-method-change-icon.webp" alt="карта">
+          </a>
+        </div>
+      </div>
+
+      <a class="maintenance-badge">
+        <p class="maintenance-badge__description">
+          Сервисное обслуживание
+        </p>
+        <div class="popular-badge popular-badge_maintenance">
+          <p class="popular-badge__description">
+            Популярное
+          </p>
+        </div>
+      </a>
+
+      <div class="cashback-info">
+        <p class="cashback-info__description">
+          Все использованные Вами <br>
+          на массаж средства в полном объёме <br>
+          вернуться баллами. Их Вы сможете <br>
+          использовать при покупке <br>
+          в фирменных салонах Yamaguchi
+        </p>
+        <a class="cashback-info__learn-more" href="">
+          Подробнее
+        </a>
+      </div>
+
+      <footer class="screen__footer">
+        <p class="legal-info legal-info_choose-time">
+          ООО «РОМАШКА ПЛЮС», ИНН 5635373563, <br>
+          ОГРН 54623452352435136, Адрес: 108814, <br>
+          г. Москва, п. Сосенское, п. Коммунарка, ул, <br>
+          Фитаревская, д.19, кв. 214. Spirit <br>
+          <a class="legal-info_bold">Договор оферты</a>
+        </p>
+
+        <div class="screen__last-row">
+          <p class="chair-model-name">
+            Кресло DM01234
+          </p>
+
+          <div class="language-switch">
+            <img class="language-switch__flag" src="../../web/v5/images/england-flag.webp" alt="карта">
+
+            <p class="language-switch__name">
+              English
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="points-details-modal">
+      <div class="points-details-modal__overlay">
+        <div class="points-details-modal__body">
+          <img class="points-details-modal__cross" src="../../web/v5/images/points-details-modal-cross.webp" alt="крестик">
+          <div class="points-details">
+            <div class="points-details__container">
+              <h3 class="points-details__title">
+                Подробно о баллах
+              </h3>
+
+              <div class="points-details__content">
+                <p class="points-details__description">
+                  Все средства, внесённые за массаж возвращаются<br>
+                  в виде баллов на ваш бонусный счет.
+                </p>
+
+                <p class="points-details__description">
+                  Баллы нельзя использовать на оплату массажа.
+                </p>
+
+                <p class="points-details__description">
+                  Баллы можно потратить на ТОВАРЫ<br>
+                  в фирменных салонах Yamaguchi, на сайте<br>
+                  <a class="points-details__link" href="">yamaguchi.ru</a> и в <a class="points-details__link" href="">приложении Yamaguchi</a>.
+                </p>
+
+                <p class="points-details__description">
+                  Накопленные баллы можно использовать<br>
+                  для оплаты ваших последующих покупок<br>
+                  по курсу <b class="points-details__description_bold">1 балл = 1 рубль.</b>
+                </p>
+
+                <p class="points-details__description">
+                  Баллами можно оплатить до <b class="points-details__description_bold">30%</b> цены любого<br>
+                  товара стоимостью от 1600 рублей.
+                </p>
+
+                <p class="points-details__description points-details__description_bold">
+                  Скидки и баллы не суммируются.
+                </p>
+              </div>
+
+              <a class="proceed-btn" href="">
+                <p class="proceed-btn__description">
+                  Продолжить
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
