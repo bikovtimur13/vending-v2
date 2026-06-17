@@ -16,54 +16,68 @@
 </head>
 <body>
     <div class="feedback-form-page">
+        <a class="back-button" href="/">
+            <img class="back-button__tick" src="../../web/v5/images/tick.webp" alt="время">
+        </a>
+
         <main class="review-page">
-        <section class="review-card">
-            <div class="review-head">
             <h1 class="review-title">Как вам массаж?</h1>
-            <div class="review-code">DM01234</div>
-            </div>
-    
-            <div class="review-stars" id="reviewStars">
-            <button class="review-star" type="button" data-rating="1" aria-label="1 звезда"></button>
-            <button class="review-star" type="button" data-rating="2" aria-label="2 звезды"></button>
-            <button class="review-star" type="button" data-rating="3" aria-label="3 звезды"></button>
-            <button class="review-star" type="button" data-rating="4" aria-label="4 звезды"></button>
-            <button class="review-star" type="button" data-rating="5" aria-label="5 звезд"></button>
-            </div>
-    
-            <div class="review-reasons" id="reviewReasons">
-            <button class="review-reason" type="button" data-reason="Кресло грязное">Кресло грязное</button>
-            <button class="review-reason" type="button" data-reason="Скрипит/шумит">Скрипит/шумит</button>
-            <button class="review-reason" type="button" data-reason="Не работают ролики на ногах">Не работают ролики на ногах</button>
-            <button class="review-reason" type="button" data-reason="Не работают ролики спины">Не работают ролики спины</button>
-            <button class="review-reason" type="button" data-reason="Больно делает массаж спины">Больно делает массаж спины</button>
-            <button class="review-reason" type="button" data-reason="Не делает разминание">Не делает разминание</button>
-            <button class="review-reason" type="button" data-reason="Не в сети">Не в сети</button>
-            <button class="review-reason" type="button" data-reason="Заканчивает массаж раньше времени">Заканчивает массаж раньше времени</button>
-            <button class="review-reason" type="button" data-reason="Остановился массаж">Остановился массаж</button>
-            </div>
-    
-            <form class="review-form" id="reviewForm" action="/" method="post">
-            <input type="hidden" name="rating" id="ratingInput" value="0">
-            <input type="hidden" name="reasons" id="reasonsInput" value="">
-    
-            <div class="review-textarea-wrap">
-                <svg class="review-textarea-icon" viewBox="0 0 24 24" fill="none">
-                <path d="M5 5h14v10H8l-3 3V5Z" stroke="#7f8787" stroke-width="1.5"/>
-                <path d="M8 8h8M8 11h6" stroke="#7f8787" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-                <textarea class="review-textarea" name="comment" placeholder="Ваше мнение помогает нам стать лучше!"></textarea>
-            </div>
-    
-            <button class="review-submit" type="submit">Отправить отзыв</button>
-            </form>
-        </section>
+
+            <section class="review-card">
+                <h3 class="review-card__title">
+                    Ваше мнение помогает<br>
+                    нам стать лучше!
+                </h3>
+
+                <div class="review-head">
+                    <div class="review-stars" id="reviewStars">
+                        <button class="review-star" type="button" data-rating="1" aria-label="1 звезда"></button>
+                        <button class="review-star" type="button" data-rating="2" aria-label="2 звезды"></button>
+                        <button class="review-star" type="button" data-rating="3" aria-label="3 звезды"></button>
+                        <button class="review-star" type="button" data-rating="4" aria-label="4 звезды"></button>
+                        <button class="review-star" type="button" data-rating="5" aria-label="5 звезд"></button>
+                    </div>
+
+                    <div class="review-code">DM01234</div>
+                </div>
+
+<!--                todo: to comeback -->
+                <div class="review-reasons" id="reviewReasons">
+                    <button class="review-reason" type="button" data-reason="Кресло грязное">Кресло грязное</button>
+                    <button class="review-reason" type="button" data-reason="Скрипит/шумит">Скрипит/шумит</button>
+                    <button class="review-reason" type="button" data-reason="Не работают ролики на ногах">Не работают ролики на ногах</button>
+                    <button class="review-reason" type="button" data-reason="Не работают ролики спины">Не работают ролики спины</button>
+                    <button class="review-reason" type="button" data-reason="Больно делает массаж спины">Больно делает массаж спины</button>
+                    <button class="review-reason" type="button" data-reason="Не делает разминание">Не делает разминание</button>
+                    <button class="review-reason" type="button" data-reason="Не в сети">Не в сети</button>
+                    <button class="review-reason" type="button" data-reason="Заканчивает массаж раньше времени">Заканчивает массаж раньше времени</button>
+                    <button class="review-reason" type="button" data-reason="Остановился массаж">Остановился массаж</button>
+                </div>
+
+                <form class="review-form" id="reviewForm" action="/" method="post">
+                    <input type="hidden" name="rating" id="ratingInput" value="0">
+                    <input type="hidden" name="reasons" id="reasonsInput" value="">
+
+                    <div class="review-textarea-wrap">
+                        <svg class="review-textarea-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 10.3C5 9.452 5 8.845 5.04 8.37C5.078 7.901 5.15 7.604 5.272 7.365L4.382 6.911C4.176 7.314 4.086 7.758 4.042 8.289C4 8.814 4 9.469 4 10.3H5ZM5 11.5V10.3H4V11.5H5ZM4 11.5V16.5H5V11.5H4ZM4 16.5V18.414H5V16.5H4ZM4 18.414C4 19.26 5.023 19.684 5.622 19.085L4.915 18.378C4.9236 18.3722 4.93305 18.3679 4.943 18.365L4.969 18.367C4.9773 18.3717 4.98435 18.3784 4.98957 18.3864C4.99479 18.3944 4.99802 18.4035 4.999 18.413L4 18.414ZM5.622 19.085L7.561 17.146L6.854 16.439L4.914 18.379L5.622 19.085ZM14.7 16H7.914V17H14.7V16ZM17.635 15.728C17.396 15.85 17.099 15.922 16.63 15.961C16.154 16 15.548 16 14.7 16V17C15.532 17 16.186 17 16.711 16.957C17.242 16.914 17.686 16.824 18.089 16.619L17.635 15.728ZM18.727 14.635C18.4874 15.1051 18.1051 15.4884 17.635 15.728L18.089 16.619C18.7478 16.2834 19.2834 15.7478 19.619 15.089L18.727 14.635ZM19 11.7C19 12.548 19 13.155 18.96 13.63C18.922 14.099 18.85 14.396 18.727 14.635L19.619 15.089C19.824 14.686 19.914 14.242 19.957 13.711C20 13.186 20 12.531 20 11.7H19ZM19 10.3V11.7H20V10.3H19ZM18.727 7.365C18.849 7.604 18.922 7.901 18.961 8.37C19 8.845 19 9.452 19 10.3H20C20 9.468 20 8.814 19.957 8.289C19.914 7.758 19.824 7.314 19.619 6.911L18.727 7.365ZM17.635 6.272C18.1053 6.51189 18.4875 6.89451 18.727 7.365L19.619 6.911C19.2834 6.2522 18.7478 5.7166 18.089 5.381L17.635 6.272ZM14.7 6C15.548 6 16.154 6 16.63 6.04C17.099 6.078 17.396 6.15 17.635 6.272L18.089 5.381C17.686 5.175 17.242 5.086 16.711 5.042C16.186 5 15.531 5 14.7 5V6ZM9.3 6H14.7V5H9.3V6ZM6.365 6.272C6.604 6.151 6.901 6.078 7.37 6.039C7.845 6 8.452 6 9.3 6V5C8.468 5 7.814 5 7.289 5.043C6.758 5.086 6.314 5.176 5.911 5.381L6.365 6.272ZM5.272 7.365C5.51172 6.89435 5.89435 6.51172 6.365 6.272L5.911 5.381C5.25235 5.71634 4.71777 6.25257 4.382 6.911L5.272 7.365ZM7.561 17.146C7.65471 17.0525 7.78165 17 7.914 17V16C7.51631 16.0003 7.13503 16.1586 6.854 16.44L7.561 17.146Z" fill="#919697"/>
+                            <path d="M8.5 9.5H15.5M8.5 12.5H13.5" stroke="#919697" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <textarea class="review-textarea" name="comment" placeholder="Ваш отзыв"></textarea>
+                    </div>
+
+                    <button class="review-submit" type="submit">Отправить отзыв</button>
+                </form>
+            </section>
         </main>
 
     </div>
     <div class="review-bottom-fixed">
         <a href="#" class="review-bottom-fixed__button">
-          Выбрать время массажа
+            <img class="bottom-fixed__icon" src="../../web/v5/images/time-icon.webp" alt="время">
+
+            Выбрать время массажа
         </a>
       </div>
 </body>  
