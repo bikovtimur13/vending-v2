@@ -1226,7 +1226,15 @@
 
 .screen__container {
     width: clamp(300px, 93.75vw, 480px);
+    min-height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
+}
+
+.screen__body {
+
 }
 
 .screen__title {
@@ -1766,4 +1774,78 @@
     background: #F8F7FB;
     text-decoration: none;
     border-radius: clamp(8px, 2.5vw, 12.8px);
+}
+
+.chair-connecting-spinner {
+    position: relative;
+    width: clamp(86px, 26.88vw, 137.63px);
+    height: clamp(86px, 26.88vw, 137.63px);
+    margin: 0 auto;
+}
+
+@keyframes spinnerDotFate {
+    0%   { background-color: #c0392b; opacity: 1; transform: scale(1); }
+    12.5%{ background-color: #f28b82; opacity: 0.9; transform: scale(0.95); }
+    25%  { background-color: #f9c4c1; opacity: 0.75; }
+    50%  { background-color: #fadadd; opacity: 0.45; }
+    75%  { background-color: #fde8e8; opacity: 0.25; }
+    87.5%{ background-color: #fde8e8; opacity: 0.15; }
+    100% { background-color: #c0392b; opacity: 1; transform: scale(1); }
+}
+
+.chair-connecting-spinner__dot {
+    position: absolute;
+    width: clamp(14px, 4.38vw, 22.43px);
+    height: clamp(14px, 4.38vw, 22.43px);
+    border-radius: 50%;
+    background-color: #f28b82;
+    animation: spinnerDotFate 0.8s linear infinite;
+}
+
+.chair-connecting-spinner__dot:nth-child(1) {
+    left: clamp(36px, 11.25vw, 57.6px);
+    top: 0;
+    animation-delay: 0s;
+}
+
+.chair-connecting-spinner__dot:nth-child(2) {
+    left: clamp(62px, 19.38vw, 99.23px);
+    top: clamp(11px, 3.44vw, 17.61px);
+    animation-delay: -0.7s;
+}
+
+.chair-connecting-spinner__dot:nth-child(3) {
+    left: clamp(72px, 22.5vw, 115.2px);
+    top: clamp(36px, 11.25vw, 57.6px);
+    animation-delay: -0.6s;
+}
+
+.chair-connecting-spinner__dot:nth-child(4) {
+    left: clamp(62px, 19.38vw, 99.23px);
+    top: clamp(61px, 19.06vw, 97.59px);
+    animation-delay: -0.5s;
+}
+
+.chair-connecting-spinner__dot:nth-child(5) {
+    left: clamp(36px, 11.25vw, 57.6px);
+    top: clamp(72px, 22.5vw, 115.2px);
+    animation-delay: -0.4s;
+}
+
+.chair-connecting-spinner__dot:nth-child(6) {
+    left: clamp(11px, 3.44vw, 17.61px);
+    top: clamp(61px, 19.06vw, 97.59px);
+    animation-delay: -0.3s;
+}
+
+.chair-connecting-spinner__dot:nth-child(7) {
+    left: 0;
+    top: clamp(36px, 11.25vw, 57.6px);
+    animation-delay: -0.2s;
+}
+
+.chair-connecting-spinner__dot:nth-child(8) {
+    left: clamp(11px, 3.44vw, 17.61px);
+    top: clamp(11px, 3.44vw, 17.61px);
+    animation-delay: -0.1s;
 }
