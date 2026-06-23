@@ -112,7 +112,24 @@ body{display:flex;flex-direction:column;min-height:100vh;font-family:'Montserrat
 .form-title{align-self:center;max-width:90%;font-size:min(4.7vw,23.5px)}
 .inputs-wrapper{display:flex;align-items:center;justify-content:space-between}
 .inputs-wrapper_column{flex-direction:column}
-.input-one-number{display:flex;align-items:center;justify-content:center;width:min(19vw,95px);height:min(19vw,95px);color:#181818;text-align:center;font-weight:700;line-height:150%}
+.input-one-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(19vw, 95px);
+    height: min(19vw, 95px);
+    color: #181818;
+    text-align: center;
+    font-weight: 700;
+    line-height: 150%;
+}
+.input-one-number_new {
+    width: clamp(47px, 14.69vw, 75.21px);
+    height: clamp(47px, 14.69vw, 75.21px);
+    min-height: unset;
+    background: #F6F6FB;
+    border: clamp(1.5px, 0.47vw, 2.41px) solid #CCCCCC;
+}
 .checkbox{}
 .checkbox__label{display:flex;align-items:flex-start;max-width:95%;color:#181818;font-size:min(4.0625vw,20.3px);font-weight:500;line-height:119%}
 .checkbox__checkbox-hidden{display:none}

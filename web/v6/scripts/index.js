@@ -47,7 +47,7 @@ if (mainTimer && bottomTimer && timerText /*&& circle*/ && topTimerBlock && bott
       const stopButton = document.querySelector('.bottom-fixed__stop');
       if (stopButton) {
           stopButton.innerHTML = `<div class="bottom-fixed__description-wrapper">
-      <img class="bottom-fixed__icon" src="../../web/v5/images/time-icon.webp" alt="Yamaguchi">
+      <img class="bottom-fixed__icon" src="../../web/v6/images/time-icon.webp" alt="Yamaguchi">
       <span>Выбрать время массажа</span>
     </div>`;
           stopButton.classList.add('bottom-fixed__stop_choose-time');

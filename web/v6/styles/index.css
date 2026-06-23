@@ -1536,7 +1536,7 @@
     width: clamp(294px, 91.88vw, 470.43px);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .chair-model-name {
@@ -1554,12 +1554,14 @@
 }
 
 .language-switch {
+    margin: 0 0 0 auto;
     padding: clamp(4.5px, 1.41vw, 7.22px) clamp(12px, 3.75vw, 19.2px) clamp(4.5px, 1.41vw, 7.22px) clamp(4px, 1.25vw, 6.4px);
     display: flex;
     align-items: center;
     column-gap: clamp(4px, 1.25vw, 6.4px);
     background: #F1F1F1;
     border-radius: clamp(12.15px, 3.8vw, 19.46px);
+    text-decoration: none;
 }
 
 .language-switch__flag {
@@ -2285,4 +2287,86 @@
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
+}
+
+
+
+.code-input-page {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.code-input-page__title {
+    width: clamp(300px, 93.75vw, 480px);
+    margin: 0 auto clamp(82px, 25.62vw, 131.17px);
+    font-size: clamp(15px, 4.69vw, 24.01px);
+    letter-spacing: 0;
+}
+
+.code-input-page__phone {
+    color: #F46B58;
+}
+
+
+.sms-code-form {
+    width: clamp(274px, 85.63vw, 438.43px);
+    margin: 0 auto clamp(48px, 15vw, 76.8px);
+    position: relative;
+}
+
+.sms-code-form__input-wrapper {
+    width: max-content;
+    margin: 0 auto clamp(24px, 7.5vw, 38.4px);
+    display: flex;
+    column-gap: clamp(15px, 4.69vw, 24.01px);
+}
+
+.sms-code-form__error-msg {
+    width: clamp(274px, 85.63vw, 438.43px);
+    position: absolute;
+    left: 0;
+    top: clamp(45px, 14.06vw, 71.99px);
+    font-size: clamp(14px, 4.38vw, 22.43px);
+}
+
+.sms-code-form__submit-btn {
+    width: clamp(274px, 85.63vw, 438.43px);
+    height: clamp(45px, 14.06vw, 71.99px);
+    margin: 0 auto clamp(8px, 2.5vw, 12.8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: clamp(10px, 3.13vw, 16.03px);
+    /*background: #E03638;*/
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(15px, 4.69vw, 24.01px);
+    line-height: 118.2%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.new-code-period {
+    width: clamp(274px, 85.63vw, 438.43px);
+    height: clamp(45px, 14.06vw, 71.99px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: clamp(10px, 3.13vw, 16.03px);
+    background: #F1F1F1;
+}
+
+.new-code-period_hidden {
+    opacity: 0;
+}
+
+.new-code-period__description {
+    width: max-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(15px, 4.69vw, 24.01px);
+    line-height: 1;
+    text-align: center;
+    color: #4C4E56;
 }

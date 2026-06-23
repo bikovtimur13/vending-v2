@@ -33,66 +33,33 @@
         alt="Yamaguchi"/>
 </header>
 
-<main>
-  <div class="screen auth-page">
+<main class="main">
+  <div class="screen code-input-page">
     <div class="screen__container">
       <div class="screen__body">
-        <h2 class="screen__title auth-page__title">
-          Для включения массажного кресла,<br>
-          пожалуйста, авторизуйтесь
+        <h2 class="screen__title code-input-page__title">
+          Мы отправили Вам 4-значный<br>
+          код на номер <span class="code-input-page__phone">+ 7 903 217 42 50</span>,<br>
+          введите его ниже
         </h2>
 
-        <p class="auth-page__returning screen__text">
-          Все внесённые средства<br>
-          за массаж будут зачислены Вам<br>
-          в виде баллов для покупки товаров<br>
-          в наших салонах. <button class="auth-page__details open-popup">Подробно</button>
-        </p>
-
-        <form class="form auth-page-form"
-              action=""
-        >
-          <div class="auth-page-form__input-wrapper">
-            <input
-                    class="auth-page-form__input input input-number number-input"
-                    type="tel"
-                    name="phone"
-                    minlength="10"
-                    placeholder="+ 7 *** *** ** **"
-                    required />
-
-            <p class="error-notice auth-page-form__error-msg">Номер набран неверно</p>
+        <form action="" class="sms-code-form form _js-code-form">
+          <div class="sms-code-form__input-wrapper mb20">
+            <input type="number" class="input input-one-number input-one-number_new" required>
+            <input type="number" class="input input-one-number input-one-number_new" required>
+            <input type="number" class="input input-one-number input-one-number_new" required>
+            <input type="number" class="input input-one-number input-one-number_new" required>
           </div>
-          <button class="auth-page-form__submit submit-btn universal-red-btn">
-            <p class="universal-red-btn__description">
-              Войти
+          <p class="sms-code-form__error-msg error-notice error-notice_bold">
+            код неверный
+          </p>
+          <button class="sms-code-form__submit-btn btn submit-btn btn-disabled">Отправить</button>
+          <div class="new-code-period new-code-period_hidden">
+            <p class="new-code-period__description">
+              Новый код – через <span class="new-code-period__time">00:03</span>
             </p>
-          </button>
+          </div>
         </form>
-
-        <div class="y-resources-card">
-          <div class="y-resources-card__app-row">
-            <p class="y-resources-card__app-sign-in">
-              Или войти через
-            </p>
-
-            <a class="y-app-badge" href="">
-              <img class="y-app-badge__y-icon" src="../../web/v6/images/y-app-badge__y-icon.webp" alt="Ямагучи">
-              <p class="y-app-badge__description">
-                Приложение
-              </p>
-            </a>
-          </div>
-
-          <div class="y-resources-card__stores">
-            <a class="y-resources-card__store-link" href="">
-              <img class="y-resources-card__store-icon" src="../../web/v6/images/app-store.webp" alt="эпп стор">
-            </a>
-            <a class="y-resources-card__store-link" href="">
-              <img class="y-resources-card__store-icon" src="../../web/v6/images/google-play.webp" alt="гугл плей">
-            </a>
-          </div>
-        </div>
 
       </div>
 
@@ -117,11 +84,11 @@
               English
             </p>
 
-<!--            <img class="language-switch__flag" src="../../web/v6/images/russia-flag.webp" alt="флаг">-->
+            <!--            <img class="language-switch__flag" src="../../web/v6/images/russia-flag.webp" alt="флаг">-->
 
-<!--            <p class="language-switch__name">-->
-<!--              Русский-->
-<!--            </p>-->
+            <!--            <p class="language-switch__name">-->
+            <!--              Русский-->
+            <!--            </p>-->
           </a>
         </div>
       </footer>

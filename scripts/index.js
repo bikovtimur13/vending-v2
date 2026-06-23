@@ -97,6 +97,26 @@ function codeFormScript() {
     if (valid) {
       codeFormSubmitBtn.classList.remove('btn-disabled');
       codeFormSubmitBtn.dispatchEvent(new CustomEvent('validInputs'));
+
+      const newCodePeriod = document.querySelector('.new-code-period');
+      if (newCodePeriod) {
+          newCodePeriod.classList.remove('new-code-period_hidden');
+          const time = newCodePeriod.querySelector('.new-code-period__time');
+          const timerInterval = setInterval(() => {
+            const currentTimeStr = time.textContent;
+            const [minutesStr, secondsStr] = currentTimeStr.split(':');
+            let timeInSeconds = (+minutesStr) * 60 + (+secondsStr);
+            timeInSeconds--;
+            if (timeInSeconds>=0) {
+              const minutes = Math.floor(timeInSeconds / 60);
+              const seconds = timeInSeconds % 60;
+              time.innerHTML = `${minutes < 10? '0'+minutes : minutes}:${seconds < 10? '0' + seconds : seconds}`;
+            }
+            if (timeInSeconds < 0) {
+              clearInterval(timerInterval);
+            }
+          }, 1000)
+      }
     } else {
       codeFormSubmitBtn.classList.add('btn-disabled');
       codeFormSubmitBtn.dispatchEvent(new CustomEvent('notValidInputs'));
