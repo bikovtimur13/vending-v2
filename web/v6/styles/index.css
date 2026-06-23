@@ -2466,5 +2466,120 @@
 }
 
 .agreement-popup {
+}
 
+.agreement-popup__head {
+    margin: 0 0 clamp(14px, 4.38vw, 22.43px);
+}
+
+.agreement-popup__close-btn {
+    width: clamp(24px, 7.5vw, 38.4px);
+    height: clamp(24px, 7.5vw, 38.4px);
+}
+
+.agreement-popup__proceed-btn {
+    width: clamp(288px, 90vw, 460.8px);
+    height: clamp(45px, 14.06vw, 71.99px);
+    margin: 0 auto;
+}
+
+.agreement-popup__close-icon {
+    width: clamp(24px, 7.5vw, 38.4px);
+}
+
+.agreement-popup__window {
+    padding: clamp(20px, 6.25vw, 32px) clamp(14px, 4.38vw, 22.43px);
+}
+
+.agreement-popup__info {
+    row-gap: clamp(10px, 3.13vw, 16.03px);
+    margin: 0 0 clamp(18px, 5.63vw, 28.83px);
+}
+
+.agreement-popup__descr {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(11px, 3.44vw, 17.61px);
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #575757;
+}
+
+.agreement-popup__descr:not(:last-child) {
+    margin: 0;
+}
+
+.agreement-popup__title {
+    width: max-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(15px, 4.69vw, 24.01px);
+    line-height: 150%;
+    color: #383838;
+}
+
+
+
+.subscription-popup {
+
+}
+
+.subscription-popup__window {
+    padding: clamp(20px, 6.25vw, 32px) clamp(14px, 4.38vw, 22.43px);
+    border-radius: clamp(15px, 4.69vw, 24.01px) clamp(15px, 4.69vw, 24.01px) 0 0;
+}
+
+.subscription-popup__head {
+    margin: 0 0 clamp(14px, 4.38vw, 22.43px);
+}
+
+.subscription-popup__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(15px, 4.69vw, 24.01px);
+    line-height: 150%;
+    color: #383838;
+}
+
+.subscription-popup__close-btn {
+    width: clamp(24px, 7.5vw, 38.4px);
+    height: clamp(24px, 7.5vw, 38.4px);
+}
+
+.subscription-popup__close-icon {
+    width: clamp(24px, 7.5vw, 38.4px);
+}
+
+.subscription-popup__info {
+    display: flex;
+    margin: 0 0 clamp(18px, 5.63vw, 28.83px);
+    flex-direction: column;
+    row-gap: clamp(8px, 2.5vw, 12.8px);
+}
+
+.subscription-popup .subscription-popup__descr {
+    color: #575757;
+}
+
+.subscription-popup__descr {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(11px, 3.44vw, 17.61px);
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #575757;
+}
+
+.subscription-popup__descr:not(:last-child) {
+    margin: 0;
+}
+
+.subscription-popup__proceed-btn {
+    width: clamp(288px, 90vw, 460.8px);
+    height: clamp(45px, 14.06vw, 71.99px);
 }

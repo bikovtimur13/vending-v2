@@ -51,7 +51,7 @@ try {
 try {
   new Modal(
     'subscription-popup',
-    'subscription-popup__close-btn',
+    '_js_subscription-popup__close-btn',
     'subscription-popup__open-popup'
   );
 } catch (err) {
@@ -59,7 +59,7 @@ try {
 }
 
 try {
-  new Modal('agreement-popup', 'agreement-popup__close-btn', 'agreement-popup__open-popup');
+  new Modal('agreement-popup', '_js_agreement-popup__close-btn', 'agreement-popup__open-popup');
 } catch (err) {
   console.error(err);
 }
