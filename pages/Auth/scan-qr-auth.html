@@ -31,63 +31,34 @@
 
 <body>
 
-<header class="profile-header">
-  <div class="profile-header__container">
-    <div class="profile-header__left-part">
-      <img class="profile-header__avatar" src="../../web/v5/images/profile-header-avatar.webp" alt="аватар">
-
-      <div class="profile-header__content">
-        <p class="profile-header__name">
-          Петрова Василиса
-        </p>
-
-        <div class="profile-header__bonus-row">
-          <p class="profile-header__points">
-            Бонусы: <span class="profile-header__points_count">30 000</span>
-          </p>
-
-          <a class="profile-header__details" href="">
-            Подробнее
-
-            <img class="profile-header__details-arrow" src="../../web/v5/images/profile-header-details-arrow.webp" alt="стрелка">
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="profile-header__right-part">
-      <a class="personal-account-link" href="">
-        Личный<br>
-        кабинет
-      </a>
-    </div>
-  </div>
+<header class="auth-header">
+  <img  class="auth-header__y-logo"
+        src="../../web/v5/images/auth-header-y-logo.webp"
+        alt="Yamaguchi"/>
 </header>
 
 <main class="main">
-  <div class="screen unavailable">
+  <div class="screen scan-qr-auth">
     <div class="screen__container">
       <div class="screen__body">
-        <h2 class="screen__title">
-          <span class="unavailable__user-name">Александр Зенин</span>,<br>
-          Извините, кресло <span class="unavailable__chair-name">DM01234</span><br>
-          временно недоступно
+        <h2 class="screen__title scan-qr-auth__title">
+          Извините, не отсканирован<br>
+          QR-код на кресле
         </h2>
 
         <div class="support-card">
           <div class="support-card__container">
-            <p class="support-card__description support-card__description_not-available screen__text">
-              Кресло подключится через минуту.<br>
-              Или обратитесь в службу<br>
-              поддержки по номеру:
+            <p class="scan-qr-auth__description screen__text">
+              Для входа в личный кабинет<br>
+              авторизуйтесь.
             </p>
-
-            <p class="support-card__phone">
-              8 800 333 12 81
-            </p>
-
-            <a class="scan-btn universal-red-btn" href="">
-              <p class="scan-btn__description universal-red-btn__description">
+            <a class="sign-in-btn" href="">
+              <p class="sign-in-btn__description">
+                Войти
+              </p>
+            </a>
+            <a class="scan-qr-btn universal-red-btn" href="">
+              <p class="scan-qr-btn__description universal-red-btn__description">
                 Сканировать Qr-код
               </p>
             </a>
