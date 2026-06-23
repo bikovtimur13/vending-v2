@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+          http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+  <link
+          rel="stylesheet"
+          href="../../styles/normalize.css" />
+  <link
+          rel="stylesheet"
+          href="../../styles/reset.css" />
+  <link
+          rel="stylesheet"
+          href="../../styles/index.css" />
+  <link
+          rel="stylesheet"
+          href="../../web/v6/styles/index.css" />
+  <script
+          defer
+          src="../../scripts/index.js"></script>
+  <title>Vending</title>
+</head>
+<body>
+
+<header class="auth-header">
+  <img  class="auth-header__y-logo"
+        src="../../web/v6/images/auth-header-y-logo.webp"
+        alt="Yamaguchi"/>
+</header>
+
+<main class="main">
+  <div class="screen registration-page">
+    <div class="screen__container">
+      <div class="screen__body">
+        <h2 class="screen__title registration-page__title">
+          Введите недостающие данные,<br>
+          чтобы завершить регистрацию
+        </h2>
+
+        <form class="sign-up-form _js-registration-form mb15"
+              action=""
+        >
+          <div class="sign-up-form__inputs">
+            <div class="input-wrapper">
+              <input
+                      class="sign-up-form__input input registration-input not-valid error"
+                      type="text"
+                      name="name"
+                      required
+                      placeholder="Имя" />
+              <div class="error-notice error-notice_bold">имя неверно</div>
+            </div>
+            <div class="input-wrapper">
+              <input
+                      class="sign-up-form__input input registration-input"
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      required />
+              <div class="error-notice error-notice_bold">e-mail неверен</div>
+            </div>
+          </div>
+
+          <button class="sign-up-form__submit-btn btn submit-btn registration-submit-btn btn-disabled">
+            Получить массаж
+          </button>
+
+          <div class="sign-up-form__checkbox checkbox error">
+            <label class="checkbox__label">
+              <input
+                      type="checkbox"
+                      name="agreement"
+                      class="checkbox__checkbox-hidden _js-agreement-checkbox" />
+              <span class="checkbox__checkbox-custom"></span>
+              <span class="checkbox__descr agreement-popup__open-popup">
+                Я даю согласие на обработку<br>
+                <a class="sign-up-form__link agreement-popup__open-popup" href="">персональных данных</a>.
+              </span>
+            </label>
+            <div class="error-notice">
+              <img class="error-notice__icon" src="../../images/warning.svg" alt="Warning">
+              Требуется Ваше согласие на обработку Ваших персональных данных
+            </div>
+          </div>
+
+          <div class="sign-up-form__checkbox checkbox">
+            <label class="checkbox__label">
+              <input
+                      type="checkbox"
+                      name="subscription"
+                      class="checkbox__checkbox-hidden" />
+              <span class="checkbox__checkbox-custom"></span>
+              <span class="checkbox__descr subscription-popup__open-popup">
+                Я даю согласие на получение<br>
+                еще <a href="" class="subscription-popup__open-popup sign-up-form__link">1000 баллов за подписку</a>.
+              </span>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <footer class="screen__footer">
+        <p class="legal-info">
+          ООО «РОМАШКА ПЛЮС», ИНН 5635373563, <br>
+          ОГРН 54623452352435136, Адрес: 108814, <br>
+          г. Москва, п. Сосенское, п. Коммунарка, ул, <br>
+          Фитаревская, д.19, кв. 214. Spirit <br>
+          <a class="legal-info_bold">Договор оферты</a>
+        </p>
+
+        <div class="screen__last-row">
+          <p class="chair-model-name">
+            Кресло DM01234
+          </p>
+
+          <a class="language-switch" href="">
+            <img class="language-switch__flag" src="../../web/v6/images/england-flag.webp" alt="флаг">
+
+            <p class="language-switch__name">
+              English
+            </p>
+
+            <!--            <img class="language-switch__flag" src="../../web/v6/images/russia-flag.webp" alt="флаг">-->
+
+            <!--            <p class="language-switch__name">-->
+            <!--              Русский-->
+            <!--            </p>-->
+          </a>
+        </div>
+      </footer>
+
+      <div class="popup subscription-popup">
+        <div class="popup__window">
+          <div class="popup__head">
+            <h3 class="popup__title">1000 баллов за подписку</h3>
+            <button class="popup__close-btn popup__close-btn_clear subscription-popup__close-btn">
+              <img
+                      src="../../images/close-icon.svg"
+                      alt="Закрыть" />
+            </button>
+          </div>
+          <div class="popup__info mb15">
+            <p class="popup__descr">
+              Все деньги внесенные за массаж возвращаются баллами на ваш бонусный счет. Скидки и баллы
+              не суммируются.
+            </p>
+            <p class="popup__descr">Баллы нельзя использовать на оплату массажа.</p>
+            <p class="popup__descr">
+              Баллы можно потратить на ТОВАРЫ в фирменных салонах Yamaguchi, на сайте и в приложении
+              Yamaguchi.ru.
+            </p>
+            <p class="popup__descr">
+              Накопленные баллы Вы можете использовать для оплаты ваших последующих покупок по курсу 1
+              балл = 1 рубль.
+            </p>
+            <p class="popup__descr">
+              Оплатить баллами вы можете до 50% стоимости любого товара стоимостью от 1600 рублей.
+            </p>
+            <p class="popup__descr">Скидки и баллы не суммируются.</p>
+          </div>
+          <button class="popup__close-btn btn subscription-popup__close-btn">Продолжить</button>
+        </div>
+      </div>
+
+      <div class="popup agreement-popup">
+        <div class="popup__window">
+          <div class="popup__head">
+            <h3 class="popup__title">О персональных данных</h3>
+            <button class="popup__close-btn popup__close-btn_clear agreement-popup__close-btn">
+              <img
+                      src="../../images/close-icon.svg"
+                      alt="Закрыть" />
+            </button>
+          </div>
+          <div class="popup__info mb15">
+            <p class="popup__descr">
+              Во исполнения требований Федерального закона от 27.07.2006 N 152-ФЗ "О персональных
+              данных".
+            </p>
+            <p class="popup__descr">
+              Я, даю своё согласие на автоматизированную, а также без использования средств
+              автоматизации, обработку, а именно: сбор, запись, систематизацию, накопление, хранение,
+              уточнение (обновление, изменение), извлечение, использование, распространение (в том
+              числе передачу третьим лицам), обезличивание, блокирование, удаление, уничтожение моих
+              персональных данных.
+            </p>
+            <p class="popup__descr">
+              Соглашаюсь на получение от Общества уведомлений, запросов, информационных и/или
+              рекламных материалов, акций, предложений, информирование о мероприятиях и проведение
+              опросов, предоставление информации, а также иной информации по имеющимся у Общества моим
+              контактным данным.
+            </p>
+            <p class="popup__descr">
+              Соглашаюсь с тем, что персональные данные, указанные мною, могут быть переданы Обществом
+              третьим лицам – компаниям, входящим в структуру группы компаний Общества.
+            </p>
+          </div>
+          <button class="popup__close-btn btn agreement-popup__close-btn">Продолжить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

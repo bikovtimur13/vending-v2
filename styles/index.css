@@ -136,7 +136,17 @@ body{display:flex;flex-direction:column;min-height:100vh;font-family:'Montserrat
 .checkbox__checkbox-custom{display:block;width:min(7.5vw,37.5px);height:min(7.5vw,37.5px);margin-right:5%;background-image:url('../images/checkbox.svg');background-repeat:no-repeat;background-position:center;background-size:100%}
 .checkbox__descr{max-width:81%}
 .checkbox.error{position:relative}
-.checkbox.error::before{content:'';position:absolute;top:50%;left:50%;z-index:-1;width:min(100vw,500px);height:125%;transform:translate(-50%,-50%);background-color:#f1ff0d}
+.checkbox.error::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    width: min(100vw, 500px);
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: #f1ff0d;
+}
 .checkbox.error .checkbox__label{margin-bottom:5%;color:#e03638}
 .checkbox.error .checkbox__checkbox-custom{background-image:url('../images/red-checkbox.svg')}
 .checkbox__checkbox-hidden:checked+.checkbox__checkbox-custom{background-image:url('../images/checkbox-checked.svg')}
