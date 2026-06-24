@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+          http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+  <link
+          rel="stylesheet"
+          href="../../styles/normalize.css" />
+  <link
+          rel="stylesheet"
+          href="../../styles/reset.css" />
+  <link
+          rel="stylesheet"
+          href="../../styles/index.css" />
+  <link
+          rel="stylesheet"
+          href="../../web/v6/styles/index.css" />
+  <script
+          defer
+          src="../../scripts/index.js"></script>
+  <script
+          defer
+          src="../../web/v6/scripts/index.js"></script>
+  <title>Vending</title>
+</head>
+
+<body>
+
+<header class="profile-header">
+  <div class="profile-header__container">
+    <div class="profile-header__left-part">
+      <img class="profile-header__avatar" src="../../web/v6/images/profile-header-avatar.webp" alt="аватар">
+
+      <div class="profile-header__content">
+        <p class="profile-header__name">
+          Петрова Василиса
+        </p>
+      </div>
+    </div>
+
+    <div class="profile-header__right-part">
+      <div class="profile-header__closing-circle">
+        <img class="profile-header__closing-cross" src="../../web/v6/images/profile-header-cross.webp" alt="аватар">
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="screen personal-account-page">
+    <div class="screen__container">
+      <div class="screen__body">
+        <div class="vendi-bonus vendi-bonus_new personal-account-page__bonus-block">
+          <div class="vendi-bonus__content vendi-bonus__content_new">
+            <h2 class="vendi-bonus__title">Ваш баланс</h2>
+            <p class="vendi-bonus__value">250 <span>бонусов</span></p>
+          </div>
+          <p class="vendi-bonus__info vendi-bonus__info_new">1 бонус = 1 рубль</p>
+        </div>
+
+        <a class="spend-bonuses universal-red-btn" href="">
+          <p class="spend-bonuses__description universal-red-btn__description">
+            Потратить баллы
+          </p>
+        </a>
+
+        <div class="account-menu">
+          <button class="account-menu-item account-menu-item_points">
+            <div class="account-menu-item__container">
+              <p class="account-menu-item__description">
+                Подробнее о баллах
+              </p>
+
+              <img class="account-menu-item__arrow" src="../../web/v6/images/account-menu-item__arrow.webp" alt="стрелка">
+            </div>
+          </button>
+
+          <a class="account-menu-item" href="">
+            <div class="account-menu-item__container">
+              <p class="account-menu-item__description">
+                Договор оферты
+              </p>
+
+              <img class="account-menu-item__arrow" src="../../web/v6/images/account-menu-item__arrow.webp" alt="стрелка">
+            </div>
+          </a>
+
+          <a class="account-menu-item" href="">
+            <div class="account-menu-item__container">
+              <p class="account-menu-item__description">
+                Способы оплаты
+              </p>
+
+              <img class="account-menu-item__arrow" src="../../web/v6/images/account-menu-item__arrow.webp" alt="стрелка">
+            </div>
+          </a>
+
+          <a class="account-menu-item" href="">
+            <div class="account-menu-item__container">
+              <p class="account-menu-item__description account-menu-item__description_exit">
+                Выйти
+              </p>
+
+              <img class="account-menu-item__exit-icon" src="../../web/v6/images/account-menu-item__exit-icon.webp" alt="выход">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <footer class="screen__footer">
+        <p class="legal-info">
+          ООО «РОМАШКА ПЛЮС», ИНН 5635373563, <br>
+          ОГРН 54623452352435136, Адрес: 108814, <br>
+          г. Москва, п. Сосенское, п. Коммунарка, ул, <br>
+          Фитаревская, д.19, кв. 214. Spirit <br>
+          <a class="legal-info_bold">Договор оферты</a>
+        </p>
+
+        <div class="screen__last-row">
+          <p class="chair-model-name">
+            Кресло DM01234
+          </p>
+
+          <a class="language-switch" href="">
+            <img class="language-switch__flag" src="../../web/v6/images/england-flag.webp" alt="флаг">
+
+            <p class="language-switch__name">
+              English
+            </p>
+
+            <!--            <img class="language-switch__flag" src="../../web/v6/images/russia-flag.webp" alt="флаг">-->
+
+            <!--            <p class="language-switch__name">-->
+            <!--              Русский-->
+            <!--            </p>-->
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <div class="points-details-modal">
+      <div class="points-details-modal__overlay">
+        <div class="points-details-modal__body">
+          <img class="points-details-modal__cross" src="../../web/v6/images/points-details-modal-cross.webp" alt="крестик">
+          <div class="points-details">
+            <div class="points-details__container">
+              <h3 class="points-details__title">
+                Подробно о баллах
+              </h3>
+
+              <div class="points-details__content">
+                <p class="points-details__description">
+                  Все средства, внесённые за массаж возвращаются<br>
+                  в виде баллов на ваш бонусный счет.
+                </p>
+
+                <p class="points-details__description">
+                  Баллы нельзя использовать на оплату массажа.
+                </p>
+
+                <p class="points-details__description">
+                  Баллы можно потратить на ТОВАРЫ<br>
+                  в фирменных салонах Yamaguchi, на сайте<br>
+                  <a class="points-details__link" href="">yamaguchi.ru</a> и в <a class="points-details__link" href="">приложении Yamaguchi</a>.
+                </p>
+
+                <p class="points-details__description">
+                  Накопленные баллы можно использовать<br>
+                  для оплаты ваших последующих покупок<br>
+                  по курсу <b class="points-details__description_bold">1 балл = 1 рубль.</b>
+                </p>
+
+                <p class="points-details__description">
+                  Баллами можно оплатить до <b class="points-details__description_bold">30%</b> цены любого<br>
+                  товара стоимостью от 1600 рублей.
+                </p>
+
+                <p class="points-details__description points-details__description_bold">
+                  Скидки и баллы не суммируются.
+                </p>
+              </div>
+
+              <a class="proceed-btn universal-red-btn" href="">
+                <p class="proceed-btn__description universal-red-btn__description">
+                  Продолжить
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

@@ -285,7 +285,7 @@ if (choosePaymentMethodBtn && chosenPaymentMethod) {
   })
 }
 
-const pointsModal = new Modal('points-details-modal', 'points-details-modal__cross', 'cashback-info__learn-more');
+const pointsModal = new Modal('points-details-modal', 'points-details-modal__cross', 'cashback-info__learn-more, .account-menu-item_points');
 const overlay = document.querySelector('.points-details-modal__overlay');
 if (overlay) {
     overlay.addEventListener('click', (event) => {
