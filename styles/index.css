@@ -183,8 +183,37 @@ body{display:flex;flex-direction:column;min-height:100vh;font-family:'Montserrat
 .contract-offer-modal._active{display:block;animation:enter 0.2s ease-in-out forwards}
 .contract-offer-modal__content{display:flex;flex-direction:column;width:100%}
 .contract-offer-modal__head{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;padding:2% 0;background-color:white}
-.contract-offer-modal__title{margin:0 auto;color:#181818;font-size:min(4.7vw,23.5px);font-weight:600;line-height:150%}
+.contract-offer-modal__head_new {
+    width: clamp(300px, 93.75vw, 480px);
+    padding: clamp(53px, 16.56vw, 84.79px) 0 0;
+    margin: 0 auto clamp(20px, 6.25vw, 32px);
+}
+.contract-offer-modal__title {
+    margin: 0 auto;
+    color: #181818;
+    font-size: min(4.7vw, 23.5px);
+    font-weight: 600;
+    line-height: 150%;
+}
+.contract-offer-modal__title_new {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(15px, 4.69vw, 24.01px);
+    line-height: 150%;
+    text-align: center;
+    color: #181818;
+}
 .contract-offer-modal__close-btn{display:flex;align-items:center;justify-content:center;width:min(46.8px,9.375vw);height:min(46.8px,9.375vw);padding:0;margin:0;border:0;border-radius:50%;transform:translateX(-50%)}
+.contract-offer-modal__close-btn_new {
+    width: clamp(32px, 10vw, 51.2px);
+    height: clamp(32px, 10vw, 51.2px);
+    position: absolute;
+    left: clamp(16px, 5vw, 25.6px);
+    top: clamp(28px, 8.75vw, 44.8px);
+    border-radius: 50%;
+    box-shadow: 0 clamp(3.67px, 1.15vw, 5.89px) clamp(15.69px, 4.9vw, 25.09px) 0 #CACADD8F;
+}
 .contract-offer-modal__close-btn img{width:100%}
 .contract-offer-modal__body{}
 .contract-offer-modal__text{padding-bottom:5%;color:#181818;font-size:min(15.6px,3.125vw);font-weight:400;line-height:150%}
@@ -333,3 +362,20 @@ p{display:flex;align-items:center;justify-content:flex-start;column-gap:4%}
 .modal-payment-info__heading-icon{width:min(8.4vw,37px)}
 .modal-payment-info__text{font-family:'Montserrat';font-style:normal;font-weight:700;font-size:min(4.7vw,18px);line-height:min(6vw,25px);color:#181818}
 .modal-payment-info__sub-heading{font-family:'Montserrat';font-style:normal;font-weight:400;font-size:min(4vw,18px);line-height:min(6vw,25px);color:#939393}
+
+.contract-offer-modal__btn {
+    width: clamp(300px, 93.75vw, 480px);
+    height: clamp(45px, 14.06vw, 71.99px);
+    min-height: unset;
+    border-radius: clamp(10px, 3.13vw, 16.03px);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(15px, 4.69vw, 24.01px);
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
