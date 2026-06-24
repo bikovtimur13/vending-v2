@@ -66,9 +66,13 @@
 
 <main class="main">
   <div class="screen payment-methods-page">
+    <a class="back-btn payment-methods-page__back-btn" href="">
+      <img class="back-btn__icon" src="../../web/v6/images/back-btn-arrow.webp" alt="">
+    </a>
+
     <div class="screen__container">
       <div class="screen__body">
-        <div class="payment-method-group">
+        <section class="payment-method-group">
           <h3 class="payment-method-group__title">
             Выберите способ оплаты
           </h3>
@@ -90,7 +94,7 @@
               <img class="payment-method-btn__arrow" src="../../web/v6/images/payment-method-btn__arrow.webp" alt="">
             </a>
 
-            <a class="payment-method-btn payment-method-btn_cart" href="">
+            <a class="payment-method-btn payment-method-btn_cart payment-method-btn_cart-disabled" href="">
               <img class="payment-method-btn__icon" src="../../web/v6/images/card-payment-method.webp" alt="">
               <p class="payment-method-btn__name">
                 Привязать карту
@@ -98,39 +102,169 @@
               <img class="payment-method-btn__arrow" src="../../web/v6/images/payment-method-btn__arrow.webp" alt="">
             </a>
           </div>
-        </div>
+        </section>
 
-        <div class="payment-method-group">
+        <section class="payment-method-group">
           <h3 class="payment-method-group__title">
             Сохраненные способы оплаты
           </h3>
 
           <div class="payment-method-group__container">
-            <a class="payment-method-btn" href="">
-              <img class="payment-method-btn__icon" src="../../web/v6/images/cash-payment-method.webp" alt="">
-              <p class="payment-method-btn__name">
-                Оплата без привязки карты
-              </p>
-              <img class="payment-method-btn__arrow" src="../../web/v6/images/payment-method-btn__arrow.webp" alt="">
-            </a>
+            <label class="saved-method" for="tbank-option">
+              <div class="saved-method__top">
+                <img class="saved-method__logo" src="../../web/v6/images/t-bank-logo.webp" alt="">
 
-            <a class="payment-method-btn" href="">
-              <img class="payment-method-btn__icon" src="../../web/v6/images/sbp-payment-method.webp" alt="">
-              <p class="payment-method-btn__name">
-                Привязать СБП
-              </p>
-              <img class="payment-method-btn__arrow" src="../../web/v6/images/payment-method-btn__arrow.webp" alt="">
-            </a>
+                <div class="saved-method__info">
+                  <p class="saved-method__name">
+                    Т-Банк
+                  </p>
 
-            <a class="payment-method-btn payment-method-btn_cart" href="">
-              <img class="payment-method-btn__icon" src="../../web/v6/images/card-payment-method.webp" alt="">
-              <p class="payment-method-btn__name">
-                Привязать карту
-              </p>
-              <img class="payment-method-btn__arrow" src="../../web/v6/images/payment-method-btn__arrow.webp" alt="">
-            </a>
+                  <p class="saved-method__description">
+                    Оплата по СБП
+                  </p>
+                </div>
+
+                <p class="saved-method__currency"></p>
+
+                <div class="sm-radio">
+                  <input
+                          id="tbank-option"
+                          class="sm-radio__fake-btn"
+                          type="radio"
+                          name="saved-method"
+                          value="tbank"
+                          checked
+                  >
+
+                  <div class="sm-radio__custom-btn">
+                    <div class="sm-radio__circle"></div>
+                  </div>
+                </div>
+              </div>
+
+              <a class="saved-method__action" href="">
+                Удалить
+              </a>
+            </label>
+
+            <label class="saved-method" for="card-0">
+              <div class="saved-method__top">
+                <img class="saved-method__logo" src="../../web/v6/images/card-logo.webp" alt="">
+
+                <div class="saved-method__info">
+                  <div class="saved-method__bank-account">
+                    <p class="saved-method__name">
+                      131231********2145
+                    </p>
+
+                    <p class="saved-method__currency">
+                      RUB
+                    </p>
+                  </div>
+                </div>
+
+                <div class="sm-radio">
+                  <input
+                          id="card-0"
+                          class="sm-radio__fake-btn"
+                          type="radio"
+                          name="saved-method"
+                          value="card-0"
+                  >
+
+                  <div class="sm-radio__custom-btn">
+                    <div class="sm-radio__circle"></div>
+                  </div>
+                </div>
+              </div>
+
+              <a class="saved-method__action" href="">
+                Удалить
+              </a>
+            </label>
+
+            <label class="saved-method" for="card-1">
+              <div class="saved-method__top">
+                <img class="saved-method__logo" src="../../web/v6/images/card-logo.webp" alt="">
+
+                <div class="saved-method__info">
+                  <div class="saved-method__bank-account">
+                    <p class="saved-method__name">
+                      234231********2145
+                    </p>
+
+                    <p class="saved-method__currency">
+                      UZS
+                    </p>
+                  </div>
+
+                  <p class="saved-method__description saved-method__description_test">
+                    тестовая карта
+                  </p>
+                </div>
+
+                <div class="sm-radio">
+                  <input
+                          id="card-1"
+                          class="sm-radio__fake-btn"
+                          type="radio"
+                          name="saved-method"
+                          value="card-1"
+                  >
+
+                  <div class="sm-radio__custom-btn">
+                    <div class="sm-radio__circle"></div>
+                  </div>
+                </div>
+              </div>
+
+              <a class="saved-method__action" href="">
+                Удалить
+              </a>
+            </label>
+
+            <label class="saved-method" for="card-2">
+              <div class="saved-method__top">
+                <img class="saved-method__logo" src="../../web/v6/images/card-logo.webp" alt="">
+
+                <div class="saved-method__info">
+                  <div class="saved-method__bank-account">
+                    <p class="saved-method__name">
+                      531951********1146
+                    </p>
+
+                    <p class="saved-method__currency">
+                      RUB
+                    </p>
+                  </div>
+
+                  <p class="saved-method__description saved-method__description_unavailable">
+                    оплата кресла не доступна
+                  </p>
+                </div>
+
+                <div class="sm-radio sm-radio_unavailable">
+                  <input
+                          id="card-2"
+                          class="sm-radio__fake-btn"
+                          type="radio"
+                          name="saved-method"
+                          value="card-2"
+                          disabled
+                  >
+
+                  <div class="sm-radio__custom-btn">
+                    <div class="sm-radio__circle"></div>
+                  </div>
+                </div>
+              </div>
+
+              <a class="saved-method__action" href="">
+                Удалить
+              </a>
+            </label>
           </div>
-        </div>
+        </section>
 
       </div>
 

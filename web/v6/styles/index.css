@@ -2583,3 +2583,388 @@
     width: clamp(288px, 90vw, 460.8px);
     height: clamp(45px, 14.06vw, 71.99px);
 }
+
+
+
+.payment-methods-page {
+    padding: clamp(68px, 21.25vw, 108.8px) 0 0;
+}
+
+.payment-methods-page__back-btn {
+    position: absolute;
+    left: clamp(14px, 4.38vw, 22.43px);
+    top: clamp(92px, 28.75vw, 147.2px);
+    z-index: 100;
+}
+
+.payment-method-group {
+    margin: 0 0 clamp(16px, 5vw, 25.6px) clamp(13px, 4.06vw, 20.79px);
+}
+
+.payment-method-group__title {
+    width: max-content;
+    margin: 0 0 clamp(12px, 3.75vw, 19.2px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(14px, 4.38vw, 22.43px);
+    line-height: 120%;
+    color: #2D2D2F;
+}
+
+.payment-method-group__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(8px, 2.5vw, 12.8px);
+}
+
+.payment-method-btn {
+    width: clamp(274px, 85.63vw, 438.43px);
+    height: clamp(44px, 13.75vw, 70.4px);
+    display: flex;
+    align-items: center;
+    padding: 0 clamp(8px, 2.5vw, 12.8px) 0;
+    border-radius: clamp(10px, 3.13vw, 16.03px);
+    background: #F6F6FB;
+    text-decoration: none;
+}
+
+.payment-method-btn_cart {
+    background: #FFFFFF;
+    border: clamp(1.5px, 0.47vw, 2.41px) solid #F6F6F6;
+}
+
+.payment-method-btn_cart-disabled {
+    pointer-events: none;
+}
+
+.payment-method-btn_cart-disabled * {
+    opacity: 0.4;
+}
+
+.payment-method-btn__icon {
+    width: clamp(28px, 8.75vw, 44.8px);
+    display: block;
+    margin: 0 clamp(12px, 3.75vw, 19.2px) 0 0;
+}
+
+.payment-method-btn__name {
+    width: max-content;
+    margin: 0 auto 0 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(11px, 3.44vw, 17.61px);
+    line-height: 1;
+    color: #4C4E56;
+}
+
+.payment-method-btn__arrow {
+    width: clamp(24px, 7.5vw, 38.4px);
+}
+
+.saved-method {
+    width: clamp(274px, 85.63vw, 438.43px);
+    height: clamp(74px, 23.13vw, 118.43px);
+    position: relative;
+    padding: clamp(8px, 2.5vw, 12.8px) 0 0 clamp(8px, 2.5vw, 12.8px);
+    background: #F6F6FB;
+    border-radius: clamp(10px, 3.13vw, 16.03px);
+}
+
+.saved-method__top {
+    display: flex;
+    align-items: center;
+    margin: 0 0 clamp(8px, 2.5vw, 12.8px);
+}
+
+.saved-method__logo {
+    width: clamp(28px, 8.75vw, 44.8px);
+    display: block;
+    margin: 0 clamp(12px, 3.75vw, 19.2px) 0 0;
+}
+
+.saved-method__info {
+    width: max-content;
+}
+
+.saved-method__bank-account {
+    display: flex;
+    column-gap: clamp(36px, 11.25vw, 57.6px);
+}
+
+.saved-method__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(11px, 3.44vw, 17.61px);
+    line-height: 120%;
+    color: #4C4E56;
+}
+
+.saved-method__description {
+    width: max-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(10px, 3.13vw, 16.03px);
+    line-height: 120%;
+    text-align: center;
+    color: #4C4E56;
+}
+
+.saved-method__description_test {
+    color: #16BD21;
+}
+
+.saved-method__description_unavailable {
+    color: #E03638;
+}
+
+.saved-method__currency {
+    width: max-content;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(11px, 3.44vw, 17.61px);
+    line-height: 120%;
+    color: #4C4E56;
+}
+
+.saved-method__action {
+    margin: 0 0 0 clamp(48px, 15vw, 76.8px);
+    padding: clamp(4px, 1.25vw, 6.4px) clamp(8px, 2.5vw, 12.8px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(11px, 3.44vw, 17.61px);
+    line-height: 130%;
+    color: #1F3FDE;
+    border: none;
+    outline: none;
+    border-radius: clamp(4px, 1.25vw, 6.4px);
+    background: #E9EBF5;
+    text-decoration: none;
+}
+
+.sm-radio {
+    position: absolute;
+    right: clamp(10px, 3.13vw, 16.03px);
+    top: clamp(10px, 3.13vw, 16.03px);
+}
+
+.sm-radio__fake-btn {
+    display: none;
+}
+
+.sm-radio__fake-btn:checked + .sm-radio__custom-btn {
+    border: clamp(1.2px, 0.38vw, 1.95px) solid #828387;
+}
+
+.sm-radio__fake-btn:checked + .sm-radio__custom-btn .sm-radio__circle {
+    opacity: 1;
+    transition: opacity 0.12s linear;
+}
+
+.sm-radio__custom-btn {
+    width: clamp(20px, 6.25vw, 32px);
+    height: clamp(20px, 6.25vw, 32px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: clamp(1px, 0.31vw, 1.59px) solid #828387;
+}
+
+.sm-radio__circle {
+    opacity: 0;
+    width: clamp(10px, 3.13vw, 16.03px);
+    height: clamp(10px, 3.13vw, 16.03px);
+    border-radius: 50%;
+    background: #E6332A;
+    transition: opacity 0.16s linear;
+}
+
+.sm-radio_unavailable {
+}
+
+.sm-radio_unavailable .sm-radio__custom-btn {
+    border: clamp(1px, 0.31vw, 1.59px) solid #E5E5ED;
+}
+
+.back-btn {
+    width: clamp(32px, 10vw, 51.2px);
+    height: clamp(32px, 10vw, 51.2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0 clamp(3.67px, 1.15vw, 5.89px) clamp(15.69px, 4.9vw, 25.09px) 0 #CACADD8F;
+}
+
+.back-btn__icon {
+    width: clamp(24px, 7.5vw, 38.4px);
+}
+
+
+
+.payment-history-page {}
+
+.payment-history-page__back-btn {
+    position: absolute;
+    left: clamp(14px, 4.38vw, 22.43px);
+    top: clamp(82px, 25.62vw, 131.17px);
+    z-index: 100;
+}
+
+.payment-history-page__title {
+    width: max-content;
+    margin: 0 auto clamp(12px, 3.75vw, 19.2px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(14px, 4.38vw, 22.43px);
+    line-height: 120%;
+    text-align: center;
+    color: #2D2D2F;
+}
+
+.payment-history-page__records {
+    margin: 0 0 clamp(37px, 11.56vw, 59.19px) clamp(13px, 4.06vw, 20.79px);
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(8px, 2.5vw, 12.8px);
+}
+
+.payment-record-group {
+}
+
+.payment-record-group__date {
+    display: block;
+    width: max-content;
+    margin: 0 0 clamp(4px, 1.25vw, 6.4px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(11px, 3.44vw, 17.61px);
+    line-height: 140%;
+    color: #828387;
+}
+
+.payment-record-group__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(8px, 2.5vw, 12.8px);
+}
+
+.payment-record {
+    width: clamp(274px, 85.63vw, 438.43px);
+    height: clamp(92px, 28.75vw, 147.2px);
+    padding: clamp(8px, 2.5vw, 12.8px) 0 0 clamp(8px, 2.5vw, 12.8px);
+    position: relative;
+    display: flex;
+    background: #F6F6FB;
+    border-radius: clamp(10px, 3.13vw, 16.03px);
+}
+
+.payment-record__icon {
+    width: clamp(28px, 8.75vw, 44.8px);
+    height: clamp(28px, 8.75vw, 44.8px);
+    display: block;
+    margin: 0 clamp(12px, 3.75vw, 19.2px) 0 0;
+}
+
+.payment-record__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: clamp(6px, 1.88vw, 9.63px);
+}
+
+.payment-record__summary {
+    width: max-content;
+}
+
+.payment-record__amount {
+    width: max-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(11px, 3.44vw, 17.61px);
+    line-height: 120%;
+    color: #4C4E56;
+}
+
+.payment-record__order-number {
+    width: clamp(137px, 42.81vw, 219.19px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(10px, 3.13vw, 16.03px);
+    line-height: 120%;
+    word-break: break-all;
+    color: #828387;
+}
+
+.payment-record__description {
+    width: clamp(185px, 57.81vw, 295.99px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(10px, 3.13vw, 16.03px);
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #4C4E56;
+}
+
+.payment-record__cart-number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(10px, 3.13vw, 16.03px);
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #4C4E56;
+}
+
+.payment-record__status {
+    position: absolute;
+    right: clamp(8px, 2.5vw, 12.8px);
+    top: clamp(8px, 2.5vw, 12.8px);
+    padding: clamp(4px, 1.25vw, 6.4px) clamp(8px, 2.5vw, 12.8px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(10px, 3.13vw, 16.03px);
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    border-radius: clamp(99px, 30.94vw, 158.41px);
+}
+
+.payment-record__status_failure {
+    color: #E03638;
+    background: #F5E9EA;
+}
+
+.payment-record__status_success {
+    color: #3FA31D;
+    background: #E9F5EA;
+}
+
+.payment-record__time {
+    position: absolute;
+    right: clamp(8px, 2.5vw, 12.8px);
+    bottom: clamp(8px, 2.5vw, 12.8px);
+    width: max-content;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(10px, 3.13vw, 16.03px);
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #828387;
+}
