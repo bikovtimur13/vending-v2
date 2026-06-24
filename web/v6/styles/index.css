@@ -2167,6 +2167,15 @@
     color: #4C4E56;
 }
 
+.auth-page-form__input_error {
+    border: clamp(1.5px, 0.47vw, 2.41px) solid #E03638;
+    color: #E03638;
+}
+
+.auth-page-form__input_error::placeholder {
+    color: #E03638;
+}
+
 .auth-page-form__error-msg {
     width: 100%;
     text-align: left;
@@ -2180,6 +2189,10 @@
     font-size: clamp(11px, 3.44vw, 17.61px);
     line-height: 120%;
     color: #E03638;
+}
+
+.auth-page-form__error-msg_hidden {
+    opacity: 0;
 }
 
 .auth-page-form__submit {

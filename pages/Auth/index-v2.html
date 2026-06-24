@@ -46,13 +46,23 @@
           Все внесённые средства<br>
           за массаж будут зачислены Вам<br>
           в виде баллов для покупки товаров<br>
-          в наших салонах. <button class="auth-page__details open-popup">Подробно</button>
+          в наших салонах. <button class="auth-page__details open-popup">Подробнее</button>
         </p>
 
         <form class="form auth-page-form"
               action=""
         >
           <div class="auth-page-form__input-wrapper">
+<!--            для сосотяния ошибки -->
+<!--            <input-->
+<!--                    class="auth-page-form__input auth-page-form__input_error input input-number number-input"-->
+<!--                    type="tel"-->
+<!--                    name="phone"-->
+<!--                    minlength="10"-->
+<!--                    placeholder="+ 7 *** *** ** **"-->
+<!--                    required />-->
+<!--            <p class="error-notice auth-page-form__error-msg">Номер набран неверно</p>-->
+
             <input
                     class="auth-page-form__input input input-number number-input"
                     type="tel"
@@ -61,7 +71,7 @@
                     placeholder="+ 7 *** *** ** **"
                     required />
 
-            <p class="error-notice auth-page-form__error-msg">Номер набран неверно</p>
+            <p class="error-notice auth-page-form__error-msg auth-page-form__error-msg_hidden">Номер набран неверно</p>
           </div>
           <button class="auth-page-form__submit submit-btn universal-red-btn">
             <p class="universal-red-btn__description">
