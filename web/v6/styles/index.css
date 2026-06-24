@@ -10,6 +10,12 @@
 .timer-circle__time{color:#2b2b2b;font-size:min(13vw,58px);font-weight:700;line-height:1}
 
 .bottom-fixed{position:fixed;left:50%;bottom:0;z-index:50;width:100%;max-width:500px;padding:10px;transform:translateX(-50%);background:rgba(255,244,232,.96);border-radius:15px 15px 0 0;box-shadow:0 -8px 30px rgba(166,93,33,.25)}
+.bottom-fixed_new {
+    background: #FFFFFFF0;
+    border: clamp(2px, 0.63vw, 3.23px) solid rgba(255, 255, 255, 0.32);
+    box-shadow: 0 0 clamp(24.1px, 7.53vw, 38.55px) 0 #FFFAF3C7 inset,
+                0 clamp(-9px, -2.81vw, -14.39px) clamp(31.68px, 9.9vw, 50.69px) 0 #A6A6A614;
+}
 .bottom-fixed__video{width:100%;margin-bottom:8px}
 .bottom-fixed__video_new {
     height: clamp(45px, 14.06vw, 71.99px);
