@@ -1544,6 +1544,7 @@
 
 .chair-model-name {
     width: max-content;
+    max-width: clamp(160px, 50vw, 256px);
     padding: clamp(8px, 2.5vw, 12.8px) clamp(10px, 3.13vw, 16.03px);
     font-family: 'Montserrat';
     font-style: normal;
@@ -1720,6 +1721,25 @@
 
 .profile-header__right-part {
     width: max-content;
+}
+
+.profile-header__avatar-wrapper {
+    width: clamp(34px, 10.63vw, 54.43px);
+    height: clamp(34px, 10.63vw, 54.43px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #383838;
+}
+
+.profile-header__avatar-letter {
+    width: max-content;
+    color: #fff;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    font-size: clamp(18px, 5.63vw, 28.83px);
+    line-height: 1;
 }
 
 .profile-header__avatar {
