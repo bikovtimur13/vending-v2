@@ -1750,7 +1750,10 @@
 }
 
 .profile-header__name {
-    width: max-content;
+    width: clamp(190px, 59.38vw, 304.03px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
