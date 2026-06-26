@@ -1767,6 +1767,7 @@
 
 .profile-header__bonus-row {
     display: flex;
+    align-items: center;
     column-gap: clamp(4px, 1.25vw, 6.4px);
 }
 
@@ -1781,6 +1782,16 @@
 
 .profile-header__points_count {
     font-weight: 500;
+}
+
+.profile-header__details-link {
+    width: max-content;
+    display: block;
+}
+
+.profile-header__details-icon {
+    width: clamp(24px, 7.5vw, 38.4px);
+    height: clamp(24px, 7.5vw, 38.4px);
 }
 
 .profile-header__details {
