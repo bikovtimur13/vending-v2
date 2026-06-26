@@ -1,5 +1,16 @@
 :root{--y-red-2:#ef5556}
 
+.b-ruble {
+    display: inline-block;
+    background: url("../images/ruble-bold.svg");
+    background-size: auto;
+    background-size: 100%;
+    width: 15px;
+    height: 18px;
+    margin: 0 2px 0 2px;
+    transform: translateY(1px);
+}
+
 .massage-timer-card{display:flex;align-items:center;justify-content:center;width:100%;height:76vw;max-width:475px;max-height:400px;background:rgba(255,255,255,.6);border-radius:20px;box-shadow:0 9.67742px 31.6774px rgba(188,134,71,.17),inset 0 0 24.1px rgba(255,250,243,.78)}
 .timer-circle{position:relative;width:69vw;height:69vw;max-width:320px;max-height:320px}
 .progress-ring{width:100%;height:100%;transform:rotate(-90deg)}
@@ -3116,6 +3127,4 @@
 .account-menu-item__exit-icon {
     width: clamp(24px, 7.5vw, 38.4px);
 }
-
-
 
