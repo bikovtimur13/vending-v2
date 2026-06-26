@@ -1394,6 +1394,7 @@
     border: clamp(1.5px, 0.47vw, 2.41px) solid #F6F6F6;
     border-radius: clamp(10px, 3.13vw, 16.03px);
     transition: opacity 0.2s 0.1s linear;
+    text-decoration: none;
 }
 
 .chosen-payment-method_choose {
