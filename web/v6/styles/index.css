@@ -1284,6 +1284,9 @@
 .period-badge {
     width: clamp(272px, 85vw, 435.2px);
     height: clamp(47px, 14.69vw, 75.21px);
+    max-width: unset;
+    min-height: unset;
+    padding: 0;
     position: relative;
     display: flex;
     justify-content: center;
