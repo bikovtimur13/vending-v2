@@ -1281,6 +1281,13 @@
     row-gap: clamp(14px, 4.38vw, 22.43px);
 }
 
+.period-form {
+    width: max-content;
+    height: max-content;
+    display: block;
+    position: relative;
+}
+
 .period-badge {
     width: clamp(272px, 85vw, 435.2px);
     height: clamp(47px, 14.69vw, 75.21px);
@@ -1294,10 +1301,8 @@
     background: #FFFFFF;
     border: clamp(1.5px, 0.47vw, 2.41px) solid #CCCCCC;
     border-radius: clamp(10px, 3.13vw, 16.03px);
-}
 
-.period-badge__description {
-    width: max-content;
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -1318,9 +1323,6 @@
 .period-badge_free {
     background: #E03638;
     border: clamp(1.5px, 0.47vw, 2.41px) solid #FF8889;
-}
-
-.period-badge__description_free {
     color: #FFFFFF;
 }
 
@@ -1476,6 +1478,7 @@
     background: #FFFFFF;
     border: clamp(1.5px, 0.47vw, 2.41px) solid #575757;
     border-radius: clamp(10px, 3.13vw, 16.03px);
+    text-decoration: none;
 }
 
 .maintenance-badge__description {
