@@ -15,297 +15,329 @@
 </head>
 
 <body>
-<header class="header auth">
-  <div class="container flex-container">
-    <img src="../../web/v6/images/logo.svg" alt="Yamaguchi" class="logo logo-not-100">
-    <a href="#" class="profile" aria-label="Личный кабинет">
-      <img src="../../web/v6/images/profile-icon.svg" alt="" class="profile__avatar">
-    </a>
+<header class="profile-header">
+  <div class="profile-header__container">
+    <div class="profile-header__left-part">
+      <div class="profile-header__avatar-wrapper">
+        <!--        <img class="profile-header__avatar" src="../../web/v6/images/profile-header-avatar.webp" alt="аватар">-->
+        <p class="profile-header__avatar-letter">
+          П
+        </p>
+      </div>
+
+      <div class="profile-header__content">
+        <p class="profile-header__name">
+          Петрова Василиса
+        </p>
+
+        <div class="profile-header__bonus-row">
+          <p class="profile-header__points">
+            Бонусы: <span class="profile-header__points_count">30 000</span>
+          </p>
+
+          <a class="profile-header__details-link" href="">
+            <img class="profile-header__details-icon" src="../../web/v6/images/profile-header-info-circle.webp" alt="стрелка">
+          </a>
+          <!--          <a class="profile-header__details" href="">-->
+          <!--            Подробнее-->
+
+          <!--            <img class="profile-header__details-arrow" src="../../web/v6/images/profile-header-details-arrow.webp" alt="стрелка">-->
+          <!--          </a>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-header__right-part">
+      <a class="personal-account-link" href="">
+        Личный<br>
+        кабинет
+      </a>
+    </div>
   </div>
 </header>
 
-<main class="main vending-v2">
-  <div class="container">
+<main class="main ">
+  <div class="screen vending-v2">
+    <div class="screen__container">
+      <div class="screen__body">
+        <section class="m-timer-card" id="topTimerBlock">
+          <p class="m-timer-card__text">
+            До окончания<br>массажа осталось
+          </p>
 
-    <section class="m-timer-card" id="topTimerBlock">
-      <p class="m-timer-card__text">
-        До окончания<br>массажа осталось
-      </p>
-
-      <!--        todo: to uncomment -->
-<!--      <p class="m-timer-card__time" id="mainTimer">00:05</p>-->
-      <p class="m-timer-card__time" id="mainTimer">10:00</p>
-      <img class="m-timer-card__spinner undraggable-image"
+          <!--        todo: to uncomment -->
+          <!--      <p class="m-timer-card__time" id="mainTimer">00:05</p>-->
+          <p class="m-timer-card__time" id="mainTimer">10:00</p>
+          <img class="m-timer-card__spinner undraggable-image"
                src="../../web/v6/images/spinner.webp"
                alt="загрузка"
                loading="lazy"
-       >
-    </section>
-
-    <div class="two-proposition-cards">
-      <div class="proposition-card proposition-card_bonuses">
-        <div class="proposition-card__container">
-          <img class="proposition-card__icon"
-               src="../../web/v6/images/bonuses-icon-v2.webp"
-               alt="кресло"
-               loading="lazy"
           >
+        </section>
 
-          <p class="proposition-card__description proposition-card__description_bonuses">
-            Потратить<br>
-            бонусы
-          </p>
+        <div class="two-proposition-cards">
+          <a class="proposition-card proposition-card_bonuses" href="#spend-bonuses">
+            <div class="proposition-card__container">
+              <img class="proposition-card__icon"
+                   src="../../web/v6/images/bonuses-icon-v2.webp"
+                   alt="кресло"
+                   loading="lazy"
+              >
+
+              <p class="proposition-card__description proposition-card__description_bonuses">
+                Потратить<br>
+                бонусы
+              </p>
+            </div>
+          </a>
+
+          <a class="proposition-card proposition-card_gift" href="#gift">
+            <div class="proposition-card__container">
+              <img class="proposition-card__icon"
+                   src="../../web/v6/images/gift-icon-v2.webp"
+                   alt="кресло"
+                   loading="lazy"
+              >
+
+              <p class="proposition-card__description proposition-card__description_gift">
+                Получить<br>
+                30 000 руб
+              </p>
+            </div>
+          </a>
         </div>
-      </div>
 
-      <div class="proposition-card proposition-card_gift">
-        <div class="proposition-card__container">
-          <img class="proposition-card__icon"
-               src="../../web/v6/images/gift-icon-v2.webp"
-               alt="кресло"
-               loading="lazy"
-          >
+        <a class="proposition-card proposition-card_test" href="#test-chairs">
+          <div class="proposition-card__container proposition-card__container_test">
+            <p class="proposition-card__description proposition-card__description_test">
+              Протестировать массажные<br>
+              кресла в салоне Ямагучи
+            </p>
 
-          <p class="proposition-card__description proposition-card__description_gift">
-            Получить<br>
-            30 000 руб
+            <img class="proposition-card__icon proposition-card__icon_chair"
+                 src="../../web/v6/images/test-chair-icon-v2.webp"
+                 alt="кресло"
+                 loading="lazy"
+            >
+          </div>
+        </a>
+
+        <section id="spend-bonuses" class="active-hero mt20">
+          <h2 class="active-hero__title active-hero__title_new">
+            Потратьте<br>
+            накопленные бонусы —
+          </h2>
+          <p class="active-hero__descr active-hero__descr_bonuses">
+            на покупку массажного оборудования,<br>
+            инновационных приборов косметологии<br>
+            и комплексных решений фитнес-<br>
+            оборудования.
           </p>
+        </section>
+
+        <div class="vendi-bonus vendi-bonus_new">
+          <div class="vendi-bonus__content vendi-bonus__content_new">
+            <h2 class="vendi-bonus__title">Ваш баланс</h2>
+            <p class="vendi-bonus__value">250 <span>бонусов</span></p>
+          </div>
+          <p class="vendi-bonus__info vendi-bonus__info_new">1 бонус = 1 рубль</p>
         </div>
-      </div>
-    </div>
 
-    <div class="proposition-card proposition-card_test">
-      <div class="proposition-card__container proposition-card__container_test">
-        <p class="proposition-card__description proposition-card__description_test">
-          Протестировать массажные<br>
-          кресла в салоне Ямагучи
-        </p>
-
-        <img class="proposition-card__icon proposition-card__icon_chair"
-             src="../../web/v6/images/test-chair-icon-v2.webp"
-             alt="кресло"
-             loading="lazy"
-        >
-      </div>
-    </div>
-
-    <section class="active-hero mt20">
-      <h2 class="active-hero__title active-hero__title_new">
-        Потратьте<br>
-        накопленные бонусы —
-      </h2>
-      <p class="active-hero__descr active-hero__descr_bonuses">
-        на покупку массажного оборудования,<br>
-        инновационных приборов косметологии<br>
-        и комплексных решений фитнес-<br>
-        оборудования.
-      </p>
-    </section>
-
-    <div class="vendi-bonus vendi-bonus_new">
-      <div class="vendi-bonus__content vendi-bonus__content_new">
-        <h2 class="vendi-bonus__title">Ваш баланс</h2>
-        <p class="vendi-bonus__value">250 <span>бонусов</span></p>
-      </div>
-      <p class="vendi-bonus__info vendi-bonus__info_new">1 бонус = 1 рубль</p>
-    </div>
-
-    <section class="invitation section">
-      <div class="invitation-card">
-        <img class="invitation-card__background undraggable-image"
+        <section class="invitation section">
+          <div id="test-chairs" class="invitation-card">
+            <img class="invitation-card__background undraggable-image"
                  src="../../web/v6/images/invitation-card-background.webp"
                  alt="задний фон"
                  loading="lazy"
-         >
-        <div class="invitation-card__content">
-          <h2 class="invitation-card__title">
-            Приглашаем в салон
-            <span class="invitation-card__title_yamaguchi">Ямагучи</span> — протестировать
-            массажные кресла
-          </h2>
-          <p class="invitation-card__description">
-            Бесплатно испытайте настоящий
-            SPA-массаж в лучшем кресле
-            премиум-класса!
-          </p>
+            >
+            <div class="invitation-card__content">
+              <h2 class="invitation-card__title">
+                Приглашаем в салон
+                <span class="invitation-card__title_yamaguchi">Ямагучи</span> — протестировать
+                массажные кресла
+              </h2>
+              <p class="invitation-card__description">
+                Бесплатно испытайте настоящий
+                SPA-массаж в лучшем кресле
+                премиум-класса!
+              </p>
 
-          <div class="nagiev-badge">
-            <p class="nagiev-badge__description">
-              "Я выбираю<br>
-              только лучшее<br>
-              Я выбираю<br>
-              Ямагучи."
-            </p>
+              <div class="nagiev-badge">
+                <p class="nagiev-badge__description">
+                  "Я выбираю<br>
+                  только лучшее<br>
+                  Я выбираю<br>
+                  Ямагучи."
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="vendi__main vendi__main_new">
+          <div class="vendi__main-form vendi__main-form_new">
+            <div class="vs-form vs-form_new">
+              <div class="vs-form__note">БЕСПЛАТНО</div>
+              <h2 class="vs-form__title vs-form__title_new">Запишитесь на массаж</h2>
+              <p class="vs-form__text vs-form__text_new">
+                проверьте на себе профессиональные<br>
+                японские технологии массажа<br>
+                и получите персональную<br>
+                рекомендацию по выбору кресла<br>
+                от наших экспертов
+              </p>
+              <form class="vendi-form" action="/" method="post">
+                <input type="hidden" name="_csrf" value="#">
+                <button class="vendi-form__button vendi-form__button_main" type="submit">Записаться</button>
+              </form>
+              <div class="vendi-form__success">
+                Ваша заявка принята и&nbsp;обрабатывается. <br>
+                В&nbsp;ближайшее время с&nbsp;Вами
+                свяжется <br> наш менеджер.
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <div class="vendi__main vendi__main_new">
-      <div class="vendi__main-form vendi__main-form_new">
-        <div class="vs-form vs-form_new">
-          <div class="vs-form__note">БЕСПЛАТНО</div>
-          <h2 class="vs-form__title vs-form__title_new">Запишитесь на массаж</h2>
-          <p class="vs-form__text vs-form__text_new">
-            проверьте на себе профессиональные<br>
-            японские технологии массажа<br>
-            и получите персональную<br>
-            рекомендацию по выбору кресла<br>
-            от наших экспертов
-          </p>
-          <form class="vendi-form" action="/" method="post">
-            <input type="hidden" name="_csrf" value="#">
-            <button class="vendi-form__button vendi-form__button_main" type="submit">Записаться</button>
-          </form>
-          <div class="vendi-form__success">
-            Ваша заявка принята и&nbsp;обрабатывается. <br>
-            В&nbsp;ближайшее время с&nbsp;Вами
-            свяжется <br> наш менеджер.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="vendi-bottom__chairs">
-      <div class="vendi-bottom__form vendi-bottom__form_new mb30">
-        <img class="vendi-bottom__form-background undraggable-image"
-             src="../../web/v6/images/vendi-bottom__form-background.webp"
-             alt=""
-             loading="lazy"
-        >
-        <div class="vb-form vb-form_new">
-          <h2 class="vb-form__title"><span class="vb-form__title_giving">Дарим</span><span>30 000 рублей</span></h2>
-          <p class="vb-form__text">
-            *на покупку кресла<br>
-            от 1 000 000 руб
-          </p>
-          <form class="vendi-form" action="#" method="post">
-            <button class="vendi-form__button vendi-form__button_bf" type="submit">Получить</button>
-          </form>
-          <p class="vendi-form__gift-text">
-            Подарок доступен в приложении<br> в разделе Персональные предложения
-          </p>
-        </div>
-      </div>
-
-      <div class="vendi-chairs vendi-chairs_new">
-        <div class="vendi-chairs__top">
-          <h2 class="vendi-chairs__title">Выбери свое <br> массажное кресло</h2>
-          <a class="vendi-chairs__button vendi-chairs__button_new vendi-btn" href="https://www.yamaguchi.ru/massazhnyie-kresla" target="_blank" rel="noopener">
-            <img class="vendi-bottom__go-to-icon undraggable-image"
-                 src="../../web/v6/images/go-to-icon.webp"
+        <div id="gift" class="vendi-bottom__chairs">
+          <div class="vendi-bottom__form vendi-bottom__form_new mb30">
+            <img class="vendi-bottom__form-background undraggable-image"
+                 src="../../web/v6/images/vendi-bottom__form-background.webp"
                  alt=""
                  loading="lazy"
             >
-          </a>
+            <div class="vb-form vb-form_new">
+              <h2 class="vb-form__title"><span class="vb-form__title_giving">Дарим</span><span>30 000 рублей</span></h2>
+              <p class="vb-form__text">
+                *на покупку кресла<br>
+                от 1 000 000 руб
+              </p>
+              <form class="vendi-form" action="#" method="post">
+                <button class="vendi-form__button vendi-form__button_bf" type="submit">Получить</button>
+              </form>
+              <p class="vendi-form__gift-text">
+                Подарок доступен в приложении<br> в разделе Персональные предложения
+              </p>
+            </div>
+          </div>
+
+          <div class="vendi-chairs vendi-chairs_new">
+            <div class="vendi-chairs__top">
+              <h2 class="vendi-chairs__title">Выбери свое <br> массажное кресло</h2>
+              <a class="vendi-chairs__button vendi-chairs__button_new vendi-btn" href="https://www.yamaguchi.ru/massazhnyie-kresla" target="_blank" rel="noopener">
+                <img class="vendi-bottom__go-to-icon undraggable-image"
+                     src="../../web/v6/images/go-to-icon.webp"
+                     alt=""
+                     loading="lazy"
+                >
+              </a>
+            </div>
+
+            <div class="vendi-chairs__inner">
+              <a class="vendi-chair" href="https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xi-robot" target="_blank" rel="noopener">
+                <img class="vendi-chair__pic" src="../../web/v6/images/vendi-chair-xi-robot.webp" alt="">
+                <img class="vendi-chair__highlight vendi-chair__highlight_xi-robot" src="../../web/v6/images/vendi-chair-xi-robot-highlight.webp" alt="">
+                <div class="vendi-chair-badge">
+                  <p class="vendi-chair-badge__description">
+                    Массажный робот<br>
+                    Yamaguchi <span class="vendi-chair-badge__description_red">Xi Robot</span>
+                  </p>
+                </div>
+              </a>
+
+              <a class="vendi-chair" href="https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xu" target="_blank" rel="noopener">
+                <img class="vendi-chair__pic" src="../../web/v6/images/vendi-chair-xu.webp" alt="">
+                <img class="vendi-chair__highlight vendi-chair__highlight_xu" src="../../web/v6/images/vendi-chair-xu-highlight.webp" alt="">
+                <div class="vendi-chair-badge">
+                  <p class="vendi-chair-badge__description">
+                    Массажная капсула<br>
+                    Yamaguchi <span class="vendi-chair-badge__description_red">Xu</span>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="vendi-chairs__inner">
-          <a class="vendi-chair" href="https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xi-robot" target="_blank" rel="noopener">
-            <img class="vendi-chair__pic" src="../../web/v6/images/vendi-chair-xi-robot.webp" alt="">
-            <img class="vendi-chair__highlight vendi-chair__highlight_xi-robot" src="../../web/v6/images/vendi-chair-xi-robot-highlight.webp" alt="">
-            <div class="vendi-chair-badge">
-              <p class="vendi-chair-badge__description">
-                Массажный робот<br>
-                Yamaguchi <span class="vendi-chair-badge__description_red">Xi Robot</span>
-              </p>
-            </div>
+        <div class="vendi-cards">
+          <a class="vendi-card" href="https://www.yamaguchi.ru/massazhnyie-kresla" target="_blank" rel="noopener">
+            <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-massage-chairs.webp" alt="" loading="lazy">
+            <h3 class="vendi-card__name">Массажные<br> кресла</h3>
           </a>
 
-          <a class="vendi-chair" href="https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xu" target="_blank" rel="noopener">
-            <img class="vendi-chair__pic" src="../../web/v6/images/vendi-chair-xu.webp" alt="">
-            <img class="vendi-chair__highlight vendi-chair__highlight_xu" src="../../web/v6/images/vendi-chair-xu-highlight.webp" alt="">
-            <div class="vendi-chair-badge">
-              <p class="vendi-chair-badge__description">
-                Массажная капсула<br>
-                Yamaguchi <span class="vendi-chair-badge__description_red">Xu</span>
-              </p>
-            </div>
+          <a class="vendi-card" href="https://www.yamaguchi.ru/massazhery-dlya-nog" target="_blank" rel="noopener">
+            <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-legs-massager.webp" alt="" loading="lazy">
+            <h3 class="vendi-card__name">Массажеры<br> для ног</h3>
+          </a>
+
+          <a class="vendi-card" href="https://www.yamaguchi.ru/massazhery" target="_blank" rel="noopener">
+            <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-body-massager.webp" alt="" loading="lazy">
+            <h3 class="vendi-card__name">Массажеры<br> для всего тела</h3>
+          </a>
+
+          <a class="vendi-card" href="https://www.yamaguchi.ru/domashnij-fitnes" target="_blank" rel="noopener">
+            <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-treadmills.webp" alt="" loading="lazy">
+            <h3 class="vendi-card__name">Беговые дорожки<br> и фитнес</h3>
+          </a>
+
+          <a class="vendi-card" href="https://www.yamaguchi.ru/kosmetologicheskiye-apparaty" target="_blank" rel="noopener">
+            <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-rejuvenation.webp" alt="" loading="lazy">
+            <h3 class="vendi-card__name">Для молодости<br> и красоты</h3>
+          </a>
+
+          <a class="vendi-card" href="https://www.yamaguchi.ru/new-products" target="_blank" rel="noopener">
+            <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-learn-more.webp" alt="">
+            <h3 class="vendi-card__name">Ознакомиться<br> с продуктами</h3>
           </a>
         </div>
       </div>
-    </div>
 
-    <div class="vendi-cards">
-      <a class="vendi-card" href="https://www.yamaguchi.ru/massazhnyie-kresla" target="_blank" rel="noopener">
-        <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-massage-chairs.webp" alt="" loading="lazy">
-        <h3 class="vendi-card__name">Массажные<br> кресла</h3>
-      </a>
+      <div class="bottom-fixed bottom-fixed_new" id="bottomPanel">
+        <a href="#" class="bottom-fixed__review bottom-fixed__review_new">Оставить отзыв о кресле</a>
 
-      <a class="vendi-card" href="https://www.yamaguchi.ru/massazhery-dlya-nog" target="_blank" rel="noopener">
-        <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-legs-massager.webp" alt="" loading="lazy">
-        <h3 class="vendi-card__name">Массажеры<br> для ног</h3>
-      </a>
+        <a href="#" class="btn btn-w100 bottom-fixed__video bottom-fixed__video_new">
+          Полезные видео о здоровье
+        </a>
 
-      <a class="vendi-card" href="https://www.yamaguchi.ru/massazhery" target="_blank" rel="noopener">
-        <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-body-massager.webp" alt="" loading="lazy">
-        <h3 class="vendi-card__name">Массажеры<br> для всего тела</h3>
-      </a>
-
-      <a class="vendi-card" href="https://www.yamaguchi.ru/domashnij-fitnes" target="_blank" rel="noopener">
-        <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-treadmills.webp" alt="" loading="lazy">
-        <h3 class="vendi-card__name">Беговые дорожки<br> и фитнес</h3>
-      </a>
-
-      <a class="vendi-card" href="https://www.yamaguchi.ru/kosmetologicheskiye-apparaty" target="_blank" rel="noopener">
-        <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-rejuvenation.webp" alt="" loading="lazy">
-        <h3 class="vendi-card__name">Для молодости<br> и красоты</h3>
-      </a>
-
-      <a class="vendi-card" href="https://www.yamaguchi.ru/new-products" target="_blank" rel="noopener">
-        <img class="vendi-card__pic" src="../../web/v6/images/vendi-card-learn-more.webp" alt="">
-        <h3 class="vendi-card__name">Ознакомиться<br> с продуктами</h3>
-      </a>
-    </div>
-  </div>
-  <div class="legal-notice">
-    <div class="legal-notice__container">
-      <div class="legal-notice__main">
-        <p class="legal-notice__text legal-notice__text_name">
-          ИП Костина Юлия Сергеевна
-        </p>
-        <p class="legal-notice__text legal-notice__text_inn">
-          ИНН 132710152500
-        </p>
-        <p class="legal-notice__text legal-notice__text_ogrn">
-          ОГРНИП 323130000002237
-        </p>
-        <p class="legal-notice__text legal-notice__text_type">
-          VENDING
-        </p>
-        <a class="legal-notice__contract-offer" href="">
-          Договор оферты
+        <a href="#" class="bottom-fixed__stop bottom-fixed__stop_new">
+          <span class="bottom-fixed__time" id="bottomTimer">09:57</span>
+          <div class="bottom-fixed__description-wrapper">
+            <img class="bottom-fixed__icon" src="../../web/v6/images/close-cross.webp" alt="Yamaguchi">
+            <span>Завершить массаж</span>
+          </div>
         </a>
       </div>
+      <footer class="screen__footer">
+        <p class="legal-info">
+          ООО «РОМАШКА ПЛЮС», ИНН 5635373563, <br>
+          ОГРН 54623452352435136, Адрес: 108814, <br>
+          г. Москва, п. Сосенское, п. Коммунарка, ул, <br>
+          Фитаревская, д.19, кв. 214. Spirit <br>
+          <a class="legal-info_bold">Договор оферты</a>
+        </p>
 
-      <p class="legal-notice__usage-rules">
-        Выбирая сеанс массажа, Вы подтверждаете,<br>
-        что ознакомились с <a class="legal-notice__usage-rules_bold" href="">правилами<br>
-        использования массажного кресла</a>
-      </p>
+        <div class="screen__last-row">
+          <p class="chair-model-name">
+            Кресло DM01234
+          </p>
 
-      <p class="chair-name">
-        Кресло DM01234
-      </p>
+          <a class="language-switch" href="">
+            <img class="language-switch__flag" src="../../web/v6/images/england-flag.webp" alt="флаг">
+
+            <p class="language-switch__name">
+              English
+            </p>
+
+            <!--            <img class="language-switch__flag" src="../../web/v6/images/russia-flag.webp" alt="флаг">-->
+
+            <!--            <p class="language-switch__name">-->
+            <!--              Русский-->
+            <!--            </p>-->
+          </a>
+        </div>
+      </footer>
     </div>
   </div>
 </main>
-
-<div class="bottom-fixed bottom-fixed_new" id="bottomPanel">
-  <a href="#" class="bottom-fixed__review bottom-fixed__review_new">Оставить отзыв о кресле</a>
-
-  <a href="#" class="btn btn-w100 bottom-fixed__video bottom-fixed__video_new">
-    Полезные видео о здоровье
-  </a>
-
-  <a href="#" class="bottom-fixed__stop bottom-fixed__stop_new">
-    <span class="bottom-fixed__time" id="bottomTimer">09:57</span>
-    <div class="bottom-fixed__description-wrapper">
-      <img class="bottom-fixed__icon" src="../../web/v6/images/close-cross.webp" alt="Yamaguchi">
-      <span>Завершить массаж</span>
-    </div>
-  </a>
-</div>
-
 </body>
 </html>

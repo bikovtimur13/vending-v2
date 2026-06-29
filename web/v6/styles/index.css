@@ -81,7 +81,6 @@
 }
 
 .page-bottom-space{height:135px}
-.vending-v2{background:#FEFEFF;padding-bottom:clamp(240px, 62vw, 330px)}
 
 .vendi{background:#f6e4d6 url("../images/vendi-bg-mob@1.5x.webp") center/cover;padding:min(7.81vw,39px) 0 min(12vw,60px)}
 .vendi__main{
@@ -918,6 +917,7 @@
 
 
 .proposition-card {
+    display: block;
     position: relative;
     width: clamp(145px, 45.31vw, 231.99px);
     height: clamp(52px, 16.25vw, 83.2px);
@@ -926,6 +926,7 @@
     border: 0.3125vw solid #FFFFFF;
     border-radius: clamp(15px, 4.69vw, 24.01px);
     box-shadow: 0px 0px 14.59px 0px #FFFFFF inset, 0px 3.67px 15.69px 0px #CACADD8F;
+    text-decoration: none;
 }
 
 .proposition-card_test {
@@ -1272,6 +1273,11 @@
     font-size: clamp(13px, 4.06vw, 20.79px);
     line-height: 140%;
     letter-spacing: 0;
+}
+
+.vending-v2{
+    background:#FEFEFF;
+    padding-bottom: clamp(160px, 50vw, 256px);
 }
 
 .period-variants {
