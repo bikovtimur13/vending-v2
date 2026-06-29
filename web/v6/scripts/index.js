@@ -284,14 +284,3 @@ if (choosePaymentMethodBtn && chosenPaymentMethod) {
     chosenPaymentMethod.classList.remove('chosen-payment-method_hidden');
   })
 }
-
-const pointsModal = new Modal('points-details-modal', 'points-details-modal__cross', 'cashback-info__learn-more, .account-menu-item_points');
-const overlay = document.querySelector('.points-details-modal__overlay');
-if (overlay) {
-    overlay.addEventListener('click', (event) => {
-      if (event.target === overlay) {
-        pointsModal.body.style.overflow = 'unset';
-        pointsModal.closeModal();
-      }
-    })
-}

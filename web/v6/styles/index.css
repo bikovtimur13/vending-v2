@@ -1277,7 +1277,7 @@
 
 .vending-v2{
     background:#FEFEFF;
-    padding-bottom: clamp(160px, 50vw, 256px);
+    padding-bottom: clamp(200px, 62.5vw, 320px);
 }
 
 .period-variants {
@@ -1557,6 +1557,23 @@
     font-weight: 600;
     text-decoration-line: underline;
     color: #4C4E56;
+}
+
+.massage-conditions {
+    width: clamp(300px, 93.75vw, 480px);
+    margin: 0 0 clamp(18px, 5.63vw, 28.83px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(13px, 4.06vw, 20.79px);
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #4C4E56;
+}
+
+.massage-conditions_bold {
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .screen__last-row {
