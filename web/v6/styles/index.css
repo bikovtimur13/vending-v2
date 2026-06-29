@@ -2708,6 +2708,7 @@
 .payment-method-btn {
     width: clamp(274px, 85.63vw, 438.43px);
     height: clamp(44px, 13.75vw, 70.4px);
+    position: relative;
     border: none;
     outline: none;
     display: flex;
@@ -2716,6 +2717,13 @@
     border-radius: clamp(10px, 3.13vw, 16.03px);
     background: #F6F6FB;
     text-decoration: none;
+}
+
+.payment-method-btn__radio {
+    position: absolute;
+    right: clamp(10px, 3.13vw, 16.03px);
+    transform: translateY(-50%);
+    top: 50%;
 }
 
 .payment-method-btn_cart {
@@ -2851,10 +2859,14 @@
     text-decoration: none;
 }
 
-.sm-radio {
+.saved-method__radio {
     position: absolute;
     right: clamp(10px, 3.13vw, 16.03px);
     top: clamp(10px, 3.13vw, 16.03px);
+}
+
+.sm-radio {
+
 }
 
 .sm-radio__fake-btn {

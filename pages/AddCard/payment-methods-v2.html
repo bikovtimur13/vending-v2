@@ -86,15 +86,28 @@
           </h3>
 
           <div class="payment-method-group__container">
-            <form action="">
-              <button class="payment-method-btn" type="submit">
+            <label for="without-binding">
+              <div class="payment-method-btn">
                 <img class="payment-method-btn__icon" src="../../web/v6/images/cash-payment-method.webp" alt="">
                 <p class="payment-method-btn__name">
                   Оплата без привязки карты
                 </p>
-                <img class="payment-method-btn__arrow" src="../../web/v6/images/payment-method-btn__arrow.webp" alt="">
-              </button>
-            </form>
+                <!--                <img class="payment-method-btn__arrow" src="../../web/v6/images/payment-method-btn__arrow.webp" alt="">-->
+                <div class="sm-radio payment-method-btn__radio">
+                  <input
+                          id="without-binding"
+                          class="sm-radio__fake-btn"
+                          type="radio"
+                          name="saved-method"
+                          value="without-binding"
+                  >
+
+                  <div class="sm-radio__custom-btn">
+                    <img class="sm-radio__tick" src="../../web/v6/images/sm-radio__custom-btn-tick.webp" alt="">
+                  </div>
+                </div>
+              </div>
+            </label>
 
             <form action="">
               <button class="payment-method-btn" type="submit">
@@ -102,16 +115,18 @@
                 <p class="payment-method-btn__name">
                   Привязать СБП
                 </p>
+
                 <img class="payment-method-btn__arrow" src="../../web/v6/images/payment-method-btn__arrow.webp" alt="">
               </button>
             </form>
 
             <form action="">
-              <button class="payment-method-btn payment-method-btn_cart payment-method-btn_cart-disabled" type="submit">
+              <button class="payment-method-btn payment-method-btn_cart" type="submit">
                 <img class="payment-method-btn__icon" src="../../web/v6/images/card-payment-method.webp" alt="">
                 <p class="payment-method-btn__name">
                   Привязать карту
                 </p>
+
                 <img class="payment-method-btn__arrow" src="../../web/v6/images/payment-method-btn__arrow.webp" alt="">
               </button>
             </form>
@@ -140,7 +155,7 @@
 
                 <p class="saved-method__currency"></p>
 
-                <div class="sm-radio">
+                <div class="sm-radio saved-method__radio">
                   <input
                           id="tbank-option"
                           class="sm-radio__fake-btn"
@@ -177,7 +192,7 @@
                   </div>
                 </div>
 
-                <div class="sm-radio">
+                <div class="sm-radio saved-method__radio">
                   <input
                           id="card-0"
                           class="sm-radio__fake-btn"
@@ -221,7 +236,7 @@
                   </p>
                 </div>
 
-                <div class="sm-radio">
+                <div class="sm-radio saved-method__radio">
                   <input
                           id="card-1"
                           class="sm-radio__fake-btn"
@@ -261,7 +276,7 @@
                   </p>
                 </div>
 
-                <div class="sm-radio sm-radio_unavailable">
+                <div class="sm-radio sm-radio_unavailable saved-method__radio">
                   <input
                           id="card-2"
                           class="sm-radio__fake-btn"
