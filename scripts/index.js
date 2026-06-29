@@ -368,6 +368,7 @@ function initSwiper() {
   const swiperWrapper = swiperEl.querySelector('.swiper-wrapper');
   products.forEach((product) => {
     const html = swiperSlideHtml(product.videoLink, product.id);
+    console.log(`product.id: ${product.id}`)
     if (html) {
       insertSwiper(swiperWrapper, html);
     }
