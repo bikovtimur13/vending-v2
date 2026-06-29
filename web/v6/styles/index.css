@@ -2777,10 +2777,19 @@
 
 .saved-method__bank-account {
     display: flex;
-    column-gap: clamp(36px, 11.25vw, 57.6px);
 }
 
 .saved-method__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(11px, 3.44vw, 17.61px);
+    line-height: 120%;
+    color: #4C4E56;
+}
+
+.saved-method__expiration {
+    margin: 0 0 0 clamp(4px, 1.25vw, 6.4px);
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -2810,6 +2819,7 @@
 
 .saved-method__currency {
     width: max-content;
+    margin: 0 0 0 clamp(24px, 7.5vw, 38.4px);
     text-transform: uppercase;
     font-family: 'Montserrat';
     font-style: normal;
