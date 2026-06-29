@@ -2777,6 +2777,7 @@
 
 .saved-method__bank-account {
     display: flex;
+    position: relative;
 }
 
 .saved-method__name {
@@ -2818,6 +2819,9 @@
 }
 
 .saved-method__currency {
+    position: absolute;
+    top: 0;
+    left: clamp(120px, 37.5vw, 192px);
     width: max-content;
     margin: 0 0 0 clamp(24px, 7.5vw, 38.4px);
     text-transform: uppercase;
@@ -2856,10 +2860,11 @@
 }
 
 .sm-radio__fake-btn:checked + .sm-radio__custom-btn {
-    border: clamp(1.2px, 0.38vw, 1.95px) solid #828387;
+    /*border: clamp(1.2px, 0.38vw, 1.95px) solid #828387;*/
+    border: none;
 }
 
-.sm-radio__fake-btn:checked + .sm-radio__custom-btn .sm-radio__circle {
+.sm-radio__fake-btn:checked + .sm-radio__custom-btn .sm-radio__tick {
     opacity: 1;
     transition: opacity 0.12s linear;
 }
@@ -2875,12 +2880,10 @@
     border: clamp(1px, 0.31vw, 1.59px) solid #828387;
 }
 
-.sm-radio__circle {
+.sm-radio__tick {
     opacity: 0;
-    width: clamp(10px, 3.13vw, 16.03px);
-    height: clamp(10px, 3.13vw, 16.03px);
-    border-radius: 50%;
-    background: #E6332A;
+    width: clamp(24px, 7.5vw, 38.4px);
+    height: clamp(24px, 7.5vw, 38.4px);
     transition: opacity 0.16s linear;
 }
 
