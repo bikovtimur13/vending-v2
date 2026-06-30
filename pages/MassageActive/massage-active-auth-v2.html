@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../../web/v6/styles/index.css">
   <link rel="stylesheet" href="../../libs/swiper/swiper.min.css">
   <script src="../../libs/swiper/swiper.min.js"></script>
+  <script src="../../libs/jquery.min.js"></script>
   <script defer src="../../web/v6/scripts/index.js"></script>
   <script defer src="../../scripts/index.js"></script>
   <title>Vending</title>
@@ -65,9 +66,7 @@
           <p class="m-timer-card__text">
             До окончания<br>массажа осталось
           </p>
-
-          <!--        todo: to uncomment -->
-          <!--      <p class="m-timer-card__time" id="mainTimer">00:05</p>-->
+          
           <p class="m-timer-card__time" id="mainTimer">10:00</p>
           <img class="m-timer-card__spinner undraggable-image"
                src="../../web/v6/images/spinner.webp"
@@ -298,29 +297,29 @@
           <div class="swiper-wrapper __js-video-swiper-wrapper">
           </div>
         </div>
-        <div class="upper-content__head">
-          <div class="upper-content__left-side">
-            <div class="upper-content__time mb10">01:35</div>
-            <button class="upper-content__audio-btn _js-control-btn _muted"></button>
+        <div class="upper-content">
+          <div class="upper-content__head">
+            <div class="upper-content__left-side">
+              <div id="video-slider-timer" class="upper-content__time mb10">01:35</div>
+              <button class="upper-content__audio-btn _js-control-btn _muted"></button>
+            </div>
+            <a id="hideVideoSliderBtn" href="#" class="upper-content__back"></a>
           </div>
-          <a
-                  href="#"
-                  class="upper-content__back"></a>
-        </div>
-        <div class="upper-content__footer">
-          <div class="upper-content__progress-bar">
-            <div class="upper-content__progress-bar-strip"></div>
+          <div class="upper-content__footer">
+            <div class="upper-content__progress-bar">
+              <div class="upper-content__progress-bar-strip"></div>
+            </div>
+            <a href="#" class="upper-content__more btn" target="_blank">Подробнее</a>
           </div>
-          <a href="#" class="upper-content__more btn" target="_blank">Подробнее</a>
         </div>
       </div>
 
       <div class="bottom-fixed bottom-fixed_new" id="bottomPanel">
         <a href="#" class="bottom-fixed__review bottom-fixed__review_new">Оставить отзыв о кресле</a>
 
-        <a href="#" class="btn btn-w100 bottom-fixed__video bottom-fixed__video_new">
+        <button id="showVideoSliderBtn" class="btn btn-w100 bottom-fixed__video bottom-fixed__video_new">
           Полезные видео о здоровье
-        </a>
+        </button>
 
         <a href="#" class="bottom-fixed__stop bottom-fixed__stop_new">
           <span class="bottom-fixed__time" id="bottomTimer">09:57</span>

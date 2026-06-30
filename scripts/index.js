@@ -298,65 +298,67 @@ function swiperSlideHtml(videoLink, id) {
 function initSwiper() {
   const products = [
     {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/axiom-eye.mp4',
+      // videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/axiom-eye.mp4',
+      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/video_vending_xu_aeroflot_reel.mp4',
       pageLink: 'https://www.yamaguchi.ru/massazhery-dlya-golovy-i-glaz/yamaguchi-axiom-eye.php',
     },
     {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xi-basta.mp4',
+      // videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xi-basta.mp4',
+      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/kirkorov_xi_vending_22-12-23.mp4',
       pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xi',
     },
     {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/liberty.mp4',
+      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/video_vending_ems_hair_brush_1.mp4',
       pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/liberty-gray',
     },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xi-kirkorov.mp4',
-      pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xi',
-    },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/osumi.mp4',
-      pageLink: 'https://www.yamaguchi.ru/massazhery-dlya-tela/osumi',
-    },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xi-orlova.mp4',
-      pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xi',
-    },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xu-kirkorov.mp4',
-      pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xu',
-    },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/fen.mp4',
-      pageLink: 'https://www.yamaguchi.ru/tovari-dlya-krasoti/hair-styler-with-7-heads',
-    },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/capsula.mp4',
-      pageLink: 'https://www.yamaguchi.ru/massazhery-dlya-nog/yamaguchi-capsula-grey',
-    },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/beauty-box.mp4',
-      pageLink: 'https://www.yamaguchi.ru/beautybox',
-    },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/standing-desk.mp4',
-      pageLink: 'https://www.yamaguchi.ru/tovari-dlya-zdorovya/standing-desk-dark.php',
-    },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/hula-hoop.mp4',
-      pageLink: 'https://www.yamaguchi.ru/tovari-dlya-zdorovya/hula-hoop',
-    },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xu-doroga.mp4',
-      pageLink: 'https://www.yamaguchi.ru/x-collection',
-    },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xi-nagiev.mp4',
-      pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xi',
-    },
-    {
-      videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xi-medvedeva.mp4',
-      pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xi',
-    },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xi-kirkorov.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xi',
+    // },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/osumi.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/massazhery-dlya-tela/osumi',
+    // },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xi-orlova.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xi',
+    // },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xu-kirkorov.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xu',
+    // },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/fen.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/tovari-dlya-krasoti/hair-styler-with-7-heads',
+    // },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/capsula.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/massazhery-dlya-nog/yamaguchi-capsula-grey',
+    // },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/beauty-box.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/beautybox',
+    // },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/standing-desk.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/tovari-dlya-zdorovya/standing-desk-dark.php',
+    // },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/hula-hoop.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/tovari-dlya-zdorovya/hula-hoop',
+    // },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xu-doroga.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/x-collection',
+    // },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xi-nagiev.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xi',
+    // },
+    // {
+    //   videoLink: 'https://sportapp.yamaguchi.ru/uploads/media_vending/xi-medvedeva.mp4',
+    //   pageLink: 'https://www.yamaguchi.ru/massazhnyie-kresla/yamaguchi-xi',
+    // },
   ].map((product, index) => {
     return { ...product, id: index };
   });
@@ -368,32 +370,33 @@ function initSwiper() {
   const swiperWrapper = swiperEl.querySelector('.swiper-wrapper');
   products.forEach((product) => {
     const html = swiperSlideHtml(product.videoLink, product.id);
-    console.log(`product.id: ${product.id}`)
     if (html) {
       insertSwiper(swiperWrapper, html);
     }
   });
   let prevVideo = null;
+  let swiper = null;
 
-  const swiper = new Swiper('.video-swiper', {
-    loop: true,
-    autoplay: false,
-    direction: 'vertical',
-    on: {
-      init: function () {
-        const activeSlide = this.slides[this.activeIndex];
-        const video = activeSlide.querySelector('video');
-        if (video) {
-          const productId = video.dataset.productId;
-          const currentProduct = products.find((product) => product.id === Number(productId));
-          linkBtn.href = currentProduct.pageLink;
-          video.addEventListener('ended', onVideoEnd);
-          video.addEventListener('loadedmetadata', onVideoPlay);
-        }
+  try {
+    swiper = new Swiper('.video-swiper', {
+      loop: true,
+      autoplay: false,
+      direction: 'vertical',
+      on: {
+        init: function () {
+          const activeSlide = this.slides[this.activeIndex];
+          const video = activeSlide.querySelector('video');
+          if (video) {
+            const productId = video.dataset.productId;
+            const currentProduct = products.find((product) => product.id === Number(productId));
+            linkBtn.href = currentProduct.pageLink;
+            video.addEventListener('ended', onVideoEnd);
+            video.addEventListener('loadedmetadata', onVideoPlay);
+          }
+        },
       },
-    },
-  });
-
+    });
+  } catch (e) { console.log(e); return; }
 
   swiper.on('slideChange', () => {
     if (prevVideo) {
@@ -413,7 +416,9 @@ function initSwiper() {
       video.play();
     }
   });
+
   function onVideoEnd(event) {
+    //console.log(prevVideo.dataset.productId);
     swiper.slideNext();
     event.target.removeEventListener('ended', onVideoEnd);
   }
@@ -445,12 +450,12 @@ function createProgressStrip() {
 
 controlVideoAudio('.swiper-slide-video');
 function controlVideoAudio(className) {
-  const video = document.querySelectorAll(className);
   const controlBtn = document.querySelector('._js-control-btn');
-
-  if (video.length === 0 || !controlBtn) return;
+  if (!controlBtn) return;
 
   controlBtn.addEventListener('click', () => {
+    const video = document.querySelectorAll(className);
+    if (video.length === 0)  return;
     if (controlBtn.classList.contains('_muted')) {
       video.forEach((item) => {
         item.muted = false;
@@ -464,6 +469,37 @@ function controlVideoAudio(className) {
     }
   });
 }
+
+function showVideoSlider() {
+  $('header').hide();
+  $('#massageRunDiv').hide();
+  $('footer').hide();
+  $('.bottom-fixed').hide();
+  $('#videoSliderDiv').show();
+  $('.screen').addClass('screen_video-player');
+  $('.screen__container').addClass('screen__container_video-player');
+  if (typeof document.querySelector('.video-swiper').swiper === "undefined") return;
+  document.querySelector('.video-swiper').swiper.enable();
+}
+
+function hideVideoSlider() {
+  document.querySelector('.video-swiper').swiper.disable();
+  $('header').show();
+  $('#massageRunDiv').show();
+  $('footer').show();
+  $('.bottom-fixed').show();
+  $('.screen').removeClass('screen_video-player');
+  $('.screen__container').removeClass('screen__container_video-player');
+  $('#videoSliderDiv').hide();
+}
+
+$('#showVideoSliderBtn').click(function(){
+  showVideoSlider();
+});
+
+$('#hideVideoSliderBtn').click(function(){
+  hideVideoSlider();
+});
 
 class ValidEmail {
   valid = false;

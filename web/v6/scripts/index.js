@@ -1,5 +1,6 @@
 const mainTimer = document.getElementById('mainTimer');
 const bottomTimer = document.getElementById('bottomTimer');
+const videoSliderTimer = document.getElementById('video-slider-timer');
 // const timerText = document.querySelector('.timer-circle__text');
 const timerText = document.querySelector('.m-timer-card__text');
 // const circle = document.querySelector('.progress-ring__circle');
@@ -25,8 +26,8 @@ if (mainTimer && bottomTimer && timerText /*&& circle*/ && topTimerBlock && bott
   const render = time => {
     const safeTime = Math.max(time, 0);
     const progress = safeTime / FULL_TIME;
-  
-    mainTimer.textContent =
+
+    videoSliderTimer.textContent = mainTimer.textContent =
     bottomTimer.textContent = formatTime(safeTime);
   
     bottomPanel.classList.toggle('_massage-ended', safeTime <= 0);

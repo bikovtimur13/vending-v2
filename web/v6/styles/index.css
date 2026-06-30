@@ -1235,11 +1235,18 @@
 }
 
 
-
+.vending-v2{
+    background:#FEFEFF;
+    padding-bottom: clamp(200px, 62.5vw, 320px);
+}
 
 .screen {
     padding: clamp(34px, 10.63vw, 54.43px) 0 clamp(20px, 6.25vw, 32px);
     background: #FEFEFF;
+}
+
+.screen_video-player {
+    padding: 0;
 }
 
 .screen__container {
@@ -1249,6 +1256,10 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
+}
+
+.screen__container_video-player {
+    width: clamp(320px, 100vw, 512px);
 }
 
 .screen__body {
@@ -1273,11 +1284,6 @@
     font-size: clamp(13px, 4.06vw, 20.79px);
     line-height: 140%;
     letter-spacing: 0;
-}
-
-.vending-v2{
-    background:#FEFEFF;
-    padding-bottom: clamp(200px, 62.5vw, 320px);
 }
 
 .period-variants {
