@@ -493,6 +493,7 @@ function hideVideoSlider() {
   $('#videoSliderDiv').hide();
 }
 
+hideVideoSlider();
 $('#showVideoSliderBtn').click(function(){
   showVideoSlider();
 });
