@@ -63,16 +63,43 @@
     <div class="screen__container">
       <div id="massageRunDiv" class="screen__body">
         <section class="m-timer-card" id="topTimerBlock">
-          <p class="m-timer-card__text">
-            До окончания<br>массажа осталось
-          </p>
-          
-          <p class="m-timer-card__time" id="mainTimer">10:00</p>
-          <img class="m-timer-card__spinner undraggable-image"
-               src="../../web/v6/images/spinner.webp"
-               alt="загрузка"
-               loading="lazy"
-          >
+          <div class="connecting-state">
+            <p class="connecting-state__description">
+              Кресло подключается,<br>
+              ожидайте
+            </p>
+
+            <img class="connecting-state__spinner undraggable-image"
+                 src="../../web/v6/images/spinner.webp"
+                 alt="загрузка"
+                 loading="lazy"
+            >
+          </div>
+
+          <div class="running-state hidden">
+            <p class="running-state__description">
+              До окончания<br>массажа осталось
+            </p>
+
+            <p id="mainTimer" class="running-state__time">
+              10:00
+            </p>
+          </div>
+
+          <div class="finished-state hidden">
+            <p class="finished-state__description">
+              <b class="finished-state__description_bold">Сеанс массажа завершен. Спасибо!</b>
+              Вы можете оплатить следующий
+              сеанс восстановительного массажа.
+            </p>
+          </div>
+
+<!--          <p class="m-timer-card__time" id="mainTimer">10:00</p>-->
+<!--          <img class="m-timer-card__spinner undraggable-image"-->
+<!--               src="../../web/v6/images/spinner.webp"-->
+<!--               alt="загрузка"-->
+<!--               loading="lazy"-->
+<!--          >-->
         </section>
 
         <div class="two-proposition-cards">

@@ -825,11 +825,131 @@
     height: clamp(66px, 20.63vw, 105.63px);
     margin: clamp(4px, 1.25vw, 7px) auto clamp(14px, 4.38vw, 22.43px);
     position: relative;
+    border-radius: clamp(15px, 4.69vw, 24.01px);
+    overflow: hidden;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*background: radial-gradient(47.3% 106.88% at 52.83% 104.59%, #FF7061 0%, #E03638 100%);*/
+    /*border: 1px solid rgba(255, 255, 255, 0.8);*/
+}
+
+.connecting-state {
+    width: clamp(300px, 93.75vw, 480px);
+    height: clamp(66px, 20.63vw, 105.63px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0 0 0 clamp(16px, 5vw, 25.6px);
+    display: flex;
+    align-items: center;
+    column-gap: clamp(39px, 12.19vw, 62.41px);
+    background: radial-gradient(47.3% 106.88% at 52.83% 104.59%, #FF7061 0%, #E03638 100%);
+    border-radius: clamp(15px, 4.69vw, 24.01px);
+    border: clamp(1px, 0.31vw, 1.59px) solid rgba(255, 255, 255, 0.32);
+
+    transition: opacity 0.16s linear;
+}
+
+.connecting-state.hidden {
+    opacity: 0;
+}
+
+.connecting-state__description {
+    width: clamp(189px, 59.06vw, 302.39px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(15px, 4.69vw, 24.01px);
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    color: #FFF6F6;
+    text-shadow: 0 clamp(1px, 0.31vw, 1.59px) clamp(2.9px, 0.91vw, 4.66px) rgba(188, 9, 0, 0.58);
+}
+
+.connecting-state__spinner {
+    width: clamp(40px, 12.5vw, 64px);
+    animation: rotation 3s linear both infinite;
+}
+
+.running-state {
+    width: clamp(300px, 93.75vw, 480px);
+    height: clamp(66px, 20.63vw, 105.63px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0 0 0 clamp(16px, 5vw, 25.6px);
     display: flex;
     align-items: center;
     background: radial-gradient(47.3% 106.88% at 52.83% 104.59%, #FF7061 0%, #E03638 100%);
     border-radius: clamp(15px, 4.69vw, 24.01px);
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: clamp(1px, 0.31vw, 1.59px) solid rgba(255, 255, 255, 0.32);
+    transition: opacity 0.16s linear;
+}
+
+.running-state.hidden {
+    opacity: 0;
+}
+
+.running-state__description {
+    width: clamp(148px, 46.25vw, 236.8px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(15px, 4.69vw, 24.01px);
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    color: #FFF6F6;
+    text-shadow: 0 clamp(1px, 0.31vw, 1.59px) clamp(2.9px, 0.91vw, 4.66px) rgba(188, 9, 0, 0.58);
+}
+
+.running-state__time {
+    position: absolute;
+    left: clamp(205px, 64.06vw, 320px);
+    top: clamp(16px, 5vw, 25.6px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(28px, 8.75vw, 50.22px);
+    line-height: 120%;
+    color: #fff;
+}
+
+.finished-state {
+    width: clamp(300px, 93.75vw, 480px);
+    height: clamp(66px, 20.63vw, 105.63px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(47.3% 106.88% at 52.83% 104.59%, #45D369 0%, #19B240 100%);
+    border-radius: clamp(15px, 4.69vw, 24.01px);
+    border: clamp(1px, 0.31vw, 1.59px) solid rgba(255, 255, 255, 0.32);
+}
+
+.finished-state.hidden {
+    opacity: 0;
+    transition: opacity 0.16s linear;
+}
+
+.finished-state__description {
+    width: clamp(260px, 81.25vw, 416px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(13px, 4.06vw, 20.79px);
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 clamp(1px, 0.31vw, 1.59px) clamp(2.9px, 0.91vw, 4.66px) rgba(109, 188, 0, 0.58);
+}
+
+.finished-state__description_bold {
+    font-weight: 700;
 }
 
 .m-timer-card_finished {

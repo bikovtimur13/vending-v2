@@ -1,19 +1,29 @@
 const mainTimer = document.getElementById('mainTimer');
 const bottomTimer = document.getElementById('bottomTimer');
 const videoSliderTimer = document.getElementById('video-slider-timer');
-// const timerText = document.querySelector('.timer-circle__text');
-const timerText = document.querySelector('.m-timer-card__text');
-// const circle = document.querySelector('.progress-ring__circle');
+
+const connectingState = document.querySelector('.connecting-state');
+const runningState = document.querySelector('.running-state');
+const finishedState = document.querySelector('.finished-state');
+
 const topTimerBlock = document.getElementById('topTimerBlock');
 const bottomPanel = document.getElementById('bottomPanel');
 const stopButton = document.querySelector('.bottom-fixed__stop');
 
-if (mainTimer && bottomTimer && timerText /*&& circle*/ && topTimerBlock && bottomPanel) {
+const elementsToCheck = [
+  mainTimer,
+  bottomTimer,
+  videoSliderTimer,
+  connectingState,
+  runningState,
+  finishedState,
+  topTimerBlock,
+  bottomPanel
+]
+
+if (elementsToCheck.every(el => !!el)) {
   const FULL_TIME = 10 * 60;
   const radius = 95;
-  const circumference = 2 * Math.PI * radius;
-
-  // circle.style.strokeDasharray = circumference;
 
   const parseTime = time => {
     const [minutes, seconds] = time.trim().split(':').map(Number);
@@ -31,15 +41,12 @@ if (mainTimer && bottomTimer && timerText /*&& circle*/ && topTimerBlock && bott
     bottomTimer.textContent = formatTime(safeTime);
   
     bottomPanel.classList.toggle('_massage-ended', safeTime <= 0);
-  
-    timerText.innerHTML =
-      safeTime > 0
-        ? 'До окончания<br>массажа осталось'
-        : '<b>Сеанс массажа завершен. Спасибо!</b><br>Вы можете оплатить следующий<br>сеанс восстановительного массажа.';
-  
-    // circle.style.strokeDashoffset = circumference * (1 - progress);
 
     if (safeTime <= 0) {
+      runningState.classList.add('hidden');
+      connectingState.classList.add('hidden');
+      finishedState.classList.remove('hidden');
+
       const mTimerCard = document.querySelector('.m-timer-card');
       if (mTimerCard) {
           mTimerCard.classList.add('m-timer-card_finished');
@@ -113,14 +120,16 @@ if (mainTimer && bottomTimer && timerText /*&& circle*/ && topTimerBlock && bott
     });
   }
 
-
   const setMTimerCardToConnectingState = () => {
-    timerText.innerHTML = 'Кресло подключается,<br> ожидайте';
-    topTimerBlock.classList.add('m-timer-card_connecting');
+    connectingState.classList.remove('hidden');
+    runningState.classList.add('hidden');
+    finishedState.classList.add('hidden');
   }
 
   const unsetMTimerCardFromConnectingState = () => {
-    topTimerBlock.classList.remove('m-timer-card_connecting');
+    // topTimerBlock.classList.remove('m-timer-card_connecting');
+    connectingState.classList.add('hidden');
+    runningState.classList.remove('hidden');
   }
 
   setMTimerCardToConnectingState();
